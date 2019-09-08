@@ -51,13 +51,11 @@ void Contenedor<T>::agregarFinal(T* nuevo){
 
 template<class T>
 string Contenedor<T>::toString(){  
-    actual = primero;
     stringstream s;
-    
-    while(actual != NULL){ //Mientras actual tenga algo
-        s << actual->info->toString();
-        actual = actual->siguiente;
-    }
+//    while(getIterador()->masElementos()){ //Mientras actual tenga algo
+//        s << getIterador()->elementoActual();
+//        getIterador()->siguienteElemento();
+//    }
     return s.str();
 }
 
@@ -70,4 +68,9 @@ bool Contenedor<T>::hayMas(){
         return false;
     }
     
+}
+
+template<class T>
+Iterador<T>*  Contenedor<T>::getIterador(){
+    return new Iterador<T>(primero);
 }

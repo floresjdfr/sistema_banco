@@ -37,6 +37,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/Compra.o \
 	${OBJECTDIR}/Fecha.o \
+	${OBJECTDIR}/Iterador.o \
 	${OBJECTDIR}/Persona.o \
 	${OBJECTDIR}/contenedor.o \
 	${OBJECTDIR}/main.o
@@ -75,6 +76,11 @@ ${OBJECTDIR}/Fecha.o: Fecha.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Fecha.o Fecha.cpp
+
+${OBJECTDIR}/Iterador.o: Iterador.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Iterador.o Iterador.cpp
 
 ${OBJECTDIR}/Persona.o: Persona.cpp 
 	${MKDIR} -p ${OBJECTDIR}

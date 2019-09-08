@@ -8,6 +8,7 @@
 #ifndef CONTENEDOR_H
 #define	CONTENEDOR_H
 #include "Nodo.h"
+#include "Iterador.h"
 
 template<class T>
 class Contenedor {
@@ -25,6 +26,7 @@ public:
     void agregarFinal(T*);
     string toString(); //Este metodo solo funcionara si la clase que se trata de mostrar tiene un metodo toSting();
     bool hayMas(); //Retorna verdadero si hay  mas elementos
+    Iterador<T>* getIterador();
     
 private:
     Nodo<T>* actual;

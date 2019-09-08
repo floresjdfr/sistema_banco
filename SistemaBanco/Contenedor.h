@@ -7,31 +7,15 @@
 
 #ifndef CONTENEDOR_H
 #define	CONTENEDOR_H
-#include "Nodo.h"
-#include "Iterador.h"
 
-template<class T>
+using namespace std;
+
+template <class T>
 class Contenedor {
 public:
-    Contenedor();
-    virtual ~Contenedor();
-    
-
-
-    //Gets 
-    Nodo<T>* getActual() const;
-    Nodo<T>* getPrimero() const;
-    
     //Otros metodos
-    void agregarFinal(T*);
-    string toString(); //Este metodo solo funcionara si la clase que se trata de mostrar tiene un metodo toSting();
-    bool hayMas(); //Retorna verdadero si hay  mas elementos
-    Iterador<T>* getIterador();
-    
-private:
-    Nodo<T>* actual;
-    Nodo<T>* primero;
+    virtual void agregar(T*) = 0;
+    virtual ostream& operator <<(ostream&, T&) = 0;
 };
 
 #endif	/* CONTENEDOR_H */
-

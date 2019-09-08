@@ -1,5 +1,5 @@
 /* 
- * File:   contenedorTrancciones.cpp
+ * File:   contenedorTransacciones.cpp
  * Author: Jose David
  * 
  * Created on September 7, 2019, 7:07 PM
@@ -7,38 +7,42 @@
 
 #include "contenedorTransacciones.h"
 
-contenedorTrancciones::contenedorTrancciones() {
+contenedorTransacciones::contenedorTransacciones() {
     actual = NULL;
     primero = NULL;
 }
 
-contenedorTrancciones::~contenedorTrancciones() {
+contenedorTransacciones::~contenedorTransacciones() {
 }
 
 //Sets
-void contenedorTrancciones::setActual(Nodo* Actual){
+void contenedorTransacciones::setActual(Nodo* Actual){
     actual = Actual;
 }
-void contenedorTrancciones::setPrimero(Nodo* Primero){
+void contenedorTransacciones::setPrimero(Nodo* Primero){
     primero = Primero;
 }
 
 //Gets 
-Nodo* contenedorTrancciones::getActual() const{
+Nodo* contenedorTransacciones::getActual() const{
     return actual;
 }
-Nodo* contenedorTrancciones::getPrimero() const{
+Nodo* contenedorTransacciones::getPrimero() const{
     return primero;
 }
 
 //Otros metodos
-void contenedorTrancciones::agregarFinal(Nodo* nuevo){
+void contenedorTransacciones::agregarFinal(Nodo* nuevo){
     actual = primero;
     if(primero == NULL){
         primero = nuevo;
     }
 }
-string contenedorTrancciones::mostrarLista() const{
+string contenedorTransacciones::mostrarLista() const{
     actual = primero;
 }
 
+bool contenedorTransacciones::hayMas(){
+    actual = primero;
+    
+}

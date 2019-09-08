@@ -1,20 +1,20 @@
 /* 
- * File:   contenedorTrancciones.h
+ * File:   contenedorTransacciones.h
  * Author: Jose David
  *
  * Created on September 7, 2019, 7:07 PM
  */
 
-#ifndef CONTENEDORTRANCCIONES_H
-#define	CONTENEDORTRANCCIONES_H
+#ifndef CONTENEDORTRANSACCIONES_H
+#define	CONTENEDORTRANSACCIONES_H
 #include "Nodo.h"
 
 #include "Transaccion.h"
 
-class contenedorTrancciones {
+class contenedorTransacciones {
 public:
-    contenedorTrancciones();
-    virtual ~contenedorTrancciones();
+    contenedorTransacciones();
+    virtual ~contenedorTransacciones();
     
     //Sets
     void setActual(Nodo*);
@@ -34,5 +34,5 @@ private:
     Nodo* primero;
 };
 
-#endif	/* CONTENEDORTRANCCIONES_H */
+#endif	/* CONTENEDORTRANSACCIONES_H */
 

@@ -10,7 +10,7 @@
       <itemPath>Nodo.h</itemPath>
       <itemPath>Persona.h</itemPath>
       <itemPath>Transaccion.h</itemPath>
-      <itemPath>contenedorTrancciones.h</itemPath>
+      <itemPath>contenedorTransacciones.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -67,7 +67,7 @@
       </item>
       <item path="contenedorTrancciones.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="contenedorTrancciones.h" ex="false" tool="3" flavor2="0">
+      <item path="contenedorTransacciones.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -112,7 +112,7 @@
       </item>
       <item path="contenedorTrancciones.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="contenedorTrancciones.h" ex="false" tool="3" flavor2="0">
+      <item path="contenedorTransacciones.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>

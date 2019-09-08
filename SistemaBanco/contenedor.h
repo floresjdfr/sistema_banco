@@ -9,29 +9,26 @@
 #define	CONTENEDORTRANSACCIONES_H
 #include "Nodo.h"
 
-#include "Transaccion.h"
-
+template<class T>
 class contenedorTransacciones {
 public:
     contenedorTransacciones();
     virtual ~contenedorTransacciones();
     
-    //Sets
-    void setActual(Nodo*);
-    void setPrimero(Nodo*);
-    
+
+
     //Gets 
-    Nodo* getActual() const;
-    Nodo* getPrimero() const;
+    Nodo<T>* getActual() const;
+    Nodo<T>* getPrimero() const;
     
     //Otros metodos
-    void agregarFinal(Nodo*);
+    void agregarFinal(Nodo<T>*);
     string mostrarLista() const;
     bool hayMas();
     
 private:
-    Nodo* actual;
-    Nodo* primero;
+    Nodo<T>* actual;
+    Nodo<T>* primero;
 };
 
 #endif	/* CONTENEDORTRANSACCIONES_H */

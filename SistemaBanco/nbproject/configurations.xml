@@ -10,7 +10,7 @@
       <itemPath>Nodo.h</itemPath>
       <itemPath>Persona.h</itemPath>
       <itemPath>Transaccion.h</itemPath>
-      <itemPath>contenedorTransacciones.h</itemPath>
+      <itemPath>contenedor.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -22,7 +22,7 @@
       <itemPath>Compra.cpp</itemPath>
       <itemPath>Fecha.cpp</itemPath>
       <itemPath>Persona.cpp</itemPath>
-      <itemPath>contenedorTrancciones.cpp</itemPath>
+      <itemPath>contenedor.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -65,9 +65,9 @@
       </item>
       <item path="Transaccion.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="contenedorTrancciones.cpp" ex="false" tool="1" flavor2="0">
+      <item path="contenedor.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="contenedorTransacciones.h" ex="false" tool="3" flavor2="0">
+      <item path="contenedor.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -110,9 +110,9 @@
       </item>
       <item path="Transaccion.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="contenedorTrancciones.cpp" ex="false" tool="1" flavor2="0">
+      <item path="contenedor.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="contenedorTransacciones.h" ex="false" tool="3" flavor2="0">
+      <item path="contenedor.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>

@@ -1,6 +1,6 @@
 build/Debug/Cygwin-Windows/contenedorTrancciones.o: \
- contenedorTrancciones.cpp contenedorTransacciones.h Nodo.h
+ contenedorTrancciones.cpp contenedor.h Nodo.h
 
-contenedorTransacciones.h:
+contenedor.h:
 
 Nodo.h:

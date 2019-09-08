@@ -38,7 +38,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/Compra.o \
 	${OBJECTDIR}/Fecha.o \
 	${OBJECTDIR}/Persona.o \
-	${OBJECTDIR}/contenedorTrancciones.o \
+	${OBJECTDIR}/contenedor.o \
 	${OBJECTDIR}/main.o
 
 
@@ -81,10 +81,10 @@ ${OBJECTDIR}/Persona.o: Persona.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Persona.o Persona.cpp
 
-${OBJECTDIR}/contenedorTrancciones.o: contenedorTrancciones.cpp 
+${OBJECTDIR}/contenedor.o: contenedor.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/contenedorTrancciones.o contenedorTrancciones.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/contenedor.o contenedor.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}

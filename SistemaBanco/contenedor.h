@@ -1,19 +1,19 @@
 /* 
- * File:   contenedorTransacciones.h
+ * File:   contenedor.h
  * Author: Jose David
  *
  * Created on September 7, 2019, 7:07 PM
  */
 
-#ifndef CONTENEDORTRANSACCIONES_H
-#define	CONTENEDORTRANSACCIONES_H
+#ifndef CONTENEDOR_H
+#define	CONTENEDOR_H
 #include "Nodo.h"
 
 template<class T>
-class contenedorTransacciones {
+class contenedor {
 public:
-    contenedorTransacciones();
-    virtual ~contenedorTransacciones();
+    contenedor();
+    virtual ~contenedor();
     
 
 
@@ -31,5 +31,5 @@ private:
     Nodo<T>* primero;
 };
 
-#endif	/* CONTENEDORTRANSACCIONES_H */
+#endif	/* CONTENEDOR_H */
 

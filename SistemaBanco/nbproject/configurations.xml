@@ -7,8 +7,10 @@
       <itemPath>Cliente.h</itemPath>
       <itemPath>Compra.h</itemPath>
       <itemPath>Fecha.h</itemPath>
+      <itemPath>Nodo.h</itemPath>
       <itemPath>Persona.h</itemPath>
       <itemPath>Transaccion.h</itemPath>
+      <itemPath>contenedorTrancciones.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -20,6 +22,7 @@
       <itemPath>Compra.cpp</itemPath>
       <itemPath>Fecha.cpp</itemPath>
       <itemPath>Persona.cpp</itemPath>
+      <itemPath>contenedorTrancciones.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -54,11 +57,17 @@
       </item>
       <item path="Fecha.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Nodo.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Persona.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Persona.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Transaccion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="contenedorTrancciones.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="contenedorTrancciones.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -93,11 +102,17 @@
       </item>
       <item path="Fecha.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Nodo.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Persona.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Persona.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Transaccion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="contenedorTrancciones.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="contenedorTrancciones.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>

@@ -6,11 +6,11 @@
                    projectFiles="true">
       <itemPath>Cliente.h</itemPath>
       <itemPath>Compra.h</itemPath>
+      <itemPath>Contenedor.h</itemPath>
       <itemPath>Fecha.h</itemPath>
       <itemPath>Nodo.h</itemPath>
       <itemPath>Persona.h</itemPath>
       <itemPath>Transaccion.h</itemPath>
-      <itemPath>contenedor.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -46,12 +46,21 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
+        <cTool>
+          <standard>10</standard>
+        </cTool>
+        <ccTool>
+          <standard>8</standard>
+          <commandlineTool>g++</commandlineTool>
+        </ccTool>
       </compileType>
       <item path="Cliente.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Compra.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Compra.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Contenedor.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Fecha.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -66,8 +75,6 @@
       <item path="Transaccion.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="contenedor.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="contenedor.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -98,6 +105,8 @@
       </item>
       <item path="Compra.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Contenedor.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Fecha.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Fecha.h" ex="false" tool="3" flavor2="0">
@@ -111,8 +120,6 @@
       <item path="Transaccion.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="contenedor.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="contenedor.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>

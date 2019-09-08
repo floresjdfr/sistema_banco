@@ -1,5 +1,5 @@
 /* 
- * File:   contenedor.h
+ * File:   Contenedor.h
  * Author: Jose David
  *
  * Created on September 7, 2019, 7:07 PM
@@ -10,10 +10,10 @@
 #include "Nodo.h"
 
 template<class T>
-class contenedor {
+class Contenedor {
 public:
-    contenedor();
-    virtual ~contenedor();
+    Contenedor();
+    virtual ~Contenedor();
     
 
 
@@ -22,9 +22,9 @@ public:
     Nodo<T>* getPrimero() const;
     
     //Otros metodos
-    void agregarFinal(Nodo<T>*);
-    string mostrarLista() const;
-    bool hayMas();
+    void agregarFinal(T*);
+    string toString(); //Este metodo solo funcionara si la clase que se trata de mostrar tiene un metodo toSting();
+    bool hayMas(); //Retorna verdadero si hay  mas elementos
     
 private:
     Nodo<T>* actual;

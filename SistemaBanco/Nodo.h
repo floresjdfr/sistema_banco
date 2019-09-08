@@ -15,7 +15,7 @@ template <class T>
 struct Nodo {
 
 T* info;
-Nodo* siguiente;
+Nodo<T>* siguiente;
 
 };
 

@@ -16,7 +16,7 @@ using namespace std;
 
 class Transaccion{
 public:
-    string toString() const;
+    string toString() const = 0;
 };
 
 #endif	/* TRANSACCION_H */

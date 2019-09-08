@@ -5,6 +5,9 @@
  * Created on September 7, 2019, 6:21 PM
  */
 
+
+//Esta clase funcionara para registar una compra o un pago
+
 #ifndef COMPRA_H
 #define	COMPRA_H
 
@@ -31,7 +34,7 @@ public:
     
 private:
     float valor;
-    string tienda; //Lugar donde se hace la compra
+    string tienda; //variable que guarda el lugar donde se hace la compra o el servicio que se paga
     Fecha* fecha;
 
 };

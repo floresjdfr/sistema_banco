@@ -35,6 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/Clientes.o \
 	${OBJECTDIR}/Compra.o \
 	${OBJECTDIR}/Fecha.o \
 	${OBJECTDIR}/Persona.o \
@@ -64,6 +65,11 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/sistemabanco.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/sistemabanco ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/Clientes.o: Clientes.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Clientes.o Clientes.cpp
 
 ${OBJECTDIR}/Compra.o: Compra.cpp 
 	${MKDIR} -p ${OBJECTDIR}

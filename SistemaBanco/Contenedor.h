@@ -8,6 +8,8 @@
 #ifndef CONTENEDOR_H
 #define	CONTENEDOR_H
 
+#include "Nodo.h"
+
 using namespace std;
 
 template <class T>
@@ -15,7 +17,7 @@ class Contenedor {
 public:
     //Otros metodos
     virtual void agregar(T*) = 0;
-    //virtual ostream& operator <<(ostream&, T&) = 0; Por alguna razon tengo este error: must have exactly one argument
+    //virtual ostream& operator <<(ostream&, T&) = 0; 
 };
 
 #endif	/* CONTENEDOR_H */

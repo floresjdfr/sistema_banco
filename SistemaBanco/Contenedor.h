@@ -15,7 +15,7 @@ class Contenedor {
 public:
     //Otros metodos
     virtual void agregar(T*) = 0;
-    virtual ostream& operator <<(ostream&, T&) = 0;
+    //virtual ostream& operator <<(ostream&, T&) = 0; Por alguna razon tengo este error: must have exactly one argument
 };
 
 #endif	/* CONTENEDOR_H */

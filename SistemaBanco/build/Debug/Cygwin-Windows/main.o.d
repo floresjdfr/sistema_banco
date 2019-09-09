@@ -1,13 +1,7 @@
-build/Debug/Cygwin-Windows/main.o: main.cpp Contenedor.h Nodo.h \
- Iterador.h Contenedor.cpp Persona.h Cliente.h
+build/Debug/Cygwin-Windows/main.o: main.cpp Contenedor.h Persona.h \
+ Cliente.h
 
 Contenedor.h:
-
-Nodo.h:
-
-Iterador.h:
-
-Contenedor.cpp:
 
 Persona.h:
 

@@ -17,7 +17,6 @@ public:
     Clientes();
     virtual ~Clientes();
     void agregar(Persona*);
-    Iterador* getIterador();
     
 private:
     Nodo<Persona>* primero;

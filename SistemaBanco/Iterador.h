@@ -8,18 +8,15 @@
 #ifndef ITERADOR_H
 #define	ITERADOR_H
 
+
+
 template <class T>
 class Iterador { 
 public:
-    Iterador(T**, int);
-    bool hayMasElementos();
-    void siguiente(); //Siguiente nodo
-    void primero(); //Primer nodo
-    T* elementoActual();
-private:
-    T* *elementos;
-    int tamano;
-    int cursor;
+    virtual bool hayMas();
+    virtual void siguiente(); //Siguiente nodo
+    virtual void primero(); //Primer nodo
+    virtual T* getActual();
 };
 
 #endif	/* ITERADOR_H */

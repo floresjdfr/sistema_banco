@@ -10,6 +10,7 @@
       <itemPath>Contenedor.h</itemPath>
       <itemPath>Fecha.h</itemPath>
       <itemPath>Iterador.h</itemPath>
+      <itemPath>IteradorLista.h</itemPath>
       <itemPath>Nodo.h</itemPath>
       <itemPath>Persona.h</itemPath>
       <itemPath>Tarjeta.h</itemPath>
@@ -27,6 +28,8 @@
       <itemPath>Clientes.cpp</itemPath>
       <itemPath>Compra.cpp</itemPath>
       <itemPath>Fecha.cpp</itemPath>
+      <itemPath>Iterador.cpp</itemPath>
+      <itemPath>IteradorLista.cpp</itemPath>
       <itemPath>Persona.cpp</itemPath>
       <itemPath>TarjetaCredito.cpp</itemPath>
       <itemPath>Transacciones.cpp</itemPath>
@@ -77,7 +80,13 @@
       </item>
       <item path="Fecha.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Iterador.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="Iterador.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="IteradorLista.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="IteradorLista.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Nodo.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -136,7 +145,13 @@
       </item>
       <item path="Fecha.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Iterador.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="Iterador.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="IteradorLista.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="IteradorLista.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Nodo.h" ex="false" tool="3" flavor2="0">
       </item>

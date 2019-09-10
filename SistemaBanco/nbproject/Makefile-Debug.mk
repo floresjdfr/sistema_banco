@@ -38,6 +38,8 @@ OBJECTFILES= \
 	${OBJECTDIR}/Clientes.o \
 	${OBJECTDIR}/Compra.o \
 	${OBJECTDIR}/Fecha.o \
+	${OBJECTDIR}/Iterador.o \
+	${OBJECTDIR}/IteradorLista.o \
 	${OBJECTDIR}/Persona.o \
 	${OBJECTDIR}/TarjetaCredito.o \
 	${OBJECTDIR}/Transacciones.o \
@@ -82,6 +84,16 @@ ${OBJECTDIR}/Fecha.o: Fecha.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Fecha.o Fecha.cpp
+
+${OBJECTDIR}/Iterador.o: Iterador.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Iterador.o Iterador.cpp
+
+${OBJECTDIR}/IteradorLista.o: IteradorLista.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/IteradorLista.o IteradorLista.cpp
 
 ${OBJECTDIR}/Persona.o: Persona.cpp 
 	${MKDIR} -p ${OBJECTDIR}

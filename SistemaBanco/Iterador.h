@@ -8,7 +8,7 @@
 #ifndef ITERADOR_H
 #define	ITERADOR_H
 
-
+//Clase abstacta
 
 template <class T>
 class Iterador { 

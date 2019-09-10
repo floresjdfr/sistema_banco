@@ -5,3 +5,6 @@ SistemaBanco/nbproject/Makefile-Release.mk
 SistemaBanco/nbproject/Makefile-Release.mk
 SistemaBanco/nbproject/Makefile-Debug.mk
 SistemaBanco/nbproject/configurations.xml
+SistemaBanco/build/Debug/Cygwin-Windows/main.o
+SistemaBanco/build/Debug/Cygwin-Windows/TarjetaCredito.o.d
+SistemaBanco/build/Debug/Cygwin-Windows/Transacciones.o.d

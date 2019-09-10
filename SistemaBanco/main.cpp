@@ -17,12 +17,7 @@ using namespace std;
  */
 int main(int argc, char** argv) {
 
-//    Persona* personaP = new Persona("Jose", "402390555", "flores.jdfr@gmail.com",21,100000);
-//    Contenedor<Persona>* contenedorP = new Contenedor<Persona>;
-//    contenedorP->agregarFinal(personaP);
-//    cout << contenedorP->toString() << endl;
-//    
-//    delete personaP, contenedorP;
+  
     
     
     return 0;

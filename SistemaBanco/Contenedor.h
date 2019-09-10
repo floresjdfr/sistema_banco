@@ -17,7 +17,7 @@ class Contenedor {
 public:
     //Otros metodos
     virtual void agregar(T*) = 0;
-    //virtual ostream& operator <<(ostream&, T&) = 0; 
+    //virtual friend ostream& operator <<(ostream&, const T&) = 0; 
 };
 
 #endif	/* CONTENEDOR_H */

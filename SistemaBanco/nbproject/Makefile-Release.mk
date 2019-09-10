@@ -39,6 +39,8 @@ OBJECTFILES= \
 	${OBJECTDIR}/Compra.o \
 	${OBJECTDIR}/Fecha.o \
 	${OBJECTDIR}/Persona.o \
+	${OBJECTDIR}/TarjetaCredito.o \
+	${OBJECTDIR}/Transacciones.o \
 	${OBJECTDIR}/main.o
 
 
@@ -85,6 +87,16 @@ ${OBJECTDIR}/Persona.o: Persona.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Persona.o Persona.cpp
+
+${OBJECTDIR}/TarjetaCredito.o: TarjetaCredito.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TarjetaCredito.o TarjetaCredito.cpp
+
+${OBJECTDIR}/Transacciones.o: Transacciones.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Transacciones.o Transacciones.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}

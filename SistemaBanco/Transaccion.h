@@ -5,6 +5,10 @@
  * Created on September 7, 2019, 6:19 PM
  */
 
+
+/*Clase abstracta de la cual heredaran las transacciones que se realicen con las 
+ tarjetas*/
+
 #ifndef TRANSACCION_H
 #define	TRANSACCION_H
 

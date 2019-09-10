@@ -11,6 +11,8 @@
 #ifndef COMPRA_H
 #define	COMPRA_H
 
+/*En esta clase se generara una trasacccion compra o pago de servicio*/
+
 #include "Transaccion.h"
 #include "Fecha.h"
 

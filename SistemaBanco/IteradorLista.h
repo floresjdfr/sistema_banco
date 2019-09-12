@@ -22,8 +22,6 @@ public:
 private:
     Nodo<T>* primer;
     Nodo<T>* actual;
-    
-
 };
 
 #endif	/* ITERADORLISTA_H */

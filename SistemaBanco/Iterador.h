@@ -13,10 +13,10 @@
 template <class T>
 class Iterador { 
 public:
-    virtual bool hayMas();
-    virtual void siguiente(); //Siguiente nodo
-    virtual void primero(); //Primer nodo
-    virtual T* getActual();
+    virtual bool hayMas() = 0;
+    virtual void siguiente() = 0;
+    virtual void primero() = 0;
+    virtual T* getActual() = 0;
 };
 
 #endif	/* ITERADOR_H */

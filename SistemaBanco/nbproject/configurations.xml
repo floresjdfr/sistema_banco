@@ -28,7 +28,6 @@
       <itemPath>Clientes.cpp</itemPath>
       <itemPath>Compra.cpp</itemPath>
       <itemPath>Fecha.cpp</itemPath>
-      <itemPath>Iterador.cpp</itemPath>
       <itemPath>IteradorLista.cpp</itemPath>
       <itemPath>Persona.cpp</itemPath>
       <itemPath>TarjetaCredito.cpp</itemPath>
@@ -79,8 +78,6 @@
       <item path="Fecha.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Fecha.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Iterador.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Iterador.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -144,8 +141,6 @@
       <item path="Fecha.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Fecha.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Iterador.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Iterador.h" ex="false" tool="3" flavor2="0">
       </item>

@@ -35,14 +35,12 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/Clientes.o \
 	${OBJECTDIR}/Compra.o \
 	${OBJECTDIR}/Fecha.o \
 	${OBJECTDIR}/IteradorLista.o \
 	${OBJECTDIR}/Lista.o \
 	${OBJECTDIR}/Persona.o \
 	${OBJECTDIR}/TarjetaCredito.o \
-	${OBJECTDIR}/Transacciones.o \
 	${OBJECTDIR}/main.o
 
 
@@ -69,11 +67,6 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/sistemabanco.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/sistemabanco ${OBJECTFILES} ${LDLIBSOPTIONS}
-
-${OBJECTDIR}/Clientes.o: Clientes.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Clientes.o Clientes.cpp
 
 ${OBJECTDIR}/Compra.o: Compra.cpp 
 	${MKDIR} -p ${OBJECTDIR}
@@ -104,11 +97,6 @@ ${OBJECTDIR}/TarjetaCredito.o: TarjetaCredito.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TarjetaCredito.o TarjetaCredito.cpp
-
-${OBJECTDIR}/Transacciones.o: Transacciones.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Transacciones.o Transacciones.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}

@@ -9,7 +9,6 @@
 #include <iostream>
 #include "Lista.h"
 #include "Lista.cpp"
-#include "IteradorLista.h
 #include "Persona.h"
 
 using namespace std;

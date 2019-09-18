@@ -10,7 +10,6 @@
 
 #include "Tarjeta.h"
 #include "Fecha.h"
-#include "Transacciones.h"
 #include "Compra.h"
 
 class TarjetaCredito : public Tarjeta{
@@ -32,7 +31,6 @@ private:
     float saldo;
     Fecha* fechaCorte;
     Fecha* fechaLimite;
-    Transacciones* transacciones;
     int puntos;/*puntos que se acumulan al usar la tarjeta de credito*/
 
 };

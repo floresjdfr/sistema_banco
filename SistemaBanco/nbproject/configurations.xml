@@ -5,7 +5,6 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>Cliente.h</itemPath>
-      <itemPath>Clientes.h</itemPath>
       <itemPath>Compra.h</itemPath>
       <itemPath>Contenedor.h</itemPath>
       <itemPath>Fecha.h</itemPath>
@@ -17,7 +16,6 @@
       <itemPath>Tarjeta.h</itemPath>
       <itemPath>TarjetaCredito.h</itemPath>
       <itemPath>Transaccion.h</itemPath>
-      <itemPath>Transacciones.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -26,14 +24,12 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>Clientes.cpp</itemPath>
       <itemPath>Compra.cpp</itemPath>
       <itemPath>Fecha.cpp</itemPath>
       <itemPath>IteradorLista.cpp</itemPath>
       <itemPath>Lista.cpp</itemPath>
       <itemPath>Persona.cpp</itemPath>
       <itemPath>TarjetaCredito.cpp</itemPath>
-      <itemPath>Transacciones.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -67,10 +63,6 @@
       </compileType>
       <item path="Cliente.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="Clientes.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Clientes.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="Compra.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Compra.h" ex="false" tool="3" flavor2="0">
@@ -104,10 +96,6 @@
       <item path="TarjetaCredito.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Transaccion.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Transacciones.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Transacciones.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -134,10 +122,6 @@
       </compileType>
       <item path="Cliente.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="Clientes.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Clientes.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="Compra.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Compra.h" ex="false" tool="3" flavor2="0">
@@ -171,10 +155,6 @@
       <item path="TarjetaCredito.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Transaccion.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Transacciones.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Transacciones.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>

@@ -11,7 +11,6 @@ TarjetaCredito::TarjetaCredito() {
     float saldo = 0.0;
     Fecha* fechaCorte = NULL;
     Fecha* fechaLimite = NULL;
-    Transacciones* transacciones = NULL;
 }
 
 TarjetaCredito::~TarjetaCredito() {
@@ -21,13 +20,7 @@ TarjetaCredito::~TarjetaCredito() {
 
 /*Metodos*/
 
-void TarjetaCredito::nuevaCompra(string lugar, float monto, Fecha* fecha)/*Recibe por parametro el lugar de compra
-                                 o pago del servicio y monto de la 
-                                 transaccion*/
-{
-    Compra* t = new Compra(monto,lugar, fecha);
-    transacciones->agregar(t);
-}
+
 
 
 void TarjetaCredito::ganarPuntos(float monto){ /*A partir de 10 mil colones se 

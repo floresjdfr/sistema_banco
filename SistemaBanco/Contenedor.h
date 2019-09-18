@@ -8,6 +8,7 @@
 #ifndef CONTENEDOR_H
 #define	CONTENEDOR_H
 
+#include <iostream>
 using namespace std;
 
 

@@ -7,7 +7,9 @@
 
 #include <cstdlib>
 #include <iostream>
-#include "Contenedor.h" //Se agrega para evitar errores de compilacion de la clase template
+#include "Lista.h"
+#include "Lista.cpp"
+#include "IteradorLista.h
 #include "Persona.h"
 
 using namespace std;
@@ -17,7 +19,15 @@ using namespace std;
  */
 int main(int argc, char** argv) {
 
-  
+    Persona* P = new Persona("Jose","40239012", "flores.jdfr@gmail.com", 21, 0);
+    Lista<Persona>* L = new Lista<Persona>;
+    
+    L->agregar(P);
+    cout << L->toStringIterador();
+
+    delete P, L;
+    
+    
     
     
     return 0;

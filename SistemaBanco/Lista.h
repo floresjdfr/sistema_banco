@@ -10,32 +10,21 @@
 
 #include "Nodo.h"
 #include "Contenedor.h"
+#include "IteradorLista.h"
 
 template <class T>
-class Lista: private Contenedor{
+class Lista: public Contenedor{
     public:
         Lista();
         ~Lista();
-        
-        //Set
-        //void setPrimero(Nodo*);
-        //void setActual(Nodo*);
-        //void setSiguiente(Nodo*);
-        //void setInfo(T*);
-        
-        //Get
-        Nodo* getPrimero();
-        Nodo* getActual();
-        Nodo* getSiguiente(Nodo*);
-        //T* getInfo();
-        
-        //Otros Metodos
         void agregar(T*);
-        ostream& operator <<(ostream&, T&);
+        string toString ();
+        string toStringIterador();
+        IteradorLista<T>* getIterador();
         
     private:
-        Nodo* primero;
-        Nodo* actual;
+        Nodo<T>* primero;
+        Nodo<T>* actual;
 };
 
 #endif	/* LISTA_H */

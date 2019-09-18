@@ -10,11 +10,11 @@
 
 using namespace std;
 
-template <class T>
+
 class Contenedor {
 public:
     //Otros metodos
-    virtual void agregar(T*) = 0;
+    virtual string toString() = 0;
     //virtual ostream& operator <<(ostream&, const T&) = 0; 
 };
 

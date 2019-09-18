@@ -25,7 +25,7 @@ void IteradorLista<T>::siguiente(){
 
 template <class T>
 void IteradorLista<T>::primero(){
-    actual = primero;
+    actual = primer;
 }
 
 template <class T>

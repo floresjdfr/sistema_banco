@@ -54,7 +54,8 @@ string Lista<T>::toString(){
 
 template<class T>
 IteradorLista<T>* Lista<T>::getIterador(){
-    return new IteradorLista<T>(primero);
+    IteradorLista<T>* iterador = new IteradorLista<T>(primero);
+    return iterador;
 }
 
 template<class T>

@@ -12,11 +12,10 @@
 using namespace std;
 
 template <class T>
-class Lista: private Contenedor{
+class Lista: public Contenedor{
     public:
         Lista();
         ~Lista();
-        
         bool vacia();
         int canElementos();
         void eliminar();
@@ -24,6 +23,10 @@ class Lista: private Contenedor{
         string toString() const;
         Iterador<T>* obtenerIterador() const;
         ostream& operator <<(ostream&, T&);
+        void agregar(T*);
+        string toString ();
+        string toStringIterador();
+        IteradorLista<T>* getIterador();
         
     private:
         Nodo<T>* primero;
@@ -31,7 +34,6 @@ class Lista: private Contenedor{
         int cantidad;
 };
 
-/*----------------------------------------------------------*/
 
 template <class T>
 Lista<T>::Lista(){

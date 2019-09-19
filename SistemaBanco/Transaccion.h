@@ -12,6 +12,8 @@
 #ifndef TRANSACCION_H
 #define	TRANSACCION_H
 
+#include "Fecha.h"
+
 #include <iostream>
 #include <sstream>
 
@@ -20,7 +22,7 @@ using namespace std;
 
 class Transaccion{
 public:
-    virtual string toString() const = 0;
+    virtual void realizaTransaccion(float, string, Fecha*) = 0;
 };
 
 #endif	/* TRANSACCION_H */

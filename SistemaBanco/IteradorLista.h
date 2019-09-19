@@ -26,3 +26,28 @@ private:
 
 #endif	/* ITERADORLISTA_H */
 
+template <class T>
+IteradorLista<T>::IteradorLista(Nodo <T>* primero) {
+    primer = primero;
+    actual = primero;
+}
+
+template <class T>
+bool IteradorLista<T>::hayMas(){
+    return actual->siguiente != NULL;
+}
+
+template <class T>
+void IteradorLista<T>::siguiente(){
+    actual = actual->siguiente;
+}
+
+template <class T>
+void IteradorLista<T>::primero(){
+    actual = primer;
+}
+
+template <class T>
+T* IteradorLista<T>::getActual(){
+    return actual->info;
+}

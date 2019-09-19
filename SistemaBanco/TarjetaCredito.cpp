@@ -16,6 +16,17 @@ TarjetaCredito::TarjetaCredito() {
 TarjetaCredito::~TarjetaCredito() {
 }
 
+//Sets
+
+void TarjetaCredito::setSaldo(float Saldo){
+    saldo = Saldo;
+}
+
+//Gets
+
+float TarjetaCredito::getSaldo(){
+    return saldo;
+}
 
 
 /*Metodos*/
@@ -23,9 +34,7 @@ TarjetaCredito::~TarjetaCredito() {
 
 
 
-void TarjetaCredito::ganarPuntos(float monto){ /*A partir de 10 mil colones se 
-                                                gana un punto por cada
-                                                mil colones*/
+void TarjetaCredito::ganarPuntos(float monto){ 
     if(monto <= 10000){
         puntos += monto / 1000;
     }

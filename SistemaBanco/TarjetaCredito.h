@@ -17,14 +17,18 @@ public:
     TarjetaCredito();
     virtual ~TarjetaCredito();
     
+    //Sets
+    
+    void setSaldo(float);
+    
+    
+    //Gets
+    
+    float getSaldo();
     
     //Metodos
-    void nuevaCompra(string, float, Fecha*);/*Recibe por parametro el lugar de compra
-                                     o pago del servicio, monto y fecha de transccion*/
     
-    
-    void ganarPuntos(float); /*La cantidad de puntos dependera del monto de la 
-                              compra*/
+    void ganarPuntos(float);
     
     
 private:

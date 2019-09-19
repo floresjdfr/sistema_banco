@@ -6,47 +6,19 @@
  */
 
 #include "Compra.h"
-
-Compra::Compra(float Valor, string Tienda, Fecha* Fech) {
-    valor = Valor;
-    tienda = Tienda;
-    fecha = Fech;
-}
+#include "TarjetaCredito.h"
 
 Compra::Compra() {
-    valor = 0.0;
-    tienda = " ";
-    fecha = NULL;
+    
 }
 
-
-//Sets
-void Compra::setValor(float Valor){
-    valor = Valor;
-}
-void Compra::setTienda(string Tienda){
-    tienda = Tienda;
-}
-void Compra::setFecha(Fecha* Fech){
-    fecha = Fech;
-}
-
-//Gets
-float Compra::getValor() const{
-    return valor;
-}
-string Compra::getTienda() const{
-    return tienda;
-}
-Fecha* Compra::getFecha() const{
-    return fecha;
-}
-
-//Otros metodos
-string Compra::toString() const{
-    stringstream s;
-    s << "Fecha: " << fecha->toString() << endl;
-    s << "Tienda: " << tienda << endl;
-    s << "Valor: " << valor << endl;
-    return s.str();
+void Compra::realizaTransaccion(float monto, string lugar, Fecha* fecha,
+        TarjetaCredito* tarjeta){
+    
+    if(tarjeta->getSaldo() != 0.0 && tarjeta->getSaldo() >= monto){
+        tarjeta->setSaldo(tarjeta->getSaldo() - monto);
+    }
+    else{
+        cout << "Fondos insuficientes" << endl;
+    }
 }

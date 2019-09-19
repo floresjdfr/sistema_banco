@@ -10,6 +10,10 @@
 #include "Lista.h"
 #include "Lista.cpp"
 #include "Persona.h"
+#include "TarjetaCredito.h"
+#include "Procesar.h"
+#include "ProcesarCompra.h"
+#include "Fecha.h"
 
 using namespace std;
 
@@ -21,10 +25,22 @@ int main(int argc, char** argv) {
     Persona* P = new Persona("Jose","40239012", "flores.jdfr@gmail.com", 21, 0);
     Lista<Persona>* L = new Lista<Persona>;
     
+    TarjetaCredito* tarjeta = new TarjetaCredito();
+    tarjeta->setSaldo(10000);
+    
+    Fecha* f = new Fecha("19","9","2019");
+    
+    
+    ProcesarCompra* p;
+    p->procesarTransccion(5420, "Gollo",f, tarjeta);
+    
+    
+    
+    
     L->agregar(P);
-    cout << L->toStringIterador();
+//    cout << L->toStringIterador();
 
-    delete P, L;
+    delete P, L, tarjeta, p;
     
     
     

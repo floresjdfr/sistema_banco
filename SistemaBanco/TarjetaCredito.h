@@ -29,6 +29,7 @@ public:
     //Metodos
     
     void ganarPuntos(float);
+    string toString();
     
     
 private:

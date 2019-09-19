@@ -40,6 +40,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/IteradorLista.o \
 	${OBJECTDIR}/Lista.o \
 	${OBJECTDIR}/Persona.o \
+	${OBJECTDIR}/ProcesarCompra.o \
 	${OBJECTDIR}/TarjetaCredito.o \
 	${OBJECTDIR}/main.o
 
@@ -92,6 +93,11 @@ ${OBJECTDIR}/Persona.o: Persona.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Persona.o Persona.cpp
+
+${OBJECTDIR}/ProcesarCompra.o: ProcesarCompra.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ProcesarCompra.o ProcesarCompra.cpp
 
 ${OBJECTDIR}/TarjetaCredito.o: TarjetaCredito.cpp 
 	${MKDIR} -p ${OBJECTDIR}

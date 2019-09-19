@@ -13,6 +13,8 @@
       <itemPath>Lista.h</itemPath>
       <itemPath>Nodo.h</itemPath>
       <itemPath>Persona.h</itemPath>
+      <itemPath>Procesar.h</itemPath>
+      <itemPath>ProcesarCompra.h</itemPath>
       <itemPath>Tarjeta.h</itemPath>
       <itemPath>TarjetaCredito.h</itemPath>
       <itemPath>Transaccion.h</itemPath>
@@ -29,6 +31,7 @@
       <itemPath>IteradorLista.cpp</itemPath>
       <itemPath>Lista.cpp</itemPath>
       <itemPath>Persona.cpp</itemPath>
+      <itemPath>ProcesarCompra.cpp</itemPath>
       <itemPath>TarjetaCredito.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
@@ -43,6 +46,7 @@
                    kind="IMPORTANT_FILES_FOLDER">
       <itemPath>Makefile</itemPath>
     </logicalFolder>
+    <itemPath>.gitignore</itemPath>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -61,6 +65,8 @@
           <commandlineTool>g++</commandlineTool>
         </ccTool>
       </compileType>
+      <item path=".gitignore" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Cliente.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Compra.cpp" ex="false" tool="1" flavor2="0">
@@ -88,6 +94,12 @@
       <item path="Persona.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Persona.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Procesar.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ProcesarCompra.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ProcesarCompra.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Tarjeta.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -120,6 +132,8 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path=".gitignore" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Cliente.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Compra.cpp" ex="false" tool="1" flavor2="0">
@@ -147,6 +161,12 @@
       <item path="Persona.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Persona.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Procesar.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ProcesarCompra.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ProcesarCompra.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Tarjeta.h" ex="false" tool="3" flavor2="0">
       </item>

@@ -13,8 +13,9 @@
 template <class T>
 class Iterador { 
 public:
-    virtual bool hayMas() const = 0;
+    virtual bool hayMas() = 0;
     virtual void siguiente() = 0;
+    virtual void primero() = 0;
     virtual T* getActual() = 0;
 };
 

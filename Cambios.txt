@@ -1,4 +1,0 @@
-18/09
-Giancarlo:
--Lista e Iterador como template (ambos en .h para evitar errores).
--Elimine los contenedores Clients y Transacciones para crearlos usando Lista.

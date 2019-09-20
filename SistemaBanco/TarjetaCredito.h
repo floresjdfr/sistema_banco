@@ -9,10 +9,7 @@
 #define	TARJETACREDITO_H
 
 #include "Tarjeta.h"
-#include "ProcesarCompra.h"
-#include"Lista.h"
 
-class ProcesarCompra;
 
 
 class TarjetaCredito : public Tarjeta{
@@ -35,7 +32,7 @@ public:
     
     void ganarPuntos(float);
     string toString();
-    void comprar(float, string, Fecha*, ProcesarCompra&);
+    void comprar(float, string, Fecha*, Procesar&);
     
     
 private:

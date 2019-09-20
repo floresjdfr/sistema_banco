@@ -59,7 +59,7 @@ void TarjetaCredito::ganarPuntos(float monto){
 }
 
 
-void TarjetaCredito::comprar(float monto, string lugar, Fecha* fecha, ProcesarCompra& p){
+void TarjetaCredito::comprar(float monto, string lugar, Fecha* fecha, Procesar& p){
     
     p.procesarTransaccion(monto, lugar, fecha, *this);
 }

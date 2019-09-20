@@ -16,7 +16,7 @@
       <itemPath>ProcesarCompra.h</itemPath>
       <itemPath>Tarjeta.h</itemPath>
       <itemPath>TarjetaCredito.h</itemPath>
-      <itemPath>Transaccion.h</itemPath>
+      <itemPath>Voucher.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -29,6 +29,7 @@
       <itemPath>Persona.cpp</itemPath>
       <itemPath>ProcesarCompra.cpp</itemPath>
       <itemPath>TarjetaCredito.cpp</itemPath>
+      <itemPath>Voucher.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -92,7 +93,9 @@
       </item>
       <item path="TarjetaCredito.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="Transaccion.h" ex="false" tool="3" flavor2="0">
+      <item path="Voucher.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Voucher.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -149,7 +152,9 @@
       </item>
       <item path="TarjetaCredito.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="Transaccion.h" ex="false" tool="3" flavor2="0">
+      <item path="Voucher.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Voucher.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>

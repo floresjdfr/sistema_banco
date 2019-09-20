@@ -32,9 +32,9 @@ int main(int argc, char** argv) {
     P->getTarjetas()->agregar(credito);
     cout << P->getTarjetas()->toString();
     ProcesarCompra* procesa = new ProcesarCompra();
-    P->getTarjetas()->comprar(25500, "Automercado", new Fecha("19","9","2019"),
+    P->getTarjetas()->obtenerElementoPosicion(1)->comprar(25500, "Automercado", new Fecha("19","9","2019"),
             *procesa);
-    
+    cout << P->getTarjetas()->toString();
     
    
     

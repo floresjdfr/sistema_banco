@@ -97,7 +97,11 @@ template<class T>
 T* Lista<T>::obtenerElementoPosicion(int posicion){
     int contador = 0;
     IteradorLista<T>* iterador = this->getIterador();
-    
+    while(iterador->getActual() != NULL && contador < posicion){
+        iterador->siguiente();
+        contador++;
+    }
+    return iterador->getActual();
 }
 
 #endif	/* LISTA_H */

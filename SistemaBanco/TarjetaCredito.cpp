@@ -9,6 +9,7 @@
 #include "ProcesarCompra.h"
 
 TarjetaCredito::TarjetaCredito() {
+    saldoMaximo = 0.0;
     saldo = 0.0;
     fechaCorte = NULL;
     fechaLimite = NULL;
@@ -16,6 +17,7 @@ TarjetaCredito::TarjetaCredito() {
 }
 
 TarjetaCredito::TarjetaCredito(float Saldo , Fecha* corte, Fecha* limite, int Puntos){
+    saldoMaximo = Saldo;
     saldo = Saldo;
     fechaCorte = corte;
     fechaLimite = limite;
@@ -37,7 +39,9 @@ void TarjetaCredito::setSaldo(float Saldo){
 float TarjetaCredito::getSaldo(){
     return saldo;
 }
-
+float TarjetaCredito::getSaldoMaximo(){
+    return saldoMaximo;
+}
 Lista<Voucher>* TarjetaCredito::getEstadoCuenta(){
     return estadoCuenta;
 }
@@ -51,7 +55,6 @@ string TarjetaCredito::toString(){
     s << "Saldo: " << saldo << endl;
     return s.str();
 }
-
 void TarjetaCredito::ganarPuntos(float monto){ 
     if(monto <= 10000){
         puntos += monto / 1000;

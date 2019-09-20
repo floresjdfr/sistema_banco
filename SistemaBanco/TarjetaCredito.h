@@ -26,6 +26,7 @@ public:
     //Gets
     
     float getSaldo();
+    float getSaldoMaximo();
     Lista<Voucher>* getEstadoCuenta(); //Retorna lista de Vouchers
     
     //Metodos
@@ -36,6 +37,7 @@ public:
     
     
 private:
+    float saldoMaximo;
     float saldo;
     Fecha* fechaCorte;
     Fecha* fechaLimite;

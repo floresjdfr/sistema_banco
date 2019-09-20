@@ -8,11 +8,11 @@
 #include <cstdlib>
 #include <iostream>
 #include "Lista.h"
+#include "Cliente.h"
 #include "Persona.h"
-#include "TarjetaCredito.h"
-#include "Procesar.h"
 #include "ProcesarCompra.h"
 #include "Fecha.h"
+#include "TarjetaCredito.h"
 
 using namespace std;
 
@@ -21,27 +21,19 @@ using namespace std;
  */
 int main(int argc, char** argv) {
 
-    Persona* P = new Persona("Jose","40239012", "flores.jdfr@gmail.com", 21, 0);
-    Lista<Persona>* L = new Lista<Persona>;
+    Lista<Tarjeta>* tarjetas = new Lista<Tarjeta>;
+    Persona* P = new Persona("Jose", "111111", "jose@gmail.com", 21, 400000);
+    P->setTarjetas(tarjetas);
     
-    TarjetaCredito* tarjeta = new TarjetaCredito();
-    tarjeta->setSaldo(10000);
+    Fecha* corte = new Fecha("1","10","2019");
+    Fecha* limite = new Fecha("5","10","2019");
     
-    Fecha* f = new Fecha("19","9","2019");
-    
-    ProcesarCompra* p = new ProcesarCompra();
-    
-    tarjeta->comprar(5420, "Gollo", f, *p);
-    cout << tarjeta->toString();
-    
-    
-    
-    
-    L->agregar(P);
-//    cout << L->toStringIterador();
-
-    delete P, L, tarjeta;
-    
+    TarjetaCredito* credito = new TarjetaCredito(50000,corte,limite,0);
+    P->getTarjetas()->agregar(credito);
+    cout << P->getTarjetas()->toString();
+    ProcesarCompra* procesa = new ProcesarCompra();
+    P->getTarjetas()->comprar(25500, "Automercado", new Fecha("19","9","2019"),
+            *procesa);
     
     
    

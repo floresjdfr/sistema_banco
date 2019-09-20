@@ -14,6 +14,7 @@ using namespace std;
 
 #include "Fecha.h"
 #include "Procesar.h"
+#include "Voucher.h"
 
 class Procesar;
 

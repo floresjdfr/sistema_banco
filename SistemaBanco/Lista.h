@@ -21,13 +21,12 @@ class Lista: public Contenedor{
         string toString ();
         string toStringIterador();
         IteradorLista<T>* getIterador();
+        T* obtenerElementoPosicion(int);//Retorna el elemento que esta en la posicion del parametro
         
     private:
         Nodo<T>* primero;
         Nodo<T>* actual;
 };
-
-#endif	/* LISTA_H */
 
 template <class T>
 Lista<T>::Lista(){
@@ -93,3 +92,13 @@ string Lista<T>::toStringIterador(){
     }
     return s.str();
 }
+
+template<class T>
+T* Lista<T>::obtenerElementoPosicion(int posicion){
+    int contador = 0;
+    IteradorLista<T>* iterador = this->getIterador();
+    
+}
+
+#endif	/* LISTA_H */
+

@@ -9,13 +9,15 @@
 #define	PROCESAR_H
 
 #include "Tarjeta.h"
+#include "Lista.h"
+#include "Voucher.h"
 
 class Tarjeta;
 
 class Procesar{
 
 public:
-    virtual void procesarTransaccion(float, string, Fecha*, Tarjeta&) = 0;
+    virtual void procesarTransaccion(float, string, Fecha*, Tarjeta&, Lista<Voucher>*) = 0;
 
 };
 

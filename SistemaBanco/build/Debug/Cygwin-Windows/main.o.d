@@ -1,6 +1,6 @@
 build/Debug/Cygwin-Windows/main.o: main.cpp Lista.h Nodo.h Contenedor.h \
- IteradorLista.h Iterador.h Persona.h Cliente.h TarjetaCredito.h \
- Tarjeta.h Fecha.h Procesar.h ProcesarCompra.h
+ IteradorLista.h Iterador.h Cliente.h Tarjeta.h Fecha.h Procesar.h \
+ Voucher.h Persona.h ProcesarCompra.h TarjetaCredito.h
 
 Lista.h:
 
@@ -12,11 +12,7 @@ IteradorLista.h:
 
 Iterador.h:
 
-Persona.h:
-
 Cliente.h:
-
-TarjetaCredito.h:
 
 Tarjeta.h:
 
@@ -24,4 +20,10 @@ Fecha.h:
 
 Procesar.h:
 
+Voucher.h:
+
+Persona.h:
+
 ProcesarCompra.h:
+
+TarjetaCredito.h:

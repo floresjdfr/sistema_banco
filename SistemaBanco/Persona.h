@@ -13,11 +13,11 @@
 #include <iostream>
 #include <sstream>
 
-using namespace std;
+
 
 class Persona : public Cliente {
 public:
-    Persona(string, string, string, int, float);
+    Persona(string, string, string, int, float); 
     Persona();
     
     //Sets
@@ -26,6 +26,7 @@ public:
     void setCorreoElectronico(string);
     void setEdad(int);
     void setSalario(float);
+    void setTarjetas(Lista<Tarjeta>*);
     
     //Gets
     string getNombre() const;
@@ -33,6 +34,7 @@ public:
     string getCorreoElectronico() const;
     int getEdad() const;
     float getSalario() const;
+    Lista<Tarjeta>* getTarjetas();
     
     //Otros metodos
     string toString() const;
@@ -44,5 +46,6 @@ private:
     string correoElectronico;
     int edad;
     float salario;
+    Lista<Tarjeta>* tarjetas;
 };
 #endif	/* PERSONA_H */

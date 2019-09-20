@@ -38,6 +38,7 @@ private:
     Fecha* fechaCorte;
     Fecha* fechaLimite;
     int puntos;/*puntos que se acumulan al usar la tarjeta de credito*/
+    Lista<Voucher>* estadoCuenta;
 
 };
 

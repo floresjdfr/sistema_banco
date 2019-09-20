@@ -20,9 +20,10 @@ bool ProcesarCompra::verificaSaldo(float monto, Tarjeta& tarjeta){
     return tarjeta.getSaldo() >= monto;
 }
 
-void ProcesarCompra::procesarTransaccion(float monto, string lugar, Fecha* fecha, Tarjeta& tarjeta){
+void ProcesarCompra::procesarTransaccion(float monto, string lugar, Fecha* fecha, Tarjeta& tarjeta, Lista<Voucher>* estadoCuenta){
     if(this->verificaSaldo(monto, tarjeta)){
         tarjeta.setSaldo(tarjeta.getSaldo() - monto);
+        estadoCuenta->agregar(new Voucher(monto, lugar, fecha));
     }
     
 }

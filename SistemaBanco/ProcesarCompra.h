@@ -15,7 +15,7 @@ public:
     ProcesarCompra();
     virtual ~ProcesarCompra();
     bool verificaSaldo(float, Tarjeta&); //recibe monto compra
-    void procesarTransaccion(float, string, Fecha*, Tarjeta&);
+    void procesarTransaccion(float, string, Fecha*, Tarjeta&, Lista<Voucher>*);
 private:
 
 };

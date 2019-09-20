@@ -10,9 +10,14 @@
 
 #include <iostream>
 
+using namespace std;
+
+#include "Lista.h"
+#include "Tarjeta.h"
+
 class Cliente {
 public:
-    virtual std::string toString() const = 0;
+    virtual string toString() const = 0;
 };
 
 #endif	/* CLIENTE_H */

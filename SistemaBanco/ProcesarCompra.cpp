@@ -16,14 +16,15 @@ ProcesarCompra::~ProcesarCompra() {
     
 }
 
-bool ProcesarCompra::verificaSaldo(float monto, Tarjeta& tarjeta){
+bool ProcesarCompra::verificaSaldo(float monto, TarjetaCredito& tarjeta){
     return tarjeta.getSaldo() >= monto;
 }
 
-void ProcesarCompra::procesarTransaccion(float monto, string lugar, Fecha* fecha, Tarjeta& tarjeta, Lista<Voucher>* estadoCuenta){
+void ProcesarCompra::procesarTransaccion(float monto, string lugar, Fecha* fecha, TarjetaCredito& tarjeta){
     if(this->verificaSaldo(monto, tarjeta)){
         tarjeta.setSaldo(tarjeta.getSaldo() - monto);
-        estadoCuenta->agregar(new Voucher(monto, lugar, fecha));
+        Voucher* v = new Voucher(monto, lugar, fecha);
+        tarjeta.getEstadoCuenta()->agregar(v);
     }
     
 }

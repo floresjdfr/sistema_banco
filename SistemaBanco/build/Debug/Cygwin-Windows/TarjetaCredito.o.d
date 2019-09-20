@@ -1,6 +1,6 @@
 build/Debug/Cygwin-Windows/TarjetaCredito.o: TarjetaCredito.cpp \
- TarjetaCredito.h Tarjeta.h Fecha.h Procesar.h Lista.h Nodo.h \
- Contenedor.h IteradorLista.h Iterador.h Voucher.h ProcesarCompra.h
+ TarjetaCredito.h Tarjeta.h Fecha.h Voucher.h Lista.h Nodo.h Contenedor.h \
+ IteradorLista.h Iterador.h ProcesarCompra.h Procesar.h
 
 TarjetaCredito.h:
 
@@ -8,7 +8,7 @@ Tarjeta.h:
 
 Fecha.h:
 
-Procesar.h:
+Voucher.h:
 
 Lista.h:
 
@@ -20,6 +20,6 @@ IteradorLista.h:
 
 Iterador.h:
 
-Voucher.h:
-
 ProcesarCompra.h:
+
+Procesar.h:

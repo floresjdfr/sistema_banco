@@ -13,7 +13,7 @@
 using namespace std;
 
 #include "Lista.h"
-#include "Tarjeta.h"
+#include "TarjetaCredito.h"
 
 class Cliente {
 public:

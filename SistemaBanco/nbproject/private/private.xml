@@ -7,9 +7,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/JoseDavid/Documents/GitHub/sistema_banco/SistemaBanco/Tarjeta.h</file>
             <file>file:/C:/Users/JoseDavid/Documents/GitHub/sistema_banco/SistemaBanco/Procesar.h</file>
-            <file>file:/C:/Users/JoseDavid/Documents/GitHub/sistema_banco/SistemaBanco/ProcesarCompra.h</file>
+            <file>file:/C:/Users/JoseDavid/Documents/GitHub/sistema_banco/SistemaBanco/TarjetaCredito.cpp</file>
+            <file>file:/C:/Users/JoseDavid/Documents/GitHub/sistema_banco/SistemaBanco/Lista.h</file>
+            <file>file:/C:/Users/JoseDavid/Documents/GitHub/sistema_banco/SistemaBanco/TarjetaCredito.h</file>
             <file>file:/C:/Users/JoseDavid/Documents/GitHub/sistema_banco/SistemaBanco/ProcesarCompra.cpp</file>
+            <file>file:/C:/Users/JoseDavid/Documents/GitHub/sistema_banco/SistemaBanco/Nodo.h</file>
+            <file>file:/C:/Users/JoseDavid/Documents/GitHub/sistema_banco/SistemaBanco/Persona.cpp</file>
+            <file>file:/C:/Users/JoseDavid/Documents/GitHub/sistema_banco/SistemaBanco/Iterador.h</file>
+            <file>file:/C:/Users/JoseDavid/Documents/GitHub/sistema_banco/SistemaBanco/main.cpp</file>
+            <file>file:/C:/Users/JoseDavid/Documents/GitHub/sistema_banco/SistemaBanco/IteradorLista.h</file>
         </group>
     </open-files>
 </project-private>

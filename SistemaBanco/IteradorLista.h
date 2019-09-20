@@ -19,6 +19,7 @@ public:
     void siguiente();
     void primero();
     T* getActual();
+    T* getSiguiente();
 private:
     Nodo<T>* primer;
     Nodo<T>* actual;
@@ -50,4 +51,9 @@ void IteradorLista<T>::primero(){
 template <class T>
 T* IteradorLista<T>::getActual(){
     return actual->info;
+}
+
+template <class T>
+T* IteradorLista<T>::getSiguiente(){
+    return actual->siguiente->info;
 }

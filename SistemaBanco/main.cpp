@@ -21,7 +21,8 @@ using namespace std;
  */
 int main(int argc, char** argv) {
 
-    Lista<Tarjeta>* tarjetas = new Lista<Tarjeta>;
+    Lista<TarjetaCredito>* tarjetas = new Lista<TarjetaCredito>;
+    
     Persona* P = new Persona("Jose", "111111", "jose@gmail.com", 21, 400000);
     P->setTarjetas(tarjetas);
     
@@ -29,12 +30,15 @@ int main(int argc, char** argv) {
     Fecha* limite = new Fecha("5","10","2019");
     
     TarjetaCredito* credito = new TarjetaCredito(50000,corte,limite,0);
+    
+    
     P->getTarjetas()->agregar(credito);
     cout << P->getTarjetas()->toString();
     ProcesarCompra* procesa = new ProcesarCompra();
-    P->getTarjetas()->obtenerElementoPosicion(1)->comprar(25500, "Automercado", new Fecha("19","9","2019"),
+    P->getTarjetas()->obtenerElementoPosicion(0)->comprar(25500, "Automercado", new Fecha("19","9","2019"),
             *procesa);
     cout << P->getTarjetas()->toString();
+    
     
    
     

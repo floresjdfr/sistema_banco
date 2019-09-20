@@ -12,6 +12,7 @@ TarjetaCredito::TarjetaCredito() {
     saldo = 0.0;
     fechaCorte = NULL;
     fechaLimite = NULL;
+    estadoCuenta = new Lista<Voucher>;
 }
 
 TarjetaCredito::TarjetaCredito(float Saldo , Fecha* corte, Fecha* limite, int Puntos){
@@ -19,6 +20,7 @@ TarjetaCredito::TarjetaCredito(float Saldo , Fecha* corte, Fecha* limite, int Pu
     fechaCorte = corte;
     fechaLimite = limite;
     puntos = Puntos;
+    estadoCuenta = new Lista<Voucher>;
 }
 
 TarjetaCredito::~TarjetaCredito() {
@@ -34,6 +36,10 @@ void TarjetaCredito::setSaldo(float Saldo){
 
 float TarjetaCredito::getSaldo(){
     return saldo;
+}
+
+Lista<Voucher>* TarjetaCredito::getEstadoCuenta(){
+    return estadoCuenta;
 }
 
 
@@ -53,7 +59,7 @@ void TarjetaCredito::ganarPuntos(float monto){
 }
 
 
-void TarjetaCredito::comprar(float monto, string lugar, Fecha* fecha, Procesar& p){
+void TarjetaCredito::comprar(float monto, string lugar, Fecha* fecha, ProcesarCompra& p){
     
-    p.procesarTransaccion(monto, lugar, fecha, *this, this->estadoCuenta);
+    p.procesarTransaccion(monto, lugar, fecha, *this);
 }

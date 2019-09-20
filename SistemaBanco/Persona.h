@@ -26,7 +26,7 @@ public:
     void setCorreoElectronico(string);
     void setEdad(int);
     void setSalario(float);
-    void setTarjetas(Lista<Tarjeta>*);
+    void setTarjetas(Lista<TarjetaCredito>*);
     
     //Gets
     string getNombre() const;
@@ -34,7 +34,7 @@ public:
     string getCorreoElectronico() const;
     int getEdad() const;
     float getSalario() const;
-    Lista<Tarjeta>* getTarjetas();
+    Lista<TarjetaCredito>* getTarjetas();
     
     //Otros metodos
     string toString() const;
@@ -46,6 +46,6 @@ private:
     string correoElectronico;
     int edad;
     float salario;
-    Lista<Tarjeta>* tarjetas;
+    Lista<TarjetaCredito>* tarjetas;
 };
 #endif	/* PERSONA_H */

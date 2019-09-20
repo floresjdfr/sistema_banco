@@ -8,16 +8,15 @@
 #ifndef PROCESAR_H
 #define	PROCESAR_H
 
-#include "Tarjeta.h"
-#include "Lista.h"
+#include "TarjetaCredito.h"
 #include "Voucher.h"
 
-class Tarjeta;
+class TarjetaCredito;
 
 class Procesar{
 
 public:
-    virtual void procesarTransaccion(float, string, Fecha*, Tarjeta&, Lista<Voucher>*) = 0;
+    virtual void procesarTransaccion(float, string, Fecha*, TarjetaCredito&) = 0;
 
 };
 

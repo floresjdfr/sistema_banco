@@ -11,7 +11,6 @@
 #include "Nodo.h"
 #include "Contenedor.h"
 #include "IteradorLista.h"
-#include "IteradorLista.cpp"
 
 template <class T>
 class Lista: public Contenedor{

@@ -8,7 +8,6 @@
 #include <cstdlib>
 #include <iostream>
 #include "Lista.h"
-#include "Lista.cpp"
 #include "Persona.h"
 #include "TarjetaCredito.h"
 #include "Procesar.h"
@@ -30,9 +29,10 @@ int main(int argc, char** argv) {
     
     Fecha* f = new Fecha("19","9","2019");
     
+    ProcesarCompra* p = new ProcesarCompra();
     
-    ProcesarCompra* p;
-    p->procesarTransccion(5420, "Gollo",f, tarjeta);
+    tarjeta->comprar(5420, "Gollo", f, *p);
+    cout << tarjeta->toString();
     
     
     
@@ -40,7 +40,7 @@ int main(int argc, char** argv) {
     L->agregar(P);
 //    cout << L->toStringIterador();
 
-    delete P, L, tarjeta, p;
+    delete P, L, tarjeta;
     
     
     

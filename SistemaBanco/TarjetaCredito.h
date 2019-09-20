@@ -9,12 +9,12 @@
 #define	TARJETACREDITO_H
 
 #include "Tarjeta.h"
-#include "Fecha.h"
-#include "Compra.h"
+
 
 class TarjetaCredito : public Tarjeta{
 public:
     TarjetaCredito();
+    TarjetaCredito(float, Fecha*, Fecha*, int);//saldo, fecha corte, fecha limite, puntos
     virtual ~TarjetaCredito();
     
     //Sets
@@ -30,6 +30,7 @@ public:
     
     void ganarPuntos(float);
     string toString();
+    void comprar(float, string, Fecha*, Procesar&);
     
     
 private:

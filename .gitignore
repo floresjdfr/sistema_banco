@@ -3,13 +3,13 @@
 # Edit at https://www.gitignore.io/?templates=netbeans
 
 ### NetBeans ###
-SistemaBanco/nbproject/private/
+SistemaBanco/nbproject/private/*
 SistemaBanco/nbproject/Makefile-*.mk
 SistemaBanco/nbproject/Package-*.bash
-SistemaBanco/build/
-SistemaBanco/nbbuild/
-SistemaBanco/dist/
-SistemaBanco/nbdist/
-SistemaBanco/.nb-gradle/
+SistemaBanco/build/*
+SistemaBanco/nbbuild/*
+SistemaBanco/dist/*
+SistemaBanco/nbdist/*
+SistemaBanco/.nb-gradle/*
 
 # End of https://www.gitignore.io/api/netbeans

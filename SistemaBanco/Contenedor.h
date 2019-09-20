@@ -16,7 +16,6 @@ class Contenedor {
 public:
     //Otros metodos
     virtual string toString() = 0;
-    //virtual ostream& operator <<(ostream&, const T&) = 0; 
 };
 
 #endif	/* CONTENEDOR_H */

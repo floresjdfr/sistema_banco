@@ -19,9 +19,9 @@ class Lista: public Contenedor{
         ~Lista();
         void agregar(T*);
         string toString ();
-        string toStringIterador();
+        string toStringIterador(); //Usa el iterador para mostrar
         IteradorLista<T>* getIterador();
-        T* obtenerElementoPosicion(int);//Retorna el elemento que esta en la posicion del parametro
+        T* obtenerElementoPosicion(int);//Retorna el elemento que esta en la posicion del parametro (empieza en 0)
         
     private:
         Nodo<T>* primero;
@@ -43,7 +43,7 @@ Lista<T>::~Lista(){
 template <class T>
 void Lista<T>::agregar(T* nuevo){
     
-    if(primero == NULL){
+    if(primero == NULL){ //Si esta vacio
         Nodo<T>* aux = new Nodo<T>;
         aux->info = nuevo;
         aux->siguiente = NULL;
@@ -83,9 +83,9 @@ template<class T>
 string Lista<T>::toStringIterador(){
     stringstream s;
     IteradorLista<T>* iterador = this->getIterador();
-    if(iterador->getActual() != NULL){
+    if(iterador->getActual() != NULL){ //Si actual tiene algo
         s << iterador->getActual()->toString();
-        while(iterador->hayMas()){
+        while(iterador->hayMas()){ //Mientras haya algo en el siguiente
             iterador->siguiente();
             s << iterador->getActual()->toString();
         }
@@ -95,9 +95,9 @@ string Lista<T>::toStringIterador(){
 
 template<class T>
 T* Lista<T>::obtenerElementoPosicion(int posicion){
-    int contador = 0;
+    int contador = 0; //Utiliza este contador para llevar el control de los nodos
     IteradorLista<T>* iterador = this->getIterador();
-    while(iterador->hayMas() == true && contador < posicion){
+    while(iterador->hayMas() == true && contador < posicion){ 
 
         iterador->siguiente();
         contador++;

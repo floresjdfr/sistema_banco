@@ -12,7 +12,7 @@
 using namespace std;
 
 template <class T>
-struct Nodo {
+struct Nodo { 
 
 T* info;
 Nodo<T>* siguiente;

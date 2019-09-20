@@ -8,12 +8,12 @@
 #include "Fecha.h"
 
 Fecha::Fecha() {
-    dia = " ";
-    mes = " ";
-    ano = " ";
+    dia = 0;
+    mes = 0;
+    ano = 0;
 }
 
-Fecha::Fecha(string Dia, string Mes, string Ano) {
+Fecha::Fecha(int Dia, int Mes, int Ano) {
     dia = Dia;
     mes = Mes;
     ano = Ano;
@@ -22,25 +22,25 @@ Fecha::Fecha(string Dia, string Mes, string Ano) {
 
 //Sets
 
-void Fecha::setDia(string Dia){
+void Fecha::setDia(int Dia){
     dia = Dia;
 }
-void Fecha::setMes(string Mes){
+void Fecha::setMes(int Mes){
     mes = Mes;
 }
-void Fecha::setAno(string Ano){
+void Fecha::setAno(int Ano){
     ano = Ano;
 }
 
 //Gets
 
-string Fecha::getDia()const{
+int Fecha::getDia()const{
     return dia;
 }
-string Fecha::getMes()const{
+int Fecha::getMes()const{
     return mes;
 }
-string Fecha::getAno()const{
+int Fecha::getAno()const{
     return ano;
 }
 

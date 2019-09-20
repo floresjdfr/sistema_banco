@@ -14,8 +14,8 @@ class ProcesarCompra : public Procesar {
 public:
     ProcesarCompra();
     virtual ~ProcesarCompra();
-    bool verificaSaldo(float, TarjetaCredito&); //recibe monto compra
-    void procesarTransaccion(float, string, Fecha*, TarjetaCredito&);
+    bool verificaSaldo(float, Tarjeta&); //recibe monto compra y la tarjeta. Verifica que tenga saldo
+    void procesarTransaccion(float, string, Fecha*, Tarjeta&); //Procesa el pago
 private:
 
 };

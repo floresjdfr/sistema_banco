@@ -25,6 +25,7 @@ public:
     virtual float getSaldo() = 0;
     virtual void setSaldo(float) = 0;
     virtual void comprar(float, string, Fecha*, Procesar&) = 0;
+    virtual Lista<Voucher>* getEstadoCuenta() = 0;
     
 };
 

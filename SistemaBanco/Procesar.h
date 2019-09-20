@@ -11,12 +11,14 @@
 #include "TarjetaCredito.h"
 #include "Voucher.h"
 
-class TarjetaCredito;
+
+
+class Tarjeta;
 
 class Procesar{
 
 public:
-    virtual void procesarTransaccion(float, string, Fecha*, TarjetaCredito&) = 0;
+    virtual void procesarTransaccion(float, string, Fecha*, Tarjeta&) = 0;//Metodo que procesa la transaccion, ya sea compra o deposito
 
 };
 

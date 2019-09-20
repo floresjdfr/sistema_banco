@@ -16,28 +16,28 @@ using namespace std;
 class Fecha {
 public:
     Fecha();
-    Fecha(string, string, string);
+    Fecha(int, int, int);
     
     //Sets
     
-    void setDia(string);
-    void setMes(string);
-    void setAno(string);
+    void setDia(int);
+    void setMes(int);
+    void setAno(int);
     
     //Gets
     
-    string getDia()const;
-    string getMes()const;
-    string getAno()const;
+    int getDia()const;
+    int getMes()const;
+    int getAno()const;
     
     //Otros metodos
     
     string toString() const;
     
 private:
-    string dia;
-    string mes;
-    string ano;
+    int dia;
+    int mes;
+    int ano;
 };
 
 #endif	/* FECHA_H */

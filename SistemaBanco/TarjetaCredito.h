@@ -26,13 +26,13 @@ public:
     //Gets
     
     float getSaldo();
-    Lista<Voucher>* getEstadoCuenta();
+    Lista<Voucher>* getEstadoCuenta(); //Retorna lista de Vouchers
     
     //Metodos
     
     void ganarPuntos(float);
     string toString();
-    void comprar(float, string, Fecha*, Procesar&);
+    void comprar(float, string, Fecha*, Procesar&); //Metodo para comprar
     
     
 private:

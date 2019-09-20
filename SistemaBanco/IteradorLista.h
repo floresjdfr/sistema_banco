@@ -15,14 +15,14 @@ template <class T>
 class IteradorLista : public Iterador<T>{
 public:
     IteradorLista(Nodo<T>*);
-    bool hayMas();
-    void siguiente();
-    void primero();
-    T* getActual();
-    T* getSiguiente();
+    bool hayMas(); //Verifica si hay mas elementos en la siguiente posicion
+    void siguiente();//Mueve el "cursor" al siguiente nodo
+    void primero(); //Mueve el "cursor" al primer nodo
+    T* getActual(); //Returna el elemento actual
+    T* getSiguiente(); //Retorna el elemento siguiente
 private:
-    Nodo<T>* primer;
-    Nodo<T>* actual;
+    Nodo<T>* primer; 
+    Nodo<T>* actual; //Cursor
 };
 
 #endif	/* ITERADORLISTA_H */
@@ -34,7 +34,7 @@ IteradorLista<T>::IteradorLista(Nodo <T>* primero) {
 }
 
 template <class T>
-bool IteradorLista<T>::hayMas(){
+bool IteradorLista<T>::hayMas(){ 
     return actual->siguiente != NULL;
 }
 

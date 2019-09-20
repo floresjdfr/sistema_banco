@@ -13,10 +13,11 @@
 template <class T>
 class Iterador { 
 public:
-    virtual bool hayMas() = 0;
-    virtual void siguiente() = 0;
-    virtual void primero() = 0;
-    virtual T* getActual() = 0;
+    virtual bool hayMas() = 0; //Verifica si hay mas elementos en la siguiente posicion
+    virtual void siguiente() = 0; //Mueve el "cursor" al siguiente nodo
+    virtual void primero() = 0; //Mueve el "cursor" al primer nodo
+    virtual T* getActual() = 0; //Returna el elemento actual
+    virtual T* getSiguiente() = 0; //Retorna el elemento siguiente
 };
 
 #endif	/* ITERADOR_H */

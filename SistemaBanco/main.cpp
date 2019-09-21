@@ -10,7 +10,7 @@
 #include "Lista.h"
 #include "Cliente.h"
 #include "Persona.h"
-#include "ProcesarCompra.h"
+#include "Compra.h"
 #include "Fecha.h"
 #include "TarjetaCredito.h"
 

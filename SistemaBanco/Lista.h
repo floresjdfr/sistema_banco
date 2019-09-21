@@ -17,16 +17,46 @@ class Lista: public Contenedor{
     public:
         Lista();
         ~Lista();
+        Nodo<T>* getPrimero();
+        Nodo<T>* getActual();
+        void setPrimero(Nodo<T>*);
+        void setActual(Nodo<T>*);
         void agregar(T*);
         string toString ();
         string toStringIterador(); //Usa el iterador para mostrar
         IteradorLista<T>* getIterador();
         T* obtenerElementoPosicion(int);//Retorna el elemento que esta en la posicion del parametro (empieza en 0)
+
+        
         
     private:
         Nodo<T>* primero;
         Nodo<T>* actual;
 };
+
+
+
+
+template <class T>
+Nodo<T>* Lista<T>::getPrimero(){
+    return primero;
+}
+
+template <class T>
+Nodo<T>* Lista<T>::getActual(){
+    return actual;
+}
+
+template <class T>
+void Lista<T>::setPrimero(Nodo<T>* Primero){
+    primero = Primero;
+}
+
+template <class T>
+void Lista<T>::setActual(Nodo<T>* Actual){
+    actual = Actual;
+}
+
 
 template <class T>
 Lista<T>::Lista(){

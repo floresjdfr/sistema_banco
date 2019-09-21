@@ -49,8 +49,10 @@ public:
     
     void ganarPuntos(float);
     string toString();
-    void comprar(float, string, Fecha*, Procesar&); //Metodo para comprar
-    bool verificaSaldo(float);//Verifica que la persona tenga cuenta disponible
+    
+    bool verificaSaldo(float);//Verifica que la persona tenga aalfo en la cuenta disponible comparado con el monto de la compra
+    void procesaTransaccion();
+    
    
     
     

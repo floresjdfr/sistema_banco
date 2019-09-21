@@ -42,7 +42,7 @@ public:
     
     //Otros
     
-    virtual void comprar(float, string, Fecha*, Procesar&) = 0;
+    
     virtual string toString() = 0;
     
 };

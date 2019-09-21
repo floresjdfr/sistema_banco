@@ -4,6 +4,7 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>Banco.h</itemPath>
       <itemPath>Cliente.h</itemPath>
       <itemPath>Compra.h</itemPath>
       <itemPath>Contenedor.h</itemPath>
@@ -11,13 +12,18 @@
       <itemPath>Iterador.h</itemPath>
       <itemPath>IteradorLista.h</itemPath>
       <itemPath>Lista.h</itemPath>
+      <itemPath>ListaCompra.h</itemPath>
       <itemPath>Nodo.h</itemPath>
+      <itemPath>Pago.h</itemPath>
       <itemPath>Persona.h</itemPath>
       <itemPath>Procesar.h</itemPath>
       <itemPath>ProcesarCompra.h</itemPath>
+      <itemPath>ProcesarCompraCuotas.h</itemPath>
       <itemPath>ProcesarPago.h</itemPath>
+      <itemPath>ProcesarPagoMinimo.h</itemPath>
       <itemPath>Tarjeta.h</itemPath>
       <itemPath>TarjetaCredito.h</itemPath>
+      <itemPath>Transaccion.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -26,12 +32,18 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>Banco.cpp</itemPath>
       <itemPath>Compra.cpp</itemPath>
       <itemPath>Fecha.cpp</itemPath>
+      <itemPath>ListaCompra.cpp</itemPath>
+      <itemPath>Pago.cpp</itemPath>
       <itemPath>Persona.cpp</itemPath>
       <itemPath>ProcesarCompra.cpp</itemPath>
+      <itemPath>ProcesarCompraCuotas.cpp</itemPath>
       <itemPath>ProcesarPago.cpp</itemPath>
+      <itemPath>ProcesarPagoMinimo.cpp</itemPath>
       <itemPath>TarjetaCredito.cpp</itemPath>
+      <itemPath>Transaccion.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -63,6 +75,10 @@
           <commandlineTool>g++</commandlineTool>
         </ccTool>
       </compileType>
+      <item path="Banco.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Banco.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Cliente.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Compra.cpp" ex="false" tool="1" flavor2="0">
@@ -81,7 +97,15 @@
       </item>
       <item path="Lista.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="ListaCompra.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ListaCompra.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Nodo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Pago.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Pago.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Persona.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -93,15 +117,27 @@
       </item>
       <item path="ProcesarCompra.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="ProcesarCompraCuotas.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ProcesarCompraCuotas.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="ProcesarPago.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ProcesarPago.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ProcesarPagoMinimo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ProcesarPagoMinimo.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Tarjeta.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="TarjetaCredito.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="TarjetaCredito.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Transaccion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Transaccion.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -126,6 +162,10 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="Banco.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Banco.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Cliente.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Compra.cpp" ex="false" tool="1" flavor2="0">
@@ -144,7 +184,15 @@
       </item>
       <item path="Lista.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="ListaCompra.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ListaCompra.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Nodo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Pago.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Pago.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Persona.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -156,15 +204,27 @@
       </item>
       <item path="ProcesarCompra.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="ProcesarCompraCuotas.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ProcesarCompraCuotas.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="ProcesarPago.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ProcesarPago.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ProcesarPagoMinimo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ProcesarPagoMinimo.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Tarjeta.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="TarjetaCredito.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="TarjetaCredito.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Transaccion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Transaccion.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>

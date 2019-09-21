@@ -9,7 +9,6 @@
 #define	PROCESAR_H
 
 #include "TarjetaCredito.h"
-#include "Voucher.h"
 
 
 

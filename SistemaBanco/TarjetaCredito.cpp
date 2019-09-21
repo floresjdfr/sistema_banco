@@ -17,7 +17,6 @@ TarjetaCredito::TarjetaCredito() {
     puntos = 0;
     numeroTarjeta = 0;
     codigoSeguridad = 0;
-    estadoCuenta = new Lista<Voucher>;
     cliente = NULL;
 }
 
@@ -31,12 +30,11 @@ TarjetaCredito::TarjetaCredito(float Saldo, Fecha* corte, Fecha* limite, Fecha* 
     puntos = 0;
     numeroTarjeta = NumeroCuenta;
     codigoSeguridad = 0;
-    estadoCuenta = new Lista<Voucher>;
     cliente = Cliente;
 }
 
 TarjetaCredito::~TarjetaCredito() {
-    delete estadoCuenta;
+    
 }
 
 //Sets
@@ -57,9 +55,6 @@ void TarjetaCredito::setFechaExpiracion(Fecha* exp){
 }
 void TarjetaCredito::setCodigoSeguridad(int codigo){
     codigoSeguridad = codigo;
-}
-void TarjetaCredito::setEstadoCuenta(Lista<Voucher>* vouchers){
-    estadoCuenta = vouchers;
 }
 void TarjetaCredito::setPuntos(int Puntos){
     puntos = Puntos;
@@ -82,9 +77,6 @@ float TarjetaCredito::getSaldo(){
 }
 float TarjetaCredito::getLimiteSaldo(){
     return limiteSaldo;
-}
-Lista<Voucher>* TarjetaCredito::getEstadoCuenta(){
-    return estadoCuenta;
 }
 int TarjetaCredito::getNumeroTarjeta(){
     return numeroTarjeta;

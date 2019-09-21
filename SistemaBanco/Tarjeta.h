@@ -13,7 +13,6 @@
 using namespace std;
 
 #include "Fecha.h"
-#include "Voucher.h"
 #include "Lista.h"
 #include "Persona.h"
 #include "Procesar.h"
@@ -30,7 +29,6 @@ public:
     virtual int getNumeroTarjeta() = 0;
     virtual int getCodigoSeguridad() = 0;
     virtual Fecha* getFechaExpiracion() = 0;
-    virtual Lista<Voucher>* getEstadoCuenta() = 0;
     virtual Persona* getCliente() = 0;
     
     //Sets
@@ -40,7 +38,6 @@ public:
     virtual void setNumeroTarjeta(int) = 0;
     virtual void setFechaExpiracion (Fecha*) = 0;
     virtual void setCodigoSeguridad(int) = 0;
-    virtual void setEstadoCuenta(Lista<Voucher>*) = 0;
     virtual void setCliente(Persona*) = 0;
     
     //Otros

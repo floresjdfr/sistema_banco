@@ -26,7 +26,6 @@ public:
     void setNumeroTarjeta(int);
     void setFechaExpiracion(Fecha*);
     void setCodigoSeguridad(int);
-    void setEstadoCuenta(Lista<Voucher>*);
     void setPuntos(int);
     void setCliente(Persona*);
     void setMoroso(bool);
@@ -44,7 +43,6 @@ public:
     int getCodigoSeguridad();
     int getNumeroTarjeta();
     int getPuntos();
-    Lista<Voucher>* getEstadoCuenta(); //Retorna lista de Vouchers
     Persona* getCliente();
     
     //Metodos
@@ -66,7 +64,6 @@ private:
     int puntos;/*puntos que se acumulan al usar la tarjeta de credito*/
     int numeroTarjeta;
     int codigoSeguridad;
-    Lista<Voucher>* estadoCuenta;
     Persona* cliente;
 
 };

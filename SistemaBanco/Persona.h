@@ -36,6 +36,7 @@ public:
     
     //Otros metodos
     string toString() const;
+    float capacidadPago(); //Este metodo calcula la capacidad de pago de la persona, esta es un 60% del salario
     
     
 private:

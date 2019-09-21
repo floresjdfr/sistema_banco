@@ -74,3 +74,7 @@ Persona::Persona(){
         s << "Correo electronico: " << correoElectronico << endl;
         return s.str();
     }
+    
+    float Persona::capacidadPago(){
+        return salario * 0.4;
+    }

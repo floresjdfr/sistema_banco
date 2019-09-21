@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1256</x>
-      <y>320</y>
+      <x>1240</x>
+      <y>280</y>
       <w>96</w>
       <h>80</h>
     </coordinates>
@@ -21,8 +21,8 @@ float salario;
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>752</x>
-      <y>296</y>
+      <x>736</x>
+      <y>256</y>
       <w>184</w>
       <h>160</h>
     </coordinates>
@@ -44,8 +44,8 @@ Lista&lt;Transacciones&gt;* pagos;
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>400</x>
-      <y>328</y>
+      <x>384</x>
+      <y>288</y>
       <w>168</w>
       <h>56</h>
     </coordinates>
@@ -59,8 +59,8 @@ void creaTarjeta();</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>960</x>
-      <y>592</y>
+      <x>944</x>
+      <y>552</y>
       <w>80</w>
       <h>24</h>
     </coordinates>
@@ -71,8 +71,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>672</x>
-      <y>752</y>
+      <x>656</x>
+      <y>712</y>
       <w>168</w>
       <h>56</h>
     </coordinates>
@@ -85,8 +85,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1040</x>
-      <y>752</y>
+      <x>1024</x>
+      <y>712</y>
       <w>168</w>
       <h>56</h>
     </coordinates>
@@ -99,8 +99,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>992</x>
-      <y>608</y>
+      <x>976</x>
+      <y>568</y>
       <w>136</w>
       <h>160</h>
     </coordinates>
@@ -110,8 +110,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>760</x>
-      <y>608</y>
+      <x>744</x>
+      <y>568</y>
       <w>256</w>
       <h>160</h>
     </coordinates>
@@ -121,8 +121,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>880</x>
-      <y>208</y>
+      <x>864</x>
+      <y>168</y>
       <w>392</w>
       <h>24</h>
     </coordinates>
@@ -132,8 +132,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>560</x>
-      <y>352</y>
+      <x>544</x>
+      <y>312</y>
       <w>208</w>
       <h>24</h>
     </coordinates>
@@ -143,8 +143,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>416</x>
-      <y>576</y>
+      <x>400</x>
+      <y>536</y>
       <w>80</w>
       <h>24</h>
     </coordinates>
@@ -155,8 +155,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>448</x>
-      <y>672</y>
+      <x>432</x>
+      <y>632</y>
       <w>168</w>
       <h>56</h>
     </coordinates>
@@ -167,20 +167,31 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>248</x>
-      <y>672</y>
-      <w>168</w>
-      <h>56</h>
+      <x>184</x>
+      <y>632</y>
+      <w>216</w>
+      <h>152</h>
     </coordinates>
     <panel_attributes>Compra
---</panel_attributes>
+--
+bool estado; //Pago pendiente o no
+float monto;
+float montoPendiente;
+float montoPagoMensual;
+int numeroTarjeta;
+int codigoSeguridad;
+Fecha* expiracion;
+string descripcionCompra;
+--
+
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>336</x>
-      <y>592</y>
+      <x>320</x>
+      <y>552</y>
       <w>128</w>
       <h>96</h>
     </coordinates>
@@ -190,8 +201,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>440</x>
-      <y>592</y>
+      <x>424</x>
+      <y>552</y>
       <w>96</w>
       <h>96</h>
     </coordinates>
@@ -201,8 +212,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>232</x>
-      <y>560</y>
+      <x>216</x>
+      <y>520</y>
       <w>104</w>
       <h>64</h>
     </coordinates>
@@ -213,8 +224,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>328</x>
-      <y>584</y>
+      <x>312</x>
+      <y>544</y>
       <w>104</w>
       <h>24</h>
     </coordinates>
@@ -224,8 +235,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>856</x>
-      <y>448</y>
+      <x>840</x>
+      <y>408</y>
       <w>152</w>
       <h>160</h>
     </coordinates>
@@ -236,8 +247,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>864</x>
-      <y>752</y>
+      <x>848</x>
+      <y>712</y>
       <w>168</w>
       <h>56</h>
     </coordinates>
@@ -250,8 +261,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1216</x>
-      <y>752</y>
+      <x>1200</x>
+      <y>712</y>
       <w>168</w>
       <h>56</h>
     </coordinates>
@@ -264,8 +275,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>992</x>
-      <y>608</y>
+      <x>976</x>
+      <y>568</y>
       <w>312</w>
       <h>160</h>
     </coordinates>
@@ -275,8 +286,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>632</x>
-      <y>40</y>
+      <x>616</x>
+      <y>0</y>
       <w>80</w>
       <h>24</h>
     </coordinates>
@@ -287,8 +298,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>968</x>
-      <y>40</y>
+      <x>952</x>
+      <y>0</y>
       <w>80</w>
       <h>24</h>
     </coordinates>
@@ -299,8 +310,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>704</x>
-      <y>40</y>
+      <x>688</x>
+      <y>0</y>
       <w>280</w>
       <h>24</h>
     </coordinates>
@@ -310,8 +321,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>808</x>
-      <y>200</y>
+      <x>792</x>
+      <y>160</y>
       <w>80</w>
       <h>24</h>
     </coordinates>
@@ -322,8 +333,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1256</x>
-      <y>200</y>
+      <x>1240</x>
+      <y>160</y>
       <w>80</w>
       <h>24</h>
     </coordinates>
@@ -334,8 +345,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>656</x>
-      <y>56</y>
+      <x>640</x>
+      <y>16</y>
       <w>200</w>
       <h>160</h>
     </coordinates>
@@ -345,8 +356,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>840</x>
-      <y>216</y>
+      <x>824</x>
+      <y>176</y>
       <w>24</w>
       <h>96</h>
     </coordinates>
@@ -356,8 +367,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1288</x>
-      <y>216</y>
+      <x>1272</x>
+      <y>176</y>
       <w>24</w>
       <h>120</h>
     </coordinates>
@@ -367,8 +378,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>264</x>
-      <y>464</y>
+      <x>248</x>
+      <y>424</y>
       <w>168</w>
       <h>56</h>
     </coordinates>
@@ -381,8 +392,8 @@ string comprasActivas();</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>264</x>
-      <y>56</y>
+      <x>248</x>
+      <y>16</y>
       <w>392</w>
       <h>424</h>
     </coordinates>
@@ -392,8 +403,8 @@ string comprasActivas();</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>952</x>
-      <y>608</y>
+      <x>936</x>
+      <y>568</y>
       <w>64</w>
       <h>160</h>
     </coordinates>
@@ -403,8 +414,8 @@ string comprasActivas();</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>464</x>
-      <y>464</y>
+      <x>448</x>
+      <y>424</y>
       <w>168</w>
       <h>56</h>
     </coordinates>
@@ -415,8 +426,8 @@ string comprasActivas();</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>352</x>
-      <y>416</y>
+      <x>336</x>
+      <y>376</y>
       <w>208</w>
       <h>64</h>
     </coordinates>
@@ -426,8 +437,8 @@ string comprasActivas();</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>336</x>
-      <y>512</y>
+      <x>320</x>
+      <y>472</y>
       <w>136</w>
       <h>80</h>
     </coordinates>
@@ -437,8 +448,8 @@ string comprasActivas();</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>448</x>
-      <y>512</y>
+      <x>432</x>
+      <y>472</y>
       <w>112</w>
       <h>80</h>
     </coordinates>

@@ -8,7 +8,7 @@
 #ifndef PROCESAR_H
 #define	PROCESAR_H
 
-#include "TarjetaCredito.h"
+#include "Tarjeta.h"
 
 
 

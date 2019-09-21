@@ -7,12 +7,14 @@
 
 #ifndef COMPRA_H
 #define	COMPRA_H
-#include "Fecha.h"
+
+#include "Transaccion.h"
+
 #include <iostream>
 
 using namespace std;
 
-class Compra {
+class Compra : public Transaccion{
 public:
     Compra();
     Compra(bool, float, float, float, int, int, Fecha*, string);

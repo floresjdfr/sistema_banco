@@ -5,7 +5,7 @@
  * Created on September 19, 2019, 11:37 PM
  */
 
-#include "ProcesarPago.h"
+#include "Pago.h"
 
 ProcesarPago::ProcesarPago() {
 }

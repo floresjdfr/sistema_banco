@@ -1,16 +1,7 @@
-/* 
- * File:   TarjetaCredito.h
- * Author: Jose David
- *
- * Created on September 9, 2019, 5:38 PM
- */
-
 #ifndef TARJETACREDITO_H
 #define	TARJETACREDITO_H
 
 #include "Tarjeta.h"
-
-
 
 class TarjetaCredito : public Tarjeta{
     
@@ -20,7 +11,7 @@ public:
     virtual ~TarjetaCredito();
     
     //Sets
-    
+    void setPuntos(int);
     void setSaldo(float);
     void setLimiteSaldo(float); //Limite tarjeta
     void setNumeroTarjeta(int);
@@ -33,7 +24,7 @@ public:
 
     
     //Gets
-    
+    int getPuntos();
     float getSaldo();
     float getLimiteSaldo();
     Fecha* getFechaExpiracion();
@@ -46,11 +37,9 @@ public:
     Cliente* getCliente();
     
     //Metodos
-    
     void ganarPuntos(float);
     string toString();
-    void comprar(float, string, Fecha*, Procesar&); //Metodo para comprar
-    
+    string realizarTransaccion(float, string, Fecha*, Transaccion&); //Metodo para comprar
     
 private:
     float limiteSaldo;

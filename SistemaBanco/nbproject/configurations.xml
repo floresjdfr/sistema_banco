@@ -5,18 +5,20 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>Cliente.h</itemPath>
+      <itemPath>Compra.h</itemPath>
       <itemPath>Contenedor.h</itemPath>
       <itemPath>Fecha.h</itemPath>
       <itemPath>Iterador.h</itemPath>
       <itemPath>IteradorLista.h</itemPath>
       <itemPath>Lista.h</itemPath>
       <itemPath>Nodo.h</itemPath>
+      <itemPath>Pago.h</itemPath>
+      <itemPath>PagoContado.h</itemPath>
+      <itemPath>PagoMinimo.h</itemPath>
       <itemPath>Persona.h</itemPath>
-      <itemPath>Procesar.h</itemPath>
-      <itemPath>ProcesarCompra.h</itemPath>
-      <itemPath>ProcesarPago.h</itemPath>
       <itemPath>Tarjeta.h</itemPath>
       <itemPath>TarjetaCredito.h</itemPath>
+      <itemPath>Transaccion.h</itemPath>
       <itemPath>Voucher.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -29,7 +31,6 @@
       <itemPath>Fecha.cpp</itemPath>
       <itemPath>Persona.cpp</itemPath>
       <itemPath>ProcesarCompra.cpp</itemPath>
-      <itemPath>ProcesarPago.cpp</itemPath>
       <itemPath>TarjetaCredito.cpp</itemPath>
       <itemPath>Voucher.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
@@ -65,6 +66,8 @@
       </compileType>
       <item path="Cliente.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Compra.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Contenedor.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Fecha.cpp" ex="false" tool="1" flavor2="0">
@@ -79,25 +82,25 @@
       </item>
       <item path="Nodo.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Pago.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PagoContado.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PagoMinimo.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Persona.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Persona.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="Procesar.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="ProcesarCompra.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="ProcesarCompra.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="ProcesarPago.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="ProcesarPago.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Tarjeta.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="TarjetaCredito.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="TarjetaCredito.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Transaccion.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Voucher.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -128,6 +131,8 @@
       </compileType>
       <item path="Cliente.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Compra.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Contenedor.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Fecha.cpp" ex="false" tool="1" flavor2="0">
@@ -142,25 +147,25 @@
       </item>
       <item path="Nodo.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Pago.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PagoContado.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PagoMinimo.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Persona.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Persona.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="Procesar.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="ProcesarCompra.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="ProcesarCompra.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="ProcesarPago.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="ProcesarPago.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Tarjeta.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="TarjetaCredito.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="TarjetaCredito.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Transaccion.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Voucher.cpp" ex="false" tool="1" flavor2="0">
       </item>

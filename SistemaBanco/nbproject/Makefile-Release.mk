@@ -46,7 +46,6 @@ OBJECTFILES= \
 	${OBJECTDIR}/ProcesarPago.o \
 	${OBJECTDIR}/ProcesarPagoMinimo.o \
 	${OBJECTDIR}/TarjetaCredito.o \
-	${OBJECTDIR}/Transaccion.o \
 	${OBJECTDIR}/main.o
 
 
@@ -128,11 +127,6 @@ ${OBJECTDIR}/TarjetaCredito.o: TarjetaCredito.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TarjetaCredito.o TarjetaCredito.cpp
-
-${OBJECTDIR}/Transaccion.o: Transaccion.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Transaccion.o Transaccion.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}

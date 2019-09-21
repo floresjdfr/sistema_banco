@@ -87,6 +87,32 @@ string Compra::getDescripcion() const{
     
     
 string Compra::toString() const{
-    
+    stringstream s;
+    s << "----------------------------------------" << endl;
+    s << "Descipcion compra: " << descripcionCompra << endl;
+    s << "Monto: " << monto << endl;
+    s << endl;
+    s << endl;
+    s << "-----------------------------------------" << endl;
+    s << "Tarjeta: " << numeroTarjeta << endl;
+    s << "Fecha expiracion: " << expiracion << endl;
+    s << "-----------------------------------------" << endl;
+    return s.str();
+}
+
+string Compra::toStringPendiente() const{
+    stringstream s;
+    s << "----------------------------------------" << endl;
+    s << "Descipcion compra: " << descripcionCompra << endl;
+    s << "Monto: " << monto << endl;
+    s << "Monto pendiente: " << montoPendiente << endl;
+    s << "Monto pago mensual: " << montoPagoMensual << endl;
+    s << endl;
+    s << endl;
+    s << "-----------------------------------------" << endl;
+    s << "Tarjeta: " << numeroTarjeta << endl;
+    s << "Fecha expiracion: " << expiracion << endl;
+    s << "-----------------------------------------" << endl;
+    return s.str();
 }
 

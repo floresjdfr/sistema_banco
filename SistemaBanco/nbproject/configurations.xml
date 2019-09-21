@@ -43,7 +43,6 @@
       <itemPath>ProcesarPago.cpp</itemPath>
       <itemPath>ProcesarPagoMinimo.cpp</itemPath>
       <itemPath>TarjetaCredito.cpp</itemPath>
-      <itemPath>Transaccion.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -135,8 +134,6 @@
       </item>
       <item path="TarjetaCredito.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="Transaccion.cpp" ex="false" tool="1" flavor2="0">
-      </item>
       <item path="Transaccion.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
@@ -221,8 +218,6 @@
       <item path="TarjetaCredito.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="TarjetaCredito.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Transaccion.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Transaccion.h" ex="false" tool="3" flavor2="0">
       </item>

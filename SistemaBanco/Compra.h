@@ -18,6 +18,8 @@ class Compra : public Transaccion{
 public:
     Compra();
     Compra(bool, float, float, float, int, int, Fecha*, string);
+    //Estado, monto, montoPendiente, pagoMensual, numeroTarjeta, codigoSeguridad, 
+    //fechaExpiracion, descripcionCompra
     
     //Sets
     
@@ -43,7 +45,8 @@ public:
     string getDescripcion() const;
     
     
-    string toString() const;
+    string toString() const; //Este es el voucher si el pago se dio completo
+    string toStringPendiente() const;
     
     
     

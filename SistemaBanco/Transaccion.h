@@ -12,11 +12,7 @@
 
 class Transaccion {
 public:
-    Transaccion();
-    Transaccion(const Transaccion& orig);
-    virtual ~Transaccion();
-private:
-
+    virtual string toString() const = 0;
 };
 
 #endif	/* TRANSACCION_H */

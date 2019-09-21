@@ -17,9 +17,8 @@ using namespace std;
 class Compra : public Transaccion{
 public:
     Compra();
-    Compra(bool, float, float, float, int, int, Fecha*, string);
-    //Estado, monto, montoPendiente, pagoMensual, numeroTarjeta, codigoSeguridad, 
-    //fechaExpiracion, descripcionCompra
+    Compra(bool, float, float, float, Fecha*, string);
+    Compra(float, Fecha*, string);
     
     //Sets
     
@@ -27,9 +26,6 @@ public:
     void setMonto(float);
     void setMontoPendiente(float);
     void setMontoPagoMensual(float);
-    void setNumeroTarjeta(int);
-    void setCodigoSeguridad(int);
-    void setFechaExpiracion(Fecha*);
     void setDescripcionCompra(string);
     
     
@@ -39,9 +35,6 @@ public:
     float getMonto() const;
     float getMontoPendiente() const;
     float getMontoPagoMensual() const;
-    int getnumeroTarjeta() const;
-    int getCodigoSeguridad() const;
-    Fecha* getFechaExpiracion() const;
     string getDescripcion() const;
     
     
@@ -56,9 +49,7 @@ private:
     float monto;
     float montoPendiente;
     float montoPagoMensual;
-    int numeroTarjeta;
-    int codigoSeguridad;
-    Fecha* expiracion;
+    Fecha* fecha;
     string descripcionCompra;
 
 };

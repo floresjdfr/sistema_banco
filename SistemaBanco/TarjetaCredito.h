@@ -9,6 +9,7 @@
 #define	TARJETACREDITO_H
 
 #include "Tarjeta.h"
+#include "ListaCompra.h"
 
 
 
@@ -29,6 +30,7 @@ public:
     void setPuntos(int);
     void setCliente(Persona*);
     void setMoroso(bool);
+    void setCompras(ListaCompra*);
     
 
     
@@ -44,6 +46,7 @@ public:
     int getNumeroTarjeta();
     int getPuntos();
     Persona* getCliente();
+    ListaCompra* getCompras();
     
     //Metodos
     
@@ -67,6 +70,8 @@ private:
     int numeroTarjeta;
     int codigoSeguridad;
     Persona* cliente;
+    ListaCompra* compras;
+    
 
 };
 

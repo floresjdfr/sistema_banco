@@ -18,6 +18,7 @@ TarjetaCredito::TarjetaCredito() {
     numeroTarjeta = 0;
     codigoSeguridad = 0;
     cliente = NULL;
+    compras = NULL;
 }
 
 TarjetaCredito::TarjetaCredito(float Saldo, Fecha* corte, Fecha* limite, Fecha* Expiracion, int NumeroCuenta, Persona* Cliente){//saldo, fecha corte, fecha limite, fecha caducidad, numeroTarjeta, cliente
@@ -31,6 +32,7 @@ TarjetaCredito::TarjetaCredito(float Saldo, Fecha* corte, Fecha* limite, Fecha* 
     numeroTarjeta = NumeroCuenta;
     codigoSeguridad = 0;
     cliente = Cliente;
+    compras = new ListaCompra;
 }
 
 TarjetaCredito::~TarjetaCredito() {
@@ -64,7 +66,9 @@ void TarjetaCredito::setCliente(Persona* cliente_){
 void TarjetaCredito::setMoroso(bool Moroso){
     moroso = Moroso;
 }
-
+void TarjetaCredito::setCompras(ListaCompra* Compras){
+    compras = Compras;
+}
 
 //Gets
 
@@ -97,6 +101,9 @@ int TarjetaCredito::getPuntos(){
 }
 Persona* TarjetaCredito::getCliente(){
     return cliente;
+}
+ListaCompra* TarjetaCredito::getCompras(){
+    return compras;
 }
 
 

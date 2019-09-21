@@ -12,21 +12,22 @@ Compra::Compra() {
     monto = 0.0;
     montoPendiente = 0.0;
     montoPagoMensual = 0.0;
-    numeroTarjeta = 0;
-    codigoSeguridad = 0;
-    expiracion = NULL;
     descripcionCompra = " ";
 }
 
+Compra::Compra(float Monto, Fecha* fechaa, string Descripcion){
+    monto = Monto;
+    fecha = fechaa;
+    descripcionCompra = Descripcion;
+}
+
 Compra::Compra(bool Estado, float Monto, float MontoPendiente, float MontoPagoMensual,
-        int NumeroTarjeta, int CodigoSeguridad, Fecha* Expiracion, string Descripcion){
+    Fecha* fechaa, string Descripcion){
     estado = Estado;
     monto = Monto;
     montoPendiente = MontoPendiente;
-    numeroTarjeta = NumeroTarjeta;
-    codigoSeguridad = CodigoSeguridad;
-    expiracion = Expiracion;
     descripcionCompra = Descripcion;
+    fecha = fechaa;
 }
     
     //Sets
@@ -42,15 +43,6 @@ void Compra::setMontoPendiente(float MontoPendiente){
 }
 void Compra::setMontoPagoMensual(float MontoPagoMensual){
     montoPagoMensual = MontoPagoMensual;
-}
-void Compra::setNumeroTarjeta(int NumeroTarjeta){
-    numeroTarjeta = NumeroTarjeta;
-}
-void Compra::setCodigoSeguridad(int CodigoSeguridad){
-    codigoSeguridad = CodigoSeguridad;
-}
-void Compra::setFechaExpiracion(Fecha* Fecha){
-    expiracion = Fecha;
 }
 void Compra::setDescripcionCompra(string descripcion){
     descripcionCompra = descripcion;
@@ -71,16 +63,7 @@ float Compra::getMontoPendiente() const{
 float Compra::getMontoPagoMensual() const{
     return montoPagoMensual;
 }
-int Compra::getnumeroTarjeta() const{
-    return numeroTarjeta;
-}
-int Compra::getCodigoSeguridad() const{
-    return codigoSeguridad;
-}
 
-Fecha* Compra::getFechaExpiracion() const{
-    return expiracion;
-}
 string Compra::getDescripcion() const{
     return descripcionCompra;
 }
@@ -91,12 +74,7 @@ string Compra::toString() const{
     s << "----------------------------------------" << endl;
     s << "Descipcion compra: " << descripcionCompra << endl;
     s << "Monto: " << monto << endl;
-    s << endl;
-    s << endl;
-    s << "-----------------------------------------" << endl;
-    s << "Tarjeta: " << numeroTarjeta << endl;
-    s << "Fecha expiracion: " << expiracion << endl;
-    s << "-----------------------------------------" << endl;
+    s << "--------------------------------------" << endl;
     return s.str();
 }
 
@@ -107,12 +85,6 @@ string Compra::toStringPendiente() const{
     s << "Monto: " << monto << endl;
     s << "Monto pendiente: " << montoPendiente << endl;
     s << "Monto pago mensual: " << montoPagoMensual << endl;
-    s << endl;
-    s << endl;
-    s << "-----------------------------------------" << endl;
-    s << "Tarjeta: " << numeroTarjeta << endl;
-    s << "Fecha expiracion: " << expiracion << endl;
-    s << "-----------------------------------------" << endl;
     return s.str();
 }
 

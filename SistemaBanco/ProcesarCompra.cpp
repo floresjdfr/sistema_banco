@@ -5,7 +5,7 @@
  * Created on 19 de septiembre de 2019, 10:37 AM
  */
 
-#include "Compra.h"
+#include "ProcesarCompra.h"
 
 ProcesarCompra::ProcesarCompra() {
     

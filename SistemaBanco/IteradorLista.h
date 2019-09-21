@@ -1,3 +1,10 @@
+/* 
+ * File:   IteradorLista.h
+ * Author: JoseDavid
+ *
+ * Created on 10 de septiembre de 2019, 04:28 PM
+ */
+
 #ifndef ITERADORLISTA_H
 #define	ITERADORLISTA_H
 
@@ -10,8 +17,11 @@ public:
     IteradorLista(Nodo<T>*);
     bool hayMas(); //Verifica si hay mas elementos en la siguiente posicion
     void siguiente();//Mueve el "cursor" al siguiente nodo
+    void primero(); //Mueve el "cursor" al primer nodo
     T* getActual(); //Returna el elemento actual
-private: 
+    T* getSiguiente(); //Retorna el elemento siguiente
+private:
+    Nodo<T>* primer; 
     Nodo<T>* actual; //Cursor
 };
 
@@ -19,6 +29,7 @@ private:
 
 template <class T>
 IteradorLista<T>::IteradorLista(Nodo <T>* primero) {
+    primer = primero;
     actual = primero;
 }
 
@@ -33,6 +44,16 @@ void IteradorLista<T>::siguiente(){
 }
 
 template <class T>
+void IteradorLista<T>::primero(){
+    actual = primer;
+}
+
+template <class T>
 T* IteradorLista<T>::getActual(){
     return actual->info;
+}
+
+template <class T>
+T* IteradorLista<T>::getSiguiente(){
+    return actual->siguiente->info;
 }

@@ -1,5 +1,12 @@
+/* 
+ * File:   TarjetaCredito.cpp
+ * Author: Jose David
+ * 
+ * Created on September 9, 2019, 5:38 PM
+ */
+
 #include "TarjetaCredito.h"
-#include "Transaccion.h"
+#include "ProcesarCompra.h"
 
 TarjetaCredito::TarjetaCredito() {
     limiteSaldo = 0.0;
@@ -31,7 +38,6 @@ TarjetaCredito::~TarjetaCredito() {
     delete estadoCuenta;
 }
 
-
 //Sets
 
 
@@ -62,23 +68,7 @@ void TarjetaCredito::setCliente(Cliente* cliente_){
 }
 
 
-void TarjetaCredito::setSaldoMaximo(float saldoMax){
-    saldoMaximo = saldoMax;
-}
-
-void TarjetaCredito::setFechaCorte(Fecha* fCorte){
-    fechaCorte = fCorte;
-}
-
-void TarjetaCredito::setFechaLimite(Fecha* fLimite){
-    fechaLimite = fLimite;
-}
-
 //Gets
-
-int TarjetaCredito::getPuntos(){
-    return puntos;
-}
 
 float TarjetaCredito::getSaldo(){
     return saldo;
@@ -86,9 +76,8 @@ float TarjetaCredito::getSaldo(){
 float TarjetaCredito::getLimiteSaldo(){
     return limiteSaldo;
 }
-
-Fecha* TarjetaCredito::getFechaCorte(){
-    return fechaCorte;
+Lista<Voucher>* TarjetaCredito::getEstadoCuenta(){
+    return estadoCuenta;
 }
 int TarjetaCredito::getNumeroTarjeta(){
     return numeroTarjeta;
@@ -112,17 +101,15 @@ Cliente* TarjetaCredito::getCliente(){
     return cliente;
 }
 
-Fecha* TarjetaCredito::getFechaLimite(){
-    return fechaLimite;
-}
-
-string TarjetaCredito::getEstadoCuenta(){
-    return estadoCuenta->toString();
-}
-
 
 /*Metodos*/
 
+
+string TarjetaCredito::toString(){
+    stringstream s;
+    s << "Saldo: " << saldo << endl;
+    return s.str();
+}
 void TarjetaCredito::ganarPuntos(float monto){ 
     if(monto <= 10000){
         puntos += monto / 1000;

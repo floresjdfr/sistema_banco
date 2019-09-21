@@ -25,8 +25,6 @@ private:
     Nodo<T>* actual; //Cursor
 };
 
-#endif	/* ITERADORLISTA_H */
-
 template <class T>
 IteradorLista<T>::IteradorLista(Nodo <T>* primero) {
     primer = primero;
@@ -57,3 +55,5 @@ template <class T>
 T* IteradorLista<T>::getSiguiente(){
     return actual->siguiente->info;
 }
+#endif	/* ITERADORLISTA_H */
+

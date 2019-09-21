@@ -6,7 +6,6 @@
  */
 
 #include "TarjetaCredito.h"
-#include "ProcesarCompra.h"
 
 TarjetaCredito::TarjetaCredito() {
     limiteSaldo = 0.0;
@@ -21,7 +20,7 @@ TarjetaCredito::TarjetaCredito() {
     cliente = NULL;
 }
 
-TarjetaCredito::TarjetaCredito(float Saldo, Fecha* corte, Fecha* limite, Fecha* Expiracion, int NumeroCuenta, Cliente* cliente){//saldo, fecha corte, fecha limite, fecha caducidad, numeroTarjeta, cliente
+TarjetaCredito::TarjetaCredito(float Saldo, Fecha* corte, Fecha* limite, Fecha* Expiracion, int NumeroCuenta, Persona* Cliente){//saldo, fecha corte, fecha limite, fecha caducidad, numeroTarjeta, cliente
     limiteSaldo = Saldo;
     saldo = Saldo;
     fechaCorte = corte;
@@ -31,7 +30,7 @@ TarjetaCredito::TarjetaCredito(float Saldo, Fecha* corte, Fecha* limite, Fecha* 
     numeroTarjeta = NumeroCuenta;
     codigoSeguridad = 0;
     estadoCuenta = new Lista<Voucher>;
-    cliente = cliente;
+    cliente = Cliente;
 }
 
 TarjetaCredito::~TarjetaCredito() {
@@ -63,7 +62,7 @@ void TarjetaCredito::setEstadoCuenta(Lista<Voucher>* vouchers){
 void TarjetaCredito::setPuntos(int Puntos){
     puntos = Puntos;
 }
-void TarjetaCredito::setCliente(Cliente* cliente_){
+void TarjetaCredito::setCliente(Persona* cliente_){
     cliente = cliente_;
 }
 
@@ -97,7 +96,7 @@ int TarjetaCredito::getCodigoSeguridad(){
 int TarjetaCredito::getPuntos(){
     return puntos;
 }
-Cliente* TarjetaCredito::getCliente(){
+Persona* TarjetaCredito::getCliente(){
     return cliente;
 }
 
@@ -108,6 +107,8 @@ Cliente* TarjetaCredito::getCliente(){
 string TarjetaCredito::toString(){
     stringstream s;
     s << "Saldo: " << saldo << endl;
+    s << "Cliente: " << endl;
+    s << cliente->toString() << endl;
     return s.str();
 }
 void TarjetaCredito::ganarPuntos(float monto){ 

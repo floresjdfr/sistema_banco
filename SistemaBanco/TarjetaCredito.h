@@ -16,7 +16,7 @@ class TarjetaCredito : public Tarjeta{
     
 public:
     TarjetaCredito();
-    TarjetaCredito(float, Fecha*, Fecha*, Fecha*, int, Cliente*);//saldo, fecha corte, fecha limite, fecha caducidad, numeroTarjeta, cliente
+    TarjetaCredito(float, Fecha*, Fecha*, Fecha*, int, Persona*);//saldo, fecha corte, fecha limite, fecha caducidad, numeroTarjeta, cliente
     virtual ~TarjetaCredito();
     
     //Sets
@@ -28,7 +28,7 @@ public:
     void setCodigoSeguridad(int);
     void setEstadoCuenta(Lista<Voucher>*);
     void setPuntos(int);
-    void setCliente(Cliente*);
+    void setCliente(Persona*);
     
 
     
@@ -43,7 +43,7 @@ public:
     int getNumeroTarjeta();
     int getPuntos();
     Lista<Voucher>* getEstadoCuenta(); //Retorna lista de Vouchers
-    Cliente* getCliente();
+    Persona* getCliente();
     
     //Metodos
     
@@ -62,7 +62,7 @@ private:
     int numeroTarjeta;
     int codigoSeguridad;
     Lista<Voucher>* estadoCuenta;
-    Cliente* cliente;
+    Persona* cliente;
 
 };
 

@@ -15,7 +15,8 @@ using namespace std;
 #include "Fecha.h"
 #include "Voucher.h"
 #include "Lista.h"
-#include "Cliente.h"
+#include "Persona.h"
+#include "Procesar.h"
 
 class Procesar;
 
@@ -26,11 +27,11 @@ public:
     //Gets
     virtual float getSaldo() = 0;
     virtual float getLimiteSaldo() = 0;
-    virtual int getNumeroTajeta() = 0;
+    virtual int getNumeroTarjeta() = 0;
     virtual int getCodigoSeguridad() = 0;
     virtual Fecha* getFechaExpiracion() = 0;
     virtual Lista<Voucher>* getEstadoCuenta() = 0;
-    virtual Cliente* getCliente() = 0;
+    virtual Persona* getCliente() = 0;
     
     //Sets
     
@@ -40,7 +41,7 @@ public:
     virtual void setFechaExpiracion (Fecha*) = 0;
     virtual void setCodigoSeguridad(int) = 0;
     virtual void setEstadoCuenta(Lista<Voucher>*) = 0;
-    virtual void setCliente(Cliente*) = 0;
+    virtual void setCliente(Persona*) = 0;
     
     //Otros
     

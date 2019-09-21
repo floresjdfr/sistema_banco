@@ -17,7 +17,7 @@ class Tarjeta;
 class Procesar{
 
 public:
-    virtual void procesarTransaccion(float, string, Fecha*, Tarjeta&) = 0;//Metodo que procesa la transaccion, ya sea compra o deposito
+    virtual void procesarTransaccion(float, float, string, Fecha*, Tarjeta&) = 0;//Metodo que procesa la transaccion, ya sea compra o deposito
 
 };
 

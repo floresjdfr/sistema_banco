@@ -73,6 +73,8 @@ Lista<T>::~Lista(){
 template <class T>
 void Lista<T>::agregar(T* nuevo){
     
+    
+    
     if(primero == NULL){ //Si esta vacio
         Nodo<T>* aux = new Nodo<T>;
         aux->info = nuevo;
@@ -81,13 +83,13 @@ void Lista<T>::agregar(T* nuevo){
     }
     else{
         actual = primero;
-        while(actual != NULL){
+        while(actual->siguiente != NULL){
             actual = actual->siguiente;
         }
-        Nodo<T>* aux;
+        Nodo<T>* aux = new Nodo<T>;
         aux->info = nuevo;
         aux->siguiente = NULL;
-        actual = aux;
+        actual->siguiente = aux;
     }
 }
 

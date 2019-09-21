@@ -13,10 +13,8 @@
 class ProcesarCompraCuotas : public Procesar{
 public:
     ProcesarCompraCuotas();
-    ProcesarCompraCuotas(const ProcesarCompraCuotas& orig);
-    virtual ~ProcesarCompraCuotas();
-private:
-
+    bool verificaSaldo(float, Tarjeta&);
+    void procesarTransaccion(float, float, string, Fecha*, Tarjeta&);
 };
 
 #endif	/* PROCESARCOMPRACUOTAS_H */

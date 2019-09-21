@@ -17,7 +17,7 @@ using namespace std;
 class Compra : public Transaccion{
 public:
     Compra();
-    Compra(bool, float, float, float, Fecha*, string);
+    Compra(bool, float, float, Fecha*, string);
     Compra(float, Fecha*, string);
     
     //Sets

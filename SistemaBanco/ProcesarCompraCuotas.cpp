@@ -10,9 +10,14 @@
 ProcesarCompraCuotas::ProcesarCompraCuotas() {
 }
 
-ProcesarCompraCuotas::ProcesarCompraCuotas(const ProcesarCompraCuotas& orig) {
+bool ProcesarCompraCuotas::verificaSaldo(float monto, Tarjeta& tarjeta){
+    return tarjeta.getSaldo() >= monto;
 }
 
-ProcesarCompraCuotas::~ProcesarCompraCuotas() {
+void ProcesarCompraCuotas::procesarTransaccion(float monto, float cuotaMensual, string descripcion, Fecha* fecha, Tarjeta& tarjeta){
+    if (this->verificaSaldo(monto, tarjeta) && tarjeta.getMoroso() == false){
+        tarjeta.setSaldo(tarjeta.getSaldo() - monto);
+        tarjeta.getCompras()->agregar(new Compra(true, monto, cuotaMensual, fecha, descripcion));
+    }
 }
 

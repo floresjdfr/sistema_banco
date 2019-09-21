@@ -21,11 +21,12 @@ Compra::Compra(float Monto, Fecha* fechaa, string Descripcion){
     descripcionCompra = Descripcion;
 }
 
-Compra::Compra(bool Estado, float Monto, float MontoPendiente, float MontoPagoMensual,
+Compra::Compra(bool Estado, float Monto,float MontoPagoMensual,
     Fecha* fechaa, string Descripcion){
     estado = Estado;
     monto = Monto;
-    montoPendiente = MontoPendiente;
+    montoPendiente = Monto;
+    montoPagoMensual = MontoPagoMensual;
     descripcionCompra = Descripcion;
     fecha = fechaa;
 }
@@ -72,10 +73,15 @@ string Compra::getDescripcion() const{
 string Compra::toString() const{
     stringstream s;
     s << "----------------------------------------" << endl;
-    s << "Pago contado" << endl;
+    s << "----------------------------------------" << endl;
+    s << "VOUCHER COMPRA" << endl;
+    s << "Fecha: " << fecha->toString() << endl;
     s << "Descipcion compra: " << descripcionCompra << endl;
     s << "Monto: " << monto << endl;
+    s << "Monto pendiente: " << montoPendiente << endl;
+    s << "Monto pago mensual: " << montoPagoMensual << endl;
     s << "--------------------------------------" << endl;
+    s << "----------------------------------------" << endl;
     return s.str();
 }
 

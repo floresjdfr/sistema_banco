@@ -13,6 +13,7 @@
 #include "Lista.h"
 #include "IteradorLista.h"
 #include "ProcesarCompra.h"
+#include "ProcesarCompraCuotas.h"
 
 using namespace std;
 
@@ -30,10 +31,17 @@ int main(int argc, char** argv) {
     cout << tarjeta->toString();
     
     ProcesarCompra* p = new ProcesarCompra;
+    ProcesarCompraCuotas* cuotas = new ProcesarCompraCuotas;
+    
     Fecha* fec = new Fecha(4,4,4);
-    tarjeta->comprar(1500,"Arroz",fec,*p);
+    tarjeta->comprar(1500,0,"Arroz",fec,*p);
+    
+    Fecha* fec2 = new Fecha(5,5,5);
+    tarjeta->comprar(8000,0,"Helado",fec2,*p);
     cout << "--------------------------------" << endl;
-    cout << tarjeta->toString();
+    
+    tarjeta->comprar(40000,1000,"Parlantes",fec,*cuotas);
+    cout << "*******************************************" << endl;
     cout << tarjeta->getCompras()->toStringIterador();
     
     

@@ -129,7 +129,7 @@ bool TarjetaCredito::verificaSaldo(float monto){
     return monto <= saldo;
 }
 
-void TarjetaCredito::comprar(float monto, string descripcion, Fecha* fecha, Procesar& p){
-    p.procesarTransaccion(monto, descripcion, fecha, *this);
+void TarjetaCredito::comprar(float monto, float cuota, string descripcion, Fecha* fecha, Procesar& p){
+    p.procesarTransaccion(monto, cuota, descripcion, fecha, *this);
 }
 

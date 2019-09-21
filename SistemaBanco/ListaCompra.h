@@ -13,14 +13,12 @@
 #include "IteradorLista.h"
 class ListaCompra : public Lista<Compra>{
     
-    /*Esta clase hereda de lista que que las lista de compras posee metodos especificos
+    /*Esta clase hereda de lista ya que la lista de compras posee metodos especificos
      que el template lista no posee*/
 public:
     ListaCompra();
-    ListaCompra(const ListaCompra& orig);
-    virtual ~ListaCompra();
-//    string comprasActivas();
-//    bool hayComprasActivas();
+    string comprasActivas(); //Este metodo muestra las compras que no se han pagado
+    bool hayComprasActivas(); //Este metodo retorna verdadero si hay comprs que no se han pagado
 private:
 
 };

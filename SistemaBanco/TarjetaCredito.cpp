@@ -120,3 +120,7 @@ void TarjetaCredito::ganarPuntos(float monto){
 void TarjetaCredito::comprar(float monto, string lugar, Fecha* fecha, Procesar& p){ 
     p.procesarTransaccion(monto, lugar, fecha, *this);
 }
+
+bool TarjetaCredito::verificaSaldo(float monto){
+    return monto <= saldo;
+}

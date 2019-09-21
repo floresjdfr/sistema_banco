@@ -14,7 +14,6 @@ Persona::Persona(string Nombre, string Identificacion, string CorreoElectronico,
     correoElectronico = CorreoElectronico;
     edad = Edad;
     salario = Salario;
-    tarjetas = new Lista<TarjetaCredito>;
 }
 
 Persona::Persona(){
@@ -23,7 +22,6 @@ Persona::Persona(){
     correoElectronico = " ";
     edad = 0;
     salario = 0.0;
-    tarjetas = NULL;
     
 }
 
@@ -44,9 +42,6 @@ Persona::Persona(){
     void Persona::setSalario(float Salario){
         salario = Salario;
     }
-    void Persona::setTarjetas(Lista<TarjetaCredito>* Tarjetas){
-        tarjetas = Tarjetas;
-    }
 
     
     //Gets
@@ -65,9 +60,6 @@ Persona::Persona(){
     }
     float Persona::getSalario() const{
         return salario;
-    }
-    Lista<TarjetaCredito>* Persona::getTarjetas(){
-        return tarjetas;
     }
     
     

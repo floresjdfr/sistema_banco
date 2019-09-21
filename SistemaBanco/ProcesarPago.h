@@ -14,8 +14,6 @@ class ProcesarPago : public Procesar {
 public:
     ProcesarPago();
     virtual ~ProcesarPago();
-    void procesarTransaccion(float, Fecha*, Tarjeta&);
-    bool verificaPago(float, Tarjeta&);
 
 };
 

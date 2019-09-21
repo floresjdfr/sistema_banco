@@ -8,6 +8,7 @@
 #include "TarjetaCredito.h"
 
 TarjetaCredito::TarjetaCredito() {
+    moroso = false;
     limiteSaldo = 0.0;
     saldo = 0.0;
     fechaCorte = NULL;
@@ -21,6 +22,7 @@ TarjetaCredito::TarjetaCredito() {
 }
 
 TarjetaCredito::TarjetaCredito(float Saldo, Fecha* corte, Fecha* limite, Fecha* Expiracion, int NumeroCuenta, Persona* Cliente){//saldo, fecha corte, fecha limite, fecha caducidad, numeroTarjeta, cliente
+    moroso = false;
     limiteSaldo = Saldo;
     saldo = Saldo;
     fechaCorte = corte;
@@ -65,10 +67,16 @@ void TarjetaCredito::setPuntos(int Puntos){
 void TarjetaCredito::setCliente(Persona* cliente_){
     cliente = cliente_;
 }
+void TarjetaCredito::setMoroso(bool Moroso){
+    moroso = Moroso;
+}
 
 
 //Gets
 
+bool TarjetaCredito::getMoroso(){
+    return moroso;
+}
 float TarjetaCredito::getSaldo(){
     return saldo;
 }

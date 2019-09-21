@@ -29,11 +29,13 @@ public:
     void setEstadoCuenta(Lista<Voucher>*);
     void setPuntos(int);
     void setCliente(Persona*);
+    void setMoroso(bool);
     
 
     
     //Gets
     
+    bool getMoroso();
     float getSaldo();
     float getLimiteSaldo();
     Fecha* getFechaExpiracion();
@@ -51,9 +53,11 @@ public:
     string toString();
     void comprar(float, string, Fecha*, Procesar&); //Metodo para comprar
     bool verificaSaldo(float);//Verifica que la persona tenga cuenta disponible
+   
     
     
 private:
+    bool moroso;
     float limiteSaldo;
     float saldo;
     Fecha* fechaCorte;

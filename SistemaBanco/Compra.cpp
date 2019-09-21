@@ -72,6 +72,7 @@ string Compra::getDescripcion() const{
 string Compra::toString() const{
     stringstream s;
     s << "----------------------------------------" << endl;
+    s << "Pago contado" << endl;
     s << "Descipcion compra: " << descripcionCompra << endl;
     s << "Monto: " << monto << endl;
     s << "--------------------------------------" << endl;

@@ -12,6 +12,7 @@
 #include "TarjetaCredito.h"
 #include "Lista.h"
 #include "IteradorLista.h"
+#include "ProcesarCompra.h"
 
 using namespace std;
 
@@ -27,6 +28,14 @@ int main(int argc, char** argv) {
     TarjetaCredito* tarjeta = new TarjetaCredito(200000, fechaCorte, fechaLimite, fechaExpiracion,468465, cliente);
     
     cout << tarjeta->toString();
+    
+    ProcesarCompra* p = new ProcesarCompra;
+    Fecha* fec = new Fecha(4,4,4);
+    tarjeta->comprar(1500,"Arroz",fec,*p);
+    cout << "--------------------------------" << endl;
+    cout << tarjeta->toString();
+    cout << tarjeta->getCompras()->toStringIterador();
+    
     
     delete tarjeta, fechaCorte, fechaLimite, fechaExpiracion, cliente;
    

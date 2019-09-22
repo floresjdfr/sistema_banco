@@ -1,0 +1,25 @@
+/* 
+ * File:   ListaTarjeta.h
+ * Author: JoseDavid
+ *
+ * Created on 22 de septiembre de 2019, 11:36 AM
+ */
+
+#ifndef LISTATARJETA_H
+#define	LISTATARJETA_H
+
+#include "Lista.h"
+#include "Tarjeta.h"
+#include "IteradorLista.h" 
+#include "Persona.h"
+
+class ListaTarjeta : public Lista<Tarjeta>{
+public:
+    ListaTarjeta();
+    string busquedaTarjetasIdentificacion(string);//Busqueda de tarjetas buscando por identificacion cliente
+    bool eliminaTarjetasIdentificacion(string); //Elimina tarjetas buscando por identificacion
+    bool eliminaTarjetaNumero(int);
+};
+
+#endif	/* LISTATARJETA_H */
+

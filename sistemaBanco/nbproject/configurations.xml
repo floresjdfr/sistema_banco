@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>Banco.h</itemPath>
+      <itemPath>Cliente.h</itemPath>
+      <itemPath>Compra.h</itemPath>
+      <itemPath>Contenedor.h</itemPath>
+      <itemPath>Fecha.h</itemPath>
+      <itemPath>Interfaz.h</itemPath>
+      <itemPath>Iterador.h</itemPath>
+      <itemPath>IteradorLista.h</itemPath>
+      <itemPath>Lista.h</itemPath>
+      <itemPath>ListaCompra.h</itemPath>
+      <itemPath>ListaTarjeta.h</itemPath>
+      <itemPath>Nodo.h</itemPath>
+      <itemPath>Pago.h</itemPath>
+      <itemPath>Persona.h</itemPath>
+      <itemPath>Procesar.h</itemPath>
+      <itemPath>ProcesarCompra.h</itemPath>
+      <itemPath>ProcesarCompraCuotas.h</itemPath>
+      <itemPath>ProcesarPago.h</itemPath>
+      <itemPath>ProcesarPagoMinimo.h</itemPath>
+      <itemPath>Tarjeta.h</itemPath>
+      <itemPath>TarjetaCredito.h</itemPath>
+      <itemPath>Transaccion.h</itemPath>
+      <itemPath>Utiles.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>Banco.cpp</itemPath>
+      <itemPath>Compra.cpp</itemPath>
+      <itemPath>Fecha.cpp</itemPath>
+      <itemPath>Interfaz.cpp</itemPath>
+      <itemPath>ListaCompra.cpp</itemPath>
+      <itemPath>ListaTarjeta.cpp</itemPath>
+      <itemPath>Pago.cpp</itemPath>
+      <itemPath>Persona.cpp</itemPath>
+      <itemPath>ProcesarCompra.cpp</itemPath>
+      <itemPath>ProcesarCompraCuotas.cpp</itemPath>
+      <itemPath>ProcesarPago.cpp</itemPath>
+      <itemPath>ProcesarPagoMinimo.cpp</itemPath>
+      <itemPath>TarjetaCredito.cpp</itemPath>
+      <itemPath>Utiles.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+      </compileType>
+      <item path="Banco.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Banco.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cliente.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Compra.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Compra.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Contenedor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Fecha.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Fecha.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Interfaz.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Interfaz.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Iterador.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="IteradorLista.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Lista.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ListaCompra.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ListaCompra.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ListaTarjeta.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ListaTarjeta.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Nodo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Pago.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Pago.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Persona.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Persona.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Procesar.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ProcesarCompra.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ProcesarCompra.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ProcesarCompraCuotas.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ProcesarCompraCuotas.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ProcesarPago.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ProcesarPago.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ProcesarPagoMinimo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ProcesarPagoMinimo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Tarjeta.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TarjetaCredito.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TarjetaCredito.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Transaccion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Utiles.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Utiles.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="Banco.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Banco.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cliente.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Compra.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Compra.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Contenedor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Fecha.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Fecha.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Interfaz.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Interfaz.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Iterador.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="IteradorLista.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Lista.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ListaCompra.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ListaCompra.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ListaTarjeta.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ListaTarjeta.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Nodo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Pago.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Pago.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Persona.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Persona.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Procesar.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ProcesarCompra.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ProcesarCompra.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ProcesarCompraCuotas.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ProcesarCompraCuotas.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ProcesarPago.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ProcesarPago.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ProcesarPagoMinimo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ProcesarPagoMinimo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Tarjeta.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TarjetaCredito.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TarjetaCredito.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Transaccion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Utiles.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Utiles.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

@@ -94,6 +94,7 @@ string Compra::toStringPendiente() const{
     return s.str();
 }
 
+
 istream& operator >>(istream& entrada, Compra& nCompra){
     int op;
     float mc, mp;
@@ -145,3 +146,52 @@ ostream& operator <<(ostream& salida, Compra& nCompra){
         return salida<<nCompra.toStringPendiente()<<endl;
     return salida<<nCompra.toString()<<endl;
 }
+
+//istream& operator >>(istream& entrada, Compra* nCompra){
+//    int op;
+//    float mc, mp;
+//    string des;
+//    Fecha fec;
+//    cout<<"Seleccione el metodo de compra realizado: "<<endl;
+//    cout<<"------------------------------------------" << endl;
+//    cout<<"1 - Compra al contado. "<<endl;
+//    cout<<"2 - Compra por cuotas. "<<endl;
+//    cout<<"------------------------------------------" << endl;
+//    cout<<"Opcion: ";
+//    switch(entrada>>op && op < 3){
+//        case 1:{
+//            cout<<"Descripcion de la compra: ";
+//            entrada>>des;
+//            nCompra->setDescripcionCompra(des);
+//            cout<<"Monto de la compra: ";
+//            entrada>>mc;
+//            nCompra->setMonto(mc);
+//            entrada>>fec;
+//            nCompra->setEstado(false);
+//            nCompra->setMontoPendiente(0.0);
+//            nCompra->setMontoPagoMensual(0.0);
+//        }
+//        case 2:{
+//            cout<<"Descripcion de la compra: ";
+//            entrada>>des;
+//            nCompra->setDescripcionCompra(des);
+//            cout<<"Monto de la compra: ";
+//            entrada>>mc;
+//            nCompra->setMonto(mc);
+//            nCompra->setMontoPendiente(mc);
+//            cout<<"Establezca monto del cuota mensual: ";
+//            entrada>>mp;
+//            nCompra->setMontoPagoMensual(mp);
+//            entrada>>fec;
+//            nCompra->setEstado(true);
+//        }
+//        default: ;
+//    }
+//    return entrada;
+//}
+//
+//ostream& operator <<(ostream& salida, Compra& nCompra){
+//    if(nCompra->getEstado())
+//        return salida<<nCompra->toStringPendiente()<<endl;
+//    return salida<<nCompra->toString()<<endl;
+//}

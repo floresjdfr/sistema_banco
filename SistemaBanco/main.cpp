@@ -28,7 +28,10 @@ using namespace std;
  * 
  */
 int main(int argc, char** argv) {
+       
+    Interfaz* i = new Interfaz;
     
+
     cout << "**********PRUEBAS CLIENTE************" << endl << endl;
     
     //Sobrecarga de entrada
@@ -75,10 +78,11 @@ int main(int argc, char** argv) {
     cout << "--------------------------------" << endl;
     
     cout << *tarjeta <<endl;
+
+    cout << i->encabezado() << endl;
+
     
-    delete tarjeta, fechaCorte, fechaLimite, fechaExpiracion, cliente;
     
-    Interfaz* i = new Interfaz;
     i->main();
     delete i;
    

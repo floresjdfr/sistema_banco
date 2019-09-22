@@ -83,6 +83,7 @@ void Persona::setCorreoElectronico(string CorreoElectronico){
         string nom, id, email;
         int ed;
         float sal;
+
         cout<<"Ingrese los datos de la persona... "<<endl;
         cout<<"Nombre de la persona: ";
         entrada>>nom;

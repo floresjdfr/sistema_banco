@@ -7,14 +7,16 @@ Pago::Pago() {
     montoAcumulado = 0.0;
     morosidad = false;
     descripcion = " ";
+    interes = false;
 }
 
 Pago::Pago(string des, Fecha* fechaR, Tarjeta& cuenta) {
     monto = 0.0;
-    fecha = *fechaR;
+    fecha = fechaR;
     montoAcumulado = cuenta.getLimiteSaldo() - cuenta.getSaldo();
     morosidad = cuenta.getMoroso();
     descripcion = des;
+    interes = false;
 }
 
 Pago::~Pago() {
@@ -62,6 +64,6 @@ string Pago::toString() const{
     return s.str();
 }
 
-ostream& operator <<(ostream& salida, Pago* p){
-    return salida<<p->toString()<<endl;
+ostream& operator <<(ostream& salida, Pago& p){
+    return salida<<p.toString()<<endl;
 }

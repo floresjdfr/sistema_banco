@@ -47,7 +47,7 @@ private:
     float salario;
 };
 
-istream& operator >>(istream&, Persona*);
-ostream& operator <<(ostream&, Persona*);
+istream& operator >>(istream&, Persona&);
+ostream& operator <<(ostream&, Persona&);
 
 #endif	/* PERSONA_H */

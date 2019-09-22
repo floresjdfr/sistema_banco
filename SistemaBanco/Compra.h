@@ -27,6 +27,7 @@ public:
     void setMontoPendiente(float);
     void setMontoPagoMensual(float);
     void setDescripcionCompra(string);
+    void setFecha(Fecha&);
     
     
     //Gets
@@ -36,6 +37,7 @@ public:
     float getMontoPendiente() const;
     float getMontoPagoMensual() const;
     string getDescripcion() const;
+    Fecha* getFecha();
     
     
     string toString() const; //Este es el voucher si el pago se dio completo
@@ -54,8 +56,8 @@ private:
 
 };
 
-istream& operator >>(istream&, Compra*);
-ostream& operator <<(ostream&, Compra*);
+istream& operator >>(istream&, Compra&);
+ostream& operator <<(ostream&, Compra&);
 
 #endif	/* COMPRA_H */
 

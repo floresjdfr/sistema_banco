@@ -32,7 +32,7 @@ private:
     string descripcion;
 };
 
-ostream& operator <<(ostream&, Pago*);
+ostream& operator <<(ostream&, Pago&);
 
 #endif	/* PAGO_H */
 

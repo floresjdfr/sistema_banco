@@ -48,7 +48,9 @@ void Compra::setMontoPagoMensual(float MontoPagoMensual){
 void Compra::setDescripcionCompra(string descripcion){
     descripcionCompra = descripcion;
 }
-    
+void Compra::setFecha(Fecha& fec){
+    fecha = &fec;
+}
     
 //Gets
     
@@ -64,11 +66,12 @@ float Compra::getMontoPendiente() const{
 float Compra::getMontoPagoMensual() const{
     return montoPagoMensual;
 }
-
 string Compra::getDescripcion() const{
     return descripcionCompra;
 }
-    
+Fecha* Compra::getFecha(){
+    return fecha;
+}
     
 string Compra::toString() const{
     stringstream s;
@@ -91,7 +94,7 @@ string Compra::toStringPendiente() const{
     return s.str();
 }
 
-istream& operator >>(istream& entrada, Compra* nCompra){
+istream& operator >>(istream& entrada, Compra& nCompra){
     int op;
     float mc, mp;
     string des;
@@ -102,32 +105,35 @@ istream& operator >>(istream& entrada, Compra* nCompra){
     cout<<"2 - Compra por cuotas. "<<endl;
     cout<<"------------------------------------------" << endl;
     cout<<"Opcion: ";
-    switch(entrada>>op && op < 3){
+    entrada>>op;
+    switch(op){
         case 1:{
             cout<<"Descripcion de la compra: ";
             entrada>>des;
-            nCompra->setDescripcionCompra(des);
             cout<<"Monto de la compra: ";
             entrada>>mc;
-            nCompra->setMonto(mc);
             entrada>>fec;
-            nCompra->setEstado(false);
-            nCompra->setMontoPendiente(0.0);
-            nCompra->setMontoPagoMensual(0.0);
+            nCompra.setFecha(fec);
+            nCompra.setDescripcionCompra(des);
+            nCompra.setMonto(mc);
+            nCompra.setEstado(false);
+            nCompra.setMontoPendiente(0.0);
+            nCompra.setMontoPagoMensual(0.0);
         }
         case 2:{
             cout<<"Descripcion de la compra: ";
             entrada>>des;
-            nCompra->setDescripcionCompra(des);
             cout<<"Monto de la compra: ";
             entrada>>mc;
-            nCompra->setMonto(mc);
-            nCompra->setMontoPendiente(mc);
             cout<<"Establezca monto del cuota mensual: ";
             entrada>>mp;
-            nCompra->setMontoPagoMensual(mp);
             entrada>>fec;
-            nCompra->setEstado(true);
+            nCompra.setFecha(fec);
+            nCompra.setDescripcionCompra(des);
+            nCompra.setMonto(mc);
+            nCompra.setMontoPendiente(mc);
+            nCompra.setMontoPagoMensual(mp);
+            nCompra.setEstado(true);
         }
         default: ;
     }
@@ -135,7 +141,7 @@ istream& operator >>(istream& entrada, Compra* nCompra){
 }
 
 ostream& operator <<(ostream& salida, Compra& nCompra){
-    if(nCompra->getEstado())
-        return salida<<nCompra->toStringPendiente()<<endl;
-    return salida<<nCompra->toString()<<endl;
+    if(nCompra.getEstado())
+        return salida<<nCompra.toStringPendiente()<<endl;
+    return salida<<nCompra.toString()<<endl;
 }

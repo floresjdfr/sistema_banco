@@ -30,17 +30,26 @@ using namespace std;
 int main(int argc, char** argv) {
     
     cout << "**********PRUEBAS CLIENTE************" << endl << endl;
-
-    Fecha* fechaCorte = new Fecha(1,1,1);
+    
+    //Sobrecarga de entrada
+    Fecha* fechaCorte = new Fecha();
+    cin>>*fechaCorte;
+    
     Fecha* fechaLimite = new Fecha(2,2,2);
     Fecha* fechaExpiracion = new Fecha(3,3,3);
-    Persona* cliente = new Persona("Jose","11111","jose@yahoo",21,400000);
-    TarjetaCredito* tarjeta = new TarjetaCredito(200000, fechaCorte, fechaLimite, fechaExpiracion,468465, cliente);
     
-    cout << tarjeta->toString();
+    //Sobrecarga de entrada
+    Persona* cliente = new Persona();
+    cin>>*cliente;
     
-    ProcesarCompra* p = new ProcesarCompra;
-    ProcesarCompraCuotas* cuotas = new ProcesarCompraCuotas;
+    //Sobrecarga de entrada
+    TarjetaCredito* tarjeta = new TarjetaCredito();
+    cin>>*tarjeta;
+    
+    cout << *tarjeta <<endl;
+    
+    ProcesarCompra* p = new ProcesarCompra();
+    ProcesarCompraCuotas* cuotas = new ProcesarCompraCuotas();
     
     cout << "********** PRUEBAS COMPRAS Y VOUCHERS ************" << endl << endl;
     
@@ -65,7 +74,7 @@ int main(int argc, char** argv) {
     tarjeta->pagar(700, "Una parte", fec3, *p2);
     cout << "--------------------------------" << endl;
     
-    cout << tarjeta->toString();
+    cout << *tarjeta <<endl;
     
     delete tarjeta, fechaCorte, fechaLimite, fechaExpiracion, cliente;
     

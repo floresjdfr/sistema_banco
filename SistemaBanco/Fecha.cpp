@@ -107,21 +107,21 @@ Fecha* Fecha::operator =(Fecha* fec){
     return this;
 }
 
-istream& operator >>(istream& entrada, Fecha* fec){
+istream& operator >>(istream& entrada, Fecha& fec){
     int d, m, a;
     cout << "Formato Fecha ---->  00 (dia) / 00 (mes) / 0000 (año)" << endl;
-    cout << "Digite el dia de la fecha" << endl;
+    cout << "Digite el dia: ";
     entrada >> d;
-    cout << "Digite el mes de la mes" << endl;
+    cout << "Digite el mes: ";
     entrada >> m;
-    cout << "Digite el año de la fecha" << endl;
+    cout << "Digite el año: ";
     entrada >> a;
-    fec->setAno(a);
-    fec->setDia(d);
-    fec->setMes(m);
+    fec.setAno(a);
+    fec.setDia(d);
+    fec.setMes(m);
     return entrada;
 }
 
-ostream& operator <<(ostream& salida, Fecha* fec){
-    return salida<<fec->toString()<<endl;
+ostream& operator <<(ostream& salida, Fecha& fec){
+    return salida<<fec.toString()<<endl;
 }

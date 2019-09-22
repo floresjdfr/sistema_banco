@@ -139,30 +139,30 @@ void TarjetaCredito::pagar(float monto, string descripcion, Fecha* fecha, Proces
 }
 
 
-istream& operator >>(istream& entrada, TarjetaCredito* t){
+istream& operator >>(istream& entrada, TarjetaCredito& t){
     float s;
     int numT, cod;
-    Fecha* exp;
-    Persona* p;
-    cout<<"Cliente: ";
+    Fecha exp;
+    Persona p;
+    cout<<"Cliente: "<<endl;
     entrada>>p;
-    t->setCliente(p);
-    cout<<"Establecer fecha de expiracion: ";
+    cout<<"Establecer fecha de expiracion: "<<endl;
     entrada>>exp;
-    t->setFechaExpiracion(exp);
     cout<<"Establecer el codigo de seguridad: ";
     entrada>>cod;
-    t->setCodigoSeguridad(cod);
-    numT = rand() % 1000000000000000 + 9999999999999999;
-    t->setNumeroTarjeta(numT);
     cout<<"Establecer saldo de la tarjeta: ";
     entrada>>s;
-    t->setLimiteSaldo(s);
-    t->setSaldo(s);
+    t.setCliente(&p);
+    t.setFechaExpiracion(&exp);
+    t.setCodigoSeguridad(cod);
+    numT = rand() % 1000000000000000 + 9999999999999999;
+    t.setNumeroTarjeta(numT);
+    t.setLimiteSaldo(s);
+    t.setSaldo(s);
     
     return entrada;
 }
 
-ostream& operator <<(ostream& salida, TarjetaCredito* t){
-    return salida<<t->toString()<<endl;
+ostream& operator <<(ostream& salida, TarjetaCredito& t){
+    return salida<<t.toString()<<endl;
 }

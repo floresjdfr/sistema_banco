@@ -79,30 +79,30 @@ void Persona::setCorreoElectronico(string CorreoElectronico){
         return salario * 0.4;
     }
     
-    istream& operator >>(istream& entrada, Persona* p){
+    istream& operator >>(istream& entrada, Persona& p){
         string nom, id, email;
         int ed;
         float sal;
-        cout"Ingrese los datos de la persona... "<<endl;
+        cout<<"Ingrese los datos de la persona... "<<endl;
         cout<<"Nombre de la persona: ";
         entrada>>nom;
-        p->setNombre(nom);
         cout<<"Numero de identificacion: ";
         entrada>>id;
-        p->setIdentificacion(id);
         cout<<"Edad de la persona: ";
         entrada>>ed;
-        p->setEdad(ed);
         cout<<"Correo electronico: ";
         entrada>>email;
-        p->setCorreoElectronico(email);
         cout<<"Ingrese el monto del salario (mensual): ";
         entrada>>sal;
-        p->setSalario(sal);
+        p.setNombre(nom);
+        p.setIdentificacion(id);
+        p.setEdad(ed);
+        p.setCorreoElectronico(email);
+        p.setSalario(sal);
         
         return entrada;
     }
     
-    ostream& operator <<(ostream& salida, Persona* p){
-        return salida<<p->toString()<<endl;
+    ostream& operator <<(ostream& salida, Persona& p){
+        return salida<<p.toString()<<endl;
     }

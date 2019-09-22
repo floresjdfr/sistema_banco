@@ -43,8 +43,8 @@ private:
     int ano;
 };
 
-istream& operator >>(istream&, Fecha*);
-ostream& operator <<(ostream&, Fecha*);
+istream& operator >>(istream&, Fecha&);
+ostream& operator <<(ostream&, Fecha&);
 
 #endif	/* FECHA_H */
 

@@ -80,8 +80,8 @@ private:
 
 };
 
-istream& operator >>(istream&, TarjetaCredito*);
-ostream& operator <<(ostream&, TarjetaCredito*);
+istream& operator >>(istream&, TarjetaCredito&);
+ostream& operator <<(ostream&, TarjetaCredito&);
 
 #endif	/* TARJETACREDITO_H */
 

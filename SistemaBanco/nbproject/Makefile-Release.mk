@@ -38,7 +38,9 @@ OBJECTFILES= \
 	${OBJECTDIR}/Banco.o \
 	${OBJECTDIR}/Compra.o \
 	${OBJECTDIR}/Fecha.o \
+	${OBJECTDIR}/Interfaz.o \
 	${OBJECTDIR}/ListaCompra.o \
+	${OBJECTDIR}/ListaTarjeta.o \
 	${OBJECTDIR}/Pago.o \
 	${OBJECTDIR}/Persona.o \
 	${OBJECTDIR}/ProcesarCompra.o \
@@ -88,10 +90,20 @@ ${OBJECTDIR}/Fecha.o: Fecha.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Fecha.o Fecha.cpp
 
+${OBJECTDIR}/Interfaz.o: Interfaz.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Interfaz.o Interfaz.cpp
+
 ${OBJECTDIR}/ListaCompra.o: ListaCompra.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ListaCompra.o ListaCompra.cpp
+
+${OBJECTDIR}/ListaTarjeta.o: ListaTarjeta.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ListaTarjeta.o ListaTarjeta.cpp
 
 ${OBJECTDIR}/Pago.o: Pago.cpp 
 	${MKDIR} -p ${OBJECTDIR}

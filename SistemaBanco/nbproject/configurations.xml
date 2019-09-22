@@ -9,10 +9,12 @@
       <itemPath>Compra.h</itemPath>
       <itemPath>Contenedor.h</itemPath>
       <itemPath>Fecha.h</itemPath>
+      <itemPath>Interfaz.h</itemPath>
       <itemPath>Iterador.h</itemPath>
       <itemPath>IteradorLista.h</itemPath>
       <itemPath>Lista.h</itemPath>
       <itemPath>ListaCompra.h</itemPath>
+      <itemPath>ListaTarjeta.h</itemPath>
       <itemPath>Nodo.h</itemPath>
       <itemPath>Persona.h</itemPath>
       <itemPath>Procesar.h</itemPath>
@@ -34,7 +36,9 @@
       <itemPath>Banco.cpp</itemPath>
       <itemPath>Compra.cpp</itemPath>
       <itemPath>Fecha.cpp</itemPath>
+      <itemPath>Interfaz.cpp</itemPath>
       <itemPath>ListaCompra.cpp</itemPath>
+      <itemPath>ListaTarjeta.cpp</itemPath>
       <itemPath>Pago.cpp</itemPath>
       <itemPath>Persona.cpp</itemPath>
       <itemPath>ProcesarCompra.cpp</itemPath>
@@ -82,6 +86,10 @@
       </item>
       <item path="Fecha.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Interfaz.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Interfaz.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Iterador.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="IteradorLista.h" ex="false" tool="3" flavor2="0">
@@ -91,6 +99,10 @@
       <item path="ListaCompra.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ListaCompra.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ListaTarjeta.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ListaTarjeta.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Nodo.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -165,6 +177,10 @@
       </item>
       <item path="Fecha.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Interfaz.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Interfaz.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Iterador.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="IteradorLista.h" ex="false" tool="3" flavor2="0">
@@ -174,6 +190,10 @@
       <item path="ListaCompra.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ListaCompra.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ListaTarjeta.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ListaTarjeta.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Nodo.h" ex="false" tool="3" flavor2="0">
       </item>

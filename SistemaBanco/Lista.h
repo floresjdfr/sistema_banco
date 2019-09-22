@@ -29,7 +29,7 @@ class Lista: public Contenedor{
 
         
         
-    private:
+    protected:
         Nodo<T>* primero;
         Nodo<T>* actual;
 };

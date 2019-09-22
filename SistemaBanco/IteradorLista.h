@@ -33,7 +33,7 @@ IteradorLista<T>::IteradorLista(Nodo <T>* primero) {
 
 template <class T>
 bool IteradorLista<T>::hayMas(){ 
-    return actual->siguiente != NULL;
+    return actual != NULL;
 }
 
 template <class T>

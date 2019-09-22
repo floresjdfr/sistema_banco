@@ -32,6 +32,7 @@ public:
     virtual Persona* getCliente() = 0;
     virtual bool getMoroso() = 0;
     virtual ListaCompra* getCompras() = 0;
+    virtual int getNumeroTarjeta() = 0;
     
     //Sets
     
@@ -39,7 +40,7 @@ public:
     virtual void setLimiteSaldo(float) = 0;
     virtual void setCliente(Persona*) = 0;
     virtual void setMoroso(bool) = 0;
-    
+    virtual void setNumeroTarjeta(int) = 0;
     //Otros
     
     

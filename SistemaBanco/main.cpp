@@ -19,6 +19,7 @@
 #include "ProcesarPago.h"
 
 #include "ProcesarCompraCuotas.h"
+#include "Interfaz.h"
 
 
 using namespace std;
@@ -67,6 +68,10 @@ int main(int argc, char** argv) {
     cout << tarjeta->toString();
     
     delete tarjeta, fechaCorte, fechaLimite, fechaExpiracion, cliente;
+    
+    Interfaz* i = new Interfaz;
+    i->main();
+    delete i;
    
     cin.ignore();
     return 0;

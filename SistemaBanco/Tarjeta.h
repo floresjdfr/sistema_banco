@@ -20,6 +20,8 @@ using namespace std;
 
 class Procesar;
 
+/*Clase abstracta de una tarjeta*/
+
 
 class Tarjeta {
 public:

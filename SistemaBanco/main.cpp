@@ -21,6 +21,8 @@ using namespace std;
  * 
  */
 int main(int argc, char** argv) {
+    
+    cout << "**********PRUEBAS CLIENTE************" << endl << endl;
 
     Fecha* fechaCorte = new Fecha(1,1,1);
     Fecha* fechaLimite = new Fecha(2,2,2);
@@ -33,16 +35,23 @@ int main(int argc, char** argv) {
     ProcesarCompra* p = new ProcesarCompra;
     ProcesarCompraCuotas* cuotas = new ProcesarCompraCuotas;
     
+    cout << "********** PRUEBAS COMPRAS Y VOUCHERS ************" << endl << endl;
+    
     Fecha* fec = new Fecha(4,4,4);
     tarjeta->comprar(1500,0,"Arroz",fec,*p);
     
     Fecha* fec2 = new Fecha(5,5,5);
     tarjeta->comprar(8000,0,"Helado",fec2,*p);
-    cout << "--------------------------------" << endl;
     
     tarjeta->comprar(40000,1000,"Parlantes",fec,*cuotas);
-    cout << "*******************************************" << endl;
-    cout << tarjeta->getCompras()->toStringIterador();
+    
+    cout << "Compras pagadas en total" << endl << endl;
+    cout << tarjeta->getCompras()->toString();
+    
+    cout << endl << endl;
+    cout << "Compras pendientes: " << endl;
+    cout << tarjeta->getCompras()->toStringPendientes();
+    
     
     
     delete tarjeta, fechaCorte, fechaLimite, fechaExpiracion, cliente;

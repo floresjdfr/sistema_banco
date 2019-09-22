@@ -50,8 +50,8 @@ public:
     
     //Metodos
     
-    void ganarPuntos(float);
-    string toString();
+    void ganarPuntos(float); //Metodo para ganar puntos al usar la tarjeta. Estos serviran despues para pagar
+    string toString(); /*Muestra datos del tarjeta*/
     
     bool verificaSaldo(float);//Verifica que la persona tenga aalfo en la cuenta disponible comparado con el monto de la compra
     void comprar(float, float, string, Fecha*, Procesar&);
@@ -60,12 +60,12 @@ public:
     
     
 private:
-    bool moroso;
-    float limiteSaldo;
+    bool moroso; //Boleano que es verdadero cuando la persona no paga a tiempo
+    float limiteSaldo; //Maximo saldo de la tarjeta
     float saldo;
     Fecha* fechaCorte;
     Fecha* fechaLimite;
-    Fecha* fechaExpiracion;
+    Fecha* fechaExpiracion; 
     int puntos;/*puntos que se acumulan al usar la tarjeta de credito*/
     int numeroTarjeta;
     int codigoSeguridad;

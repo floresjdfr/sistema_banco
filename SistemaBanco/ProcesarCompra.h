@@ -14,7 +14,7 @@ class ProcesarCompra : public Procesar {
 public:
     ProcesarCompra();
     bool verificaSaldo(float, Tarjeta&); //recibe monto compra y la tarjeta. Verifica que tenga saldo
-    void procesarTransaccion(float, float, string, Fecha*, Tarjeta&); //Procesa  la compra. Recibe monto, descripcion, fecha, tarjeta
+    void procesarTransaccion(float, float, string, Fecha*, Tarjeta&); //Procesa  la compra. Recibe monto, pago mensual,  descripcion, fecha, tarjeta
 private:
 
 };

@@ -133,3 +133,6 @@ void TarjetaCredito::comprar(float monto, string descripcion, Fecha* fecha, Proc
     p.procesarTransaccion(monto, descripcion, fecha, *this);
 }
 
+void TarjetaCredito::pagar(float monto, string descripcion, Fecha* fecha, Procesar& p){
+    p.procesarTransaccion(monto, descripcion, fecha, *this);
+}

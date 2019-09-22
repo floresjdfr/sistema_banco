@@ -9,10 +9,13 @@
 #include <iostream>
 
 #include "Persona.h"
+#include "Tarjeta.h"
 #include "TarjetaCredito.h"
 #include "Lista.h"
 #include "IteradorLista.h"
 #include "ProcesarCompra.h"
+#include "ProcesarPagoMinimo.h"
+#include "ProcesarPago.h"
 
 using namespace std;
 
@@ -36,10 +39,16 @@ int main(int argc, char** argv) {
     cout << tarjeta->toString();
     cout << tarjeta->getCompras()->toStringIterador();
     
+    Fecha* fec2 = new Fecha(1, 2, 2);
+    Procesar* p2 = new ProcesarPagoMinimo();
+    tarjeta->pagar(700, "Una parte", fec2, *p2);
+    cout << "--------------------------------" << endl;
+    
+    cout << tarjeta->toString();
     
     delete tarjeta, fechaCorte, fechaLimite, fechaExpiracion, cliente;
    
-    
+    cin.ignore();
     return 0;
 }
 

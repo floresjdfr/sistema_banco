@@ -10,13 +10,14 @@
 
 #include "Procesar.h" 
 
-class ProcesarPagoMinimo : public Procesar{
+class ProcesarPagoMinimo : public Procesar {
 public:
     ProcesarPagoMinimo();
-    ProcesarPagoMinimo(const ProcesarPagoMinimo& orig);
     virtual ~ProcesarPagoMinimo();
-private:
-
+    
+    bool verificarPago(float, float);
+    void procesarTransaccion(float, string, Fecha*, Tarjeta&);
+    string obtenerVoucher();
 };
 
 #endif	/* PROCESARPAGOMINIMO_H */

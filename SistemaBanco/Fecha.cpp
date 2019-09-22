@@ -51,3 +51,77 @@ string Fecha::toString() const{
     s << dia << " " << mes << " " << ano;
     return s.str();
 }
+
+bool Fecha::operator <(Fecha* fec){
+    if (ano < fec->ano) {
+        return true;
+    }
+    else {
+        if (ano == fec->ano) {
+            if (mes < fec->mes) {
+                return true;
+            }
+            else {
+                if (mes == fec->mes) {
+                    if (dia < fec->dia) {
+                        return true;
+                    }
+                    else {
+                        return false;
+                    }
+                }
+            }
+        }
+    }
+    return false;
+}
+
+bool Fecha::operator >(Fecha* fec){
+    if (ano < fec->ano) {
+        return true;
+    }
+    else {
+        if (ano < fec->ano) {
+            if (mes < fec->mes) {
+                return true;
+            }
+            else {
+                if (mes < fec->mes) {
+                    if (dia < fec->dia) {
+                        return true;
+                    }
+                    else {
+                        return false;
+                    }
+                }
+            }
+        }
+    }
+    return false;
+}
+
+Fecha* Fecha::operator =(Fecha* fec){
+    ano = fec->ano;
+    mes = fec->mes;
+    dia = fec->dia;
+    return this;
+}
+
+istream& operator >>(istream& entrada, Fecha* fec){
+    int d, m, a;
+    cout << "Formato Fecha ---->  00 (dia) / 00 (mes) / 0000 (año)" << endl;
+    cout << "Digite el dia de la fecha" << endl;
+    entrada >> d;
+    cout << "Digite el mes de la mes" << endl;
+    entrada >> m;
+    cout << "Digite el año de la fecha" << endl;
+    entrada >> a;
+    fec->setAno(a);
+    fec->setDia(d);
+    fec->setMes(m);
+    return entrada;
+}
+
+ostream& operator <<(ostream& salida, Fecha* fec){
+    return salida<<fec->toString()<<endl;
+}

@@ -46,4 +46,8 @@ private:
     int edad;
     float salario;
 };
+
+istream& operator >>(istream&, Persona*);
+ostream& operator <<(ostream&, Persona*);
+
 #endif	/* PERSONA_H */

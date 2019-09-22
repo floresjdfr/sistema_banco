@@ -1,9 +1,17 @@
 #include "Pago.h"
 #include "TarjetaCredito.h"
 
+Pago::Pago() {
+    monto = 0.0;
+    fecha = NULL;
+    montoAcumulado = 0.0;
+    morosidad = false;
+    descripcion = " ";
+}
+
 Pago::Pago(string des, Fecha* fechaR, Tarjeta& cuenta) {
     monto = 0.0;
-    fecha = fechaR;
+    fecha = *fechaR;
     montoAcumulado = cuenta.getLimiteSaldo() - cuenta.getSaldo();
     morosidad = cuenta.getMoroso();
     descripcion = des;
@@ -52,4 +60,8 @@ string Pago::toString() const{
         s<<"Monto Pendiente: "<<montoAcumulado<<endl<<endl;
     s<<"---------------------------------"<<endl<<endl;
     return s.str();
+}
+
+ostream& operator <<(ostream& salida, Pago* p){
+    return salida<<p->toString()<<endl;
 }

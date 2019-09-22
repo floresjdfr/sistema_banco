@@ -7,6 +7,7 @@
 
 class Pago : public Transaccion{
 public:
+    Pago();
     Pago(string, Fecha*, Tarjeta&);
     ~Pago();
     //Sets
@@ -30,6 +31,8 @@ private:
     Fecha* fecha;
     string descripcion;
 };
+
+ostream& operator <<(ostream&, Pago*);
 
 #endif	/* PAGO_H */
 

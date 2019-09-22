@@ -27,15 +27,15 @@ Persona::Persona(){
 
 
 //Sets
-    void Persona::setNombre(string Nombre){
-        nombre = Nombre;
-    }
-    void Persona::setIdentificacion(string Identificacion){
-        identificacion = Identificacion;
-    }
-    void Persona::setCorreoElectronico(string CorreoElectronico){
-        correoElectronico = CorreoElectronico;
-    }
+void Persona::setNombre(string Nombre){
+    nombre = Nombre;
+}
+void Persona::setIdentificacion(string Identificacion){
+    identificacion = Identificacion;
+}
+void Persona::setCorreoElectronico(string CorreoElectronico){
+    correoElectronico = CorreoElectronico;
+}
     void Persona::setEdad(int Edad){
         edad = Edad;
     }
@@ -77,4 +77,32 @@ Persona::Persona(){
     
     float Persona::capacidadPago(){
         return salario * 0.4;
+    }
+    
+    istream& operator >>(istream& entrada, Persona* p){
+        string nom, id, email;
+        int ed;
+        float sal;
+        cout"Ingrese los datos de la persona... "<<endl;
+        cout<<"Nombre de la persona: ";
+        entrada>>nom;
+        p->setNombre(nom);
+        cout<<"Numero de identificacion: ";
+        entrada>>id;
+        p->setIdentificacion(id);
+        cout<<"Edad de la persona: ";
+        entrada>>ed;
+        p->setEdad(ed);
+        cout<<"Correo electronico: ";
+        entrada>>email;
+        p->setCorreoElectronico(email);
+        cout<<"Ingrese el monto del salario (mensual): ";
+        entrada>>sal;
+        p->setSalario(sal);
+        
+        return entrada;
+    }
+    
+    ostream& operator <<(ostream& salida, Persona* p){
+        return salida<<p->toString()<<endl;
     }

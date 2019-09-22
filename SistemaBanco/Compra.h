@@ -54,5 +54,8 @@ private:
 
 };
 
+istream& operator >>(istream&, Compra*);
+ostream& operator <<(ostream&, Compra*);
+
 #endif	/* COMPRA_H */
 

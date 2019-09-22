@@ -33,12 +33,18 @@ public:
     //Otros metodos
     
     string toString() const;
+    bool operator <(Fecha*);
+    bool operator >(Fecha*);
+    Fecha* operator =(Fecha*);
     
 private:
     int dia;
     int mes;
     int ano;
 };
+
+istream& operator >>(istream&, Fecha*);
+ostream& operator <<(ostream&, Fecha*);
 
 #endif	/* FECHA_H */
 

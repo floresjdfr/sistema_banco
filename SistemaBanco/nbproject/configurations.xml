@@ -14,7 +14,6 @@
       <itemPath>Lista.h</itemPath>
       <itemPath>ListaCompra.h</itemPath>
       <itemPath>Nodo.h</itemPath>
-      <itemPath>Pago.h</itemPath>
       <itemPath>Persona.h</itemPath>
       <itemPath>Procesar.h</itemPath>
       <itemPath>ProcesarCompra.h</itemPath>
@@ -35,7 +34,6 @@
       <itemPath>Banco.cpp</itemPath>
       <itemPath>Compra.cpp</itemPath>
       <itemPath>Fecha.cpp</itemPath>
-      <itemPath>ListaCompra.cpp</itemPath>
       <itemPath>Pago.cpp</itemPath>
       <itemPath>Persona.cpp</itemPath>
       <itemPath>ProcesarCompra.cpp</itemPath>
@@ -66,13 +64,6 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
-        <cTool>
-          <standard>10</standard>
-        </cTool>
-        <ccTool>
-          <standard>8</standard>
-          <commandlineTool>g++</commandlineTool>
-        </ccTool>
       </compileType>
       <item path="Banco.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -96,15 +87,11 @@
       </item>
       <item path="Lista.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="ListaCompra.cpp" ex="false" tool="1" flavor2="0">
-      </item>
       <item path="ListaCompra.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Nodo.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Pago.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Pago.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Persona.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -181,15 +168,11 @@
       </item>
       <item path="Lista.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="ListaCompra.cpp" ex="false" tool="1" flavor2="0">
-      </item>
       <item path="ListaCompra.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Nodo.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Pago.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Pago.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Persona.cpp" ex="false" tool="1" flavor2="0">
       </item>

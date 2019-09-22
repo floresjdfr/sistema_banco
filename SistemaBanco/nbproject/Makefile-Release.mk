@@ -38,7 +38,6 @@ OBJECTFILES= \
 	${OBJECTDIR}/Banco.o \
 	${OBJECTDIR}/Compra.o \
 	${OBJECTDIR}/Fecha.o \
-	${OBJECTDIR}/ListaCompra.o \
 	${OBJECTDIR}/Pago.o \
 	${OBJECTDIR}/Persona.o \
 	${OBJECTDIR}/ProcesarCompra.o \
@@ -87,11 +86,6 @@ ${OBJECTDIR}/Fecha.o: Fecha.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Fecha.o Fecha.cpp
-
-${OBJECTDIR}/ListaCompra.o: ListaCompra.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ListaCompra.o ListaCompra.cpp
 
 ${OBJECTDIR}/Pago.o: Pago.cpp 
 	${MKDIR} -p ${OBJECTDIR}

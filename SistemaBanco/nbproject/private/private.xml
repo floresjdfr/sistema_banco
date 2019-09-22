@@ -6,18 +6,6 @@
     </data>
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/TarjetaCredito.h</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/TarjetaCredito.cpp</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/Pago.h</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/Pago.cpp</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/main.cpp</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/ProcesarPago.cpp</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/ProcesarPagoMinimo.cpp</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/ProcesarPago.h</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/ProcesarPagoMinimo.h</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/Transaccion.h</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/Persona.cpp</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

@@ -38,7 +38,6 @@ OBJECTFILES= \
 	${OBJECTDIR}/Banco.o \
 	${OBJECTDIR}/Compra.o \
 	${OBJECTDIR}/Fecha.o \
-	${OBJECTDIR}/ListaCompra.o \
 	${OBJECTDIR}/Pago.o \
 	${OBJECTDIR}/Persona.o \
 	${OBJECTDIR}/ProcesarCompra.o \
@@ -76,62 +75,57 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/sistemabanco.exe: ${OBJECTFILES}
 ${OBJECTDIR}/Banco.o: Banco.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Banco.o Banco.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Banco.o Banco.cpp
 
 ${OBJECTDIR}/Compra.o: Compra.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Compra.o Compra.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Compra.o Compra.cpp
 
 ${OBJECTDIR}/Fecha.o: Fecha.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Fecha.o Fecha.cpp
-
-${OBJECTDIR}/ListaCompra.o: ListaCompra.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ListaCompra.o ListaCompra.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Fecha.o Fecha.cpp
 
 ${OBJECTDIR}/Pago.o: Pago.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Pago.o Pago.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Pago.o Pago.cpp
 
 ${OBJECTDIR}/Persona.o: Persona.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Persona.o Persona.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Persona.o Persona.cpp
 
 ${OBJECTDIR}/ProcesarCompra.o: ProcesarCompra.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ProcesarCompra.o ProcesarCompra.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ProcesarCompra.o ProcesarCompra.cpp
 
 ${OBJECTDIR}/ProcesarCompraCuotas.o: ProcesarCompraCuotas.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ProcesarCompraCuotas.o ProcesarCompraCuotas.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ProcesarCompraCuotas.o ProcesarCompraCuotas.cpp
 
 ${OBJECTDIR}/ProcesarPago.o: ProcesarPago.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ProcesarPago.o ProcesarPago.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ProcesarPago.o ProcesarPago.cpp
 
 ${OBJECTDIR}/ProcesarPagoMinimo.o: ProcesarPagoMinimo.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ProcesarPagoMinimo.o ProcesarPagoMinimo.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ProcesarPagoMinimo.o ProcesarPagoMinimo.cpp
 
 ${OBJECTDIR}/TarjetaCredito.o: TarjetaCredito.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TarjetaCredito.o TarjetaCredito.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TarjetaCredito.o TarjetaCredito.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
 
 # Subprojects
 .build-subprojects:

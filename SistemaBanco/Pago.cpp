@@ -11,7 +11,7 @@ Pago::Pago() {
 
 Pago::Pago(string des, Fecha* fechaR, Tarjeta& cuenta) {
     monto = 0.0;
-    fecha = *fechaR;
+    fecha = fechaR;
     montoAcumulado = cuenta.getLimiteSaldo() - cuenta.getSaldo();
     morosidad = cuenta.getMoroso();
     descripcion = des;

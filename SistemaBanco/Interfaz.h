@@ -14,11 +14,12 @@
 
 class Interfaz {
 public:
-    Interfaz();
-    Interfaz(const Interfaz& orig);
-    virtual ~Interfaz();
+    
     void main();
-private:
+    bool esDigito(string);
+    string aMinuscula(string);
+    string encabezado();
+
 
 };
 

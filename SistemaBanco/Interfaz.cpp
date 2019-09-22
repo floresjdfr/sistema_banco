@@ -7,32 +7,50 @@
 
 #include "Interfaz.h"
 
-Interfaz::Interfaz() {
-    
-    
-}
-
-Interfaz::Interfaz(const Interfaz& orig) {
-}
-
-Interfaz::~Interfaz() {
-}
 
 
 void Interfaz::main(){
     
-    ListaTarjeta* l = new ListaTarjeta;
-    Fecha* corte;
-    Fecha* limite;
-    Fecha* caducidad;
-    Persona* cliente = new Persona;
-    Persona* cliente2 = new Persona;
-    cliente2->setIdentificacion("1");
-    TarjetaCredito* tarjeta = new TarjetaCredito(5000, corte, limite, caducidad, 4525, cliente2);
-    TarjetaCredito* tarjeta2 = new TarjetaCredito(5000, corte, limite, caducidad, 4521, cliente);
-    l->agregar(tarjeta);
-    l->agregar(tarjeta2);
-    cout << l->toString();
-    l->eliminaTarjetaNumero(4525);
-    cout << l->toString();
+    
 }
+
+string Interfaz::aMinuscula(string palabra){
+    for(int i = 0; palabra[i] != '\0'; i++){
+        palabra[i] = tolower(palabra[i]);
+    }
+    return palabra;
+}
+
+bool Interfaz::esDigito(string input){
+    int verificacion = 0;
+    int total_caracteres = 0;
+    
+    for (int i = 0; input[i] != '\0'; i++){
+        total_caracteres++;
+    }
+    
+    for(int i = 0; i < total_caracteres; i++){
+        if(isdigit(input[i])){
+            verificacion++;
+        } 
+    }
+    
+    if(total_caracteres == verificacion){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+string Interfaz::encabezado(){
+    stringstream s;
+    s << "                   ********************************************" << endl;
+    s << "                   *             SISTEMA BANCARIO              *" << endl;
+    s << "                   *                                           *" <<endl;
+    s << "                   *         Jose David Flores Rodriguez       *" << endl;
+    s << "                   *         Jean Carlo                        *" << endl;
+    s << "                   *********************************************" << endl;
+    return s.str();
+}
+

@@ -9,6 +9,7 @@
 #define	COMPRA_H
 
 #include "Transaccion.h"
+#include "Utiles.h"
 
 #include <iostream>
 

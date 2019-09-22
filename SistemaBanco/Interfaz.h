@@ -16,8 +16,6 @@ class Interfaz {
 public:
     
     void main();
-    bool esDigito(string);
-    string aMinuscula(string);
     string encabezado();
 
 

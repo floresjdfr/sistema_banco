@@ -34,6 +34,7 @@
       <itemPath>Banco.cpp</itemPath>
       <itemPath>Compra.cpp</itemPath>
       <itemPath>Fecha.cpp</itemPath>
+      <itemPath>ListaCompra.cpp</itemPath>
       <itemPath>Pago.cpp</itemPath>
       <itemPath>Persona.cpp</itemPath>
       <itemPath>ProcesarCompra.cpp</itemPath>
@@ -86,6 +87,8 @@
       <item path="IteradorLista.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Lista.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ListaCompra.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ListaCompra.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -167,6 +170,8 @@
       <item path="IteradorLista.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Lista.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ListaCompra.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ListaCompra.h" ex="false" tool="3" flavor2="0">
       </item>

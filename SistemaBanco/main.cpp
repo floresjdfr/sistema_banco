@@ -59,9 +59,9 @@ int main(int argc, char** argv) {
     cout << tarjeta->getCompras()->toStringPendientes();
     
     
-    Fecha* fec2 = new Fecha(1, 2, 2);
+    Fecha* fec3 = new Fecha(1, 2, 2);
     Procesar* p2 = new ProcesarPagoMinimo();
-    tarjeta->pagar(700, "Una parte", fec2, *p2);
+    tarjeta->pagar(700, "Una parte", fec3, *p2);
     cout << "--------------------------------" << endl;
     
     cout << tarjeta->toString();

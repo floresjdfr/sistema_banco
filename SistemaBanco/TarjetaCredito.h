@@ -55,10 +55,11 @@ public:
     
     bool verificaSaldo(float);//Verifica que la persona tenga aalfo en la cuenta disponible comparado con el monto de la compra
 
+    void comprar(float, float, string, Fecha*, Procesar&);
     void comprar(float, string, Fecha*, Procesar&);
     void pagar(float, string, Fecha*, Procesar&);
 
-    void comprar(float, float, string, Fecha*, Procesar&);
+    
     
    
     

@@ -131,7 +131,7 @@ bool TarjetaCredito::verificaSaldo(float monto){
 
 void TarjetaCredito::comprar(float monto, float cuota, string descripcion, Fecha* fecha, Procesar& p){
     /*Este es el metodo encargado de ejecutar las compras*/
-    p.procesarTransaccion(monto, cuota, descripcion, fecha, *this);
+    p.procesarTransaccion(monto, descripcion, fecha, *this);
 }
 
 void TarjetaCredito::pagar(float monto, string descripcion, Fecha* fecha, Procesar& p){

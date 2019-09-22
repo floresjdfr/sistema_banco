@@ -17,7 +17,7 @@ using namespace std;
 class Compra : public Transaccion{
 public:
     Compra();
-    Compra(bool, float, float, float, Fecha*, string);
+    Compra(bool, float, float, Fecha*, string);
     Compra(float, Fecha*, string);
     
     //Sets
@@ -39,7 +39,7 @@ public:
     
     
     string toString() const; //Este es el voucher si el pago se dio completo
-    string toStringPendiente() const;
+    string toStringPendiente() const; //Este es el voucher Cuando Queda un pago Pendiente
     
     
     

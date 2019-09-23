@@ -140,6 +140,9 @@ void TarjetaCredito::pagar(Pago pag, Procesar& p){
     /*Este es el metodo encargado de ejecutar los pagos*/
     p.procesarTransaccion(pag.getMonto(), pag.getDescripcion(), pag.getFecha(), *this);
 }
+void TarjetaCredito::pagarMinimo(string descr, Fecha* fecha, Procesar& p){
+    p.procesarTransaccion(this->pagoMinimo(), descr, fecha, *this);
+}
 
 float TarjetaCredito::obtenerSaldoFechaCorte(){
     if(!moroso)
@@ -155,6 +158,10 @@ float TarjetaCredito::obtenerSaldoTotal(){
     }
     mTotal += mCompras;
     return mTotal;
+}
+
+float TarjetaCredito::pagoMinimo(){
+    return (limiteSaldo - saldo) / 3;
 }
 
 istream& operator >>(istream& entrada, TarjetaCredito& t){

@@ -57,6 +57,7 @@ public:
     void pagar(Pago, Procesar&);
     float obtenerSaldoFechaCorte();
     float obtenerSaldoTotal();
+    float pagoMinimo();
 
     
 private:

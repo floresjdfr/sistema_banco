@@ -30,6 +30,7 @@ public:
     virtual long long int getNumeroTarjeta() = 0;
     virtual Lista<Pago>* getPagos() = 0;
     virtual int getPuntos() = 0;
+    virtual Fecha* getFechaCorte() = 0;
     
     //Sets
     
@@ -44,7 +45,11 @@ public:
     
     virtual string toString() = 0;
     virtual void comprar(Compra, Procesar&) = 0;
+    virtual void pagar(float, string, Fecha*, Procesar&) = 0;
+    virtual void pagarMinimo(string, Fecha*, Procesar&) = 0;
     virtual void ganarPuntos(float) = 0;
+    virtual float obtenerSaldoFechaCorte() = 0;
+    virtual float obtenerSaldoTotal() = 0;
     
 };
 

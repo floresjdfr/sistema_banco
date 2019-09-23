@@ -59,13 +59,15 @@ void creaTarjeta();</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>912</x>
+      <x>816</x>
       <y>608</y>
-      <w>80</w>
-      <h>24</h>
+      <w>272</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>/Procesar/
-bg=yellow</panel_attributes>
+bg=yellow
+--
+ProcesarTransaccion(float, string, Fecha*, Tarjeta*);</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -100,23 +102,23 @@ bg=yellow</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>944</x>
-      <y>624</y>
+      <y>640</y>
       <w>136</w>
-      <h>160</h>
+      <h>144</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;90.0;150.0;90.0;150.0;180.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0;150.0;70.0;150.0;160.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>712</x>
-      <y>624</y>
+      <y>640</y>
       <w>256</w>
-      <h>160</h>
+      <h>144</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>300.0;10.0;300.0;90.0;10.0;90.0;10.0;180.0</additional_attributes>
+    <additional_attributes>300.0;10.0;300.0;70.0;10.0;70.0;10.0;160.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -273,12 +275,12 @@ string descripcionCompra;
     <id>Relation</id>
     <coordinates>
       <x>944</x>
-      <y>624</y>
+      <y>640</y>
       <w>312</w>
-      <h>160</h>
+      <h>144</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;90.0;370.0;90.0;370.0;180.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0;370.0;70.0;370.0;160.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -401,12 +403,12 @@ string comprasActivas();</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>904</x>
-      <y>624</y>
+      <y>640</y>
       <w>64</w>
-      <h>160</h>
+      <h>144</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>60.0;10.0;60.0;90.0;10.0;90.0;10.0;180.0</additional_attributes>
+    <additional_attributes>60.0;10.0;60.0;70.0;10.0;70.0;10.0;160.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>

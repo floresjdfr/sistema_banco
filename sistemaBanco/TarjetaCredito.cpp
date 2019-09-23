@@ -21,7 +21,7 @@ TarjetaCredito::TarjetaCredito() {
     compras = NULL;
 }
 
-TarjetaCredito::TarjetaCredito(float Saldo, Fecha* corte, Fecha* limite, Fecha* Expiracion, int NumeroCuenta, Persona* Cliente){//saldo, fecha corte, fecha limite, fecha caducidad, numeroTarjeta, cliente
+TarjetaCredito::TarjetaCredito(float Saldo, Fecha* corte, Fecha* limite, Fecha* Expiracion, long long int NumeroCuenta, Persona* Cliente){//saldo, fecha corte, fecha limite, fecha caducidad, numeroTarjeta, cliente
     moroso = false;
     limiteSaldo = Saldo;
     saldo = Saldo;
@@ -48,7 +48,7 @@ void TarjetaCredito::setLimiteSaldo(float limite) //Limite tarjeta
 {
     limiteSaldo = limite;
 }
-void TarjetaCredito::setNumeroTarjeta(int Numero){
+void TarjetaCredito::setNumeroTarjeta(long long int Numero){
     numeroTarjeta = Numero;
 }
 void TarjetaCredito::setFechaExpiracion(Fecha* exp){
@@ -81,7 +81,7 @@ float TarjetaCredito::getSaldo(){
 float TarjetaCredito::getLimiteSaldo(){
     return limiteSaldo;
 }
-int TarjetaCredito::getNumeroTarjeta(){
+long long int TarjetaCredito::getNumeroTarjeta(){
     return numeroTarjeta;
 }
 Fecha* TarjetaCredito::getFechaExpiracion(){
@@ -138,10 +138,26 @@ void TarjetaCredito::pagar(float monto, string descripcion, Fecha* fecha, Proces
     p.procesarTransaccion(monto, descripcion, fecha, *this);
 }
 
+float TarjetaCredito::obtenerSaldoFechaCorte(){
+    if(!moroso)
+        return compras->montoALaFecha(fechaCorte);
+}
+
+float TarjetaCredito::obtenerSaldoTotal(){
+    float mTotal = 0.0;
+    float mCompras = compras->montoALaFecha(fechaLimite);
+    if(moroso){
+        float adicional = (mCompras * 0.02) + (mCompras * 0.09);
+        mTotal += mCompras adicional;
+    }
+    mTotal += mCompras;
+    return mTotal;
+}
 
 istream& operator >>(istream& entrada, TarjetaCredito& t){
     float s;
-    int numT, cod;
+    long long int numT;
+    int cod;
     Fecha exp;
     Persona p;
     cout<<"Cliente: "<<endl;

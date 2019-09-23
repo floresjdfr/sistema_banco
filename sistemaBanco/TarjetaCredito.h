@@ -17,14 +17,14 @@ class TarjetaCredito : public Tarjeta{
     
 public:
     TarjetaCredito();
-    TarjetaCredito(float, Fecha*, Fecha*, Fecha*, int, Persona*);//saldo, fecha corte, fecha limite, fecha caducidad, numeroTarjeta, cliente
+    TarjetaCredito(float, Fecha*, Fecha*, Fecha*, long long int, Persona*);//saldo, fecha corte, fecha limite, fecha caducidad, numeroTarjeta, cliente
     virtual ~TarjetaCredito();
     
     //Sets
     
     void setSaldo(float);
     void setLimiteSaldo(float); //Limite tarjeta
-    void setNumeroTarjeta(int);
+    void setNumeroTarjeta(long long int);
     void setFechaExpiracion(Fecha*);
     void setCodigoSeguridad(int);
     void setPuntos(int);
@@ -43,7 +43,7 @@ public:
     Fecha* getFechaCorte();
     Fecha* getFechaLimite();
     int getCodigoSeguridad();
-    int getNumeroTarjeta();
+    long long int getNumeroTarjeta();
     int getPuntos();
     Persona* getCliente();
     ListaCompra* getCompras();
@@ -58,6 +58,8 @@ public:
     void comprar(float, float, string, Fecha*, Procesar&);
     void comprar(float, string, Fecha*, Procesar&);
     void pagar(float, string, Fecha*, Procesar&);
+    float obtenerSaldoFechaCorte();
+    float obtenerSaldoTotal();
 
     
     
@@ -72,7 +74,7 @@ private:
     Fecha* fechaLimite;
     Fecha* fechaExpiracion; 
     int puntos;/*puntos que se acumulan al usar la tarjeta de credito*/
-    int numeroTarjeta;
+    long long int numeroTarjeta;
     int codigoSeguridad;
     Persona* cliente;
     ListaCompra* compras;

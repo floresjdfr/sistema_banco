@@ -137,16 +137,8 @@ void TarjetaCredito::comprar(Compra c, Procesar& p){
 }
 
 void TarjetaCredito::pagar(Pago pag, Procesar& p){
-    IteradorLista<Compra>* iterador = compras->getIterador();
-    
-    while (iterador->hayMas()){
-        if (iterador->getActual()->getDescripcion() == pag.getDescripcion()){
-            p.procesarTransaccion(pag.getMonto(), pag.getDescripcion(), pag.getFecha(), *this);
-            iterador->getActual()->setMontoPendiente(iterador->getActual()->getMontoPendiente() - pag.getMonto());
-            break;
-        }
-        iterador->siguiente();
-    }
+    /*Este es el metodo encargado de ejecutar los pagos*/
+    p.procesarTransaccion(pag.getMonto(), pag.getDescripcion(), pag.getFecha(), *this);
 }
 
 float TarjetaCredito::obtenerSaldoFechaCorte(){

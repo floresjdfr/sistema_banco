@@ -18,9 +18,18 @@ bool ProcesarPagoCuota::verificarPago(float montoP, Tarjeta& cuenta){
 }
 
 void ProcesarPagoCuota::procesarTransaccion(float montoP, string des, Fecha* fechaP, Tarjeta& cuenta){
-    if(this->verificarPago(montoP, cuenta) && !cuenta.getMoroso()){
-        cuenta.setSaldo(cuenta.getSaldo() + montoP);
-        cuenta.getPagos()->agregar(new Pago(montoP, des, fechaP));
+    IteradorLista<Compra>* iterador = cuenta.getCompras()->getIterador();
+    
+    while (iterador->hayMas()){
+        if(this->verificarPago(montoP, cuenta) && iterador->getActual()->getEstado()){
+            if (iterador->getActual()->getDescripcion() == des){
+                cuenta.setSaldo(cuenta.getSaldo() + montoP);
+                cuenta.getPagos()->agregar(new Pago(montoP, des, fechaP));
+                iterador->getActual()->setMontoPendiente(iterador->getActual()->getMontoPendiente() - montoP);
+                break;
+            }
+        }
+        iterador->siguiente();
     }
 }
 

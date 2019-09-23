@@ -17,8 +17,8 @@ public:
     //Sets
     void setMonto(float);
     void setMontoAcumulado(float);
-    void setMorosidad();
-    void setInteres();
+    void setMorosidad(bool);
+    void setInteres(bool);
     void setFecha(Fecha*);
     void setDescripcion(string);
     

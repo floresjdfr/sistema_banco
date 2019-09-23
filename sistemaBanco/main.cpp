@@ -26,15 +26,8 @@ int main(int argc, char** argv) {
     Interfaz* i = new Interfaz;
     Banco* banco = new Banco;
     cout << i->encabezado() << endl;
-    while(true){
-
+    i->main(banco);
     
-    
-        i->main(banco);
-    
-    
-    
-    }
     delete i;
     return 0;
 }

@@ -7,35 +7,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/Nodo.h</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/Pago.h</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/Persona.h</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/Procesar.h</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/ProcesarCompra.h</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/ProcesarCompraCuotas.h</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/ProcesarPago.h</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/ProcesarPagoCuota.h</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/ProcesarPagoMinimo.h</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/Tarjeta.h</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/TarjetaCredito.h</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/Transaccion.h</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/Utiles.h</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/Banco.cpp</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/Compra.cpp</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/Fecha.cpp</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/Interfaz.cpp</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/ListaCompra.cpp</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/ListaTarjeta.cpp</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/Pago.cpp</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/Persona.cpp</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/ProcesarCompra.cpp</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/ProcesarCompraCuotas.cpp</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/ProcesarPago.cpp</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/ProcesarPagoCuota.cpp</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/ProcesarPagoMinimo.cpp</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/TarjetaCredito.cpp</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/Utiles.cpp</file>
-            <file>file:/F:/Carpetas/Documents/GitHub/sistema_banco/SistemaBanco/main.cpp</file>
+            <file>file:/D:/Jose%20David/Documents/GitHub/sistema_banco/sistemaBanco/main.cpp</file>
+            <file>file:/D:/Jose%20David/Documents/GitHub/sistema_banco/sistemaBanco/Fecha.cpp</file>
+            <file>file:/D:/Jose%20David/Documents/GitHub/sistema_banco/sistemaBanco/Compra.cpp</file>
+            <file>file:/D:/Jose%20David/Documents/GitHub/sistema_banco/sistemaBanco/Utiles.cpp</file>
+            <file>file:/D:/Jose%20David/Documents/GitHub/sistema_banco/sistemaBanco/Compra.h</file>
         </group>
     </open-files>
 </project-private>

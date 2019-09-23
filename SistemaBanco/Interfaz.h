@@ -13,7 +13,7 @@
 class Interfaz {
 public:
     
-    void main(Banco*);
+    bool main(Banco*);
     string encabezado();
 
 

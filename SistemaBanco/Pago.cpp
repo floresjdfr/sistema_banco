@@ -92,7 +92,7 @@ istream& operator >>(istream& entrada, Pago& p){
     
     p.setMonto(m);
     p.setDescripcion(des);
-    p.setFecha(*fec);
+    p.setFecha(&fec);
 }
 ostream& operator <<(ostream& salida, Pago& p){
     return salida<<p.toString()<<endl;

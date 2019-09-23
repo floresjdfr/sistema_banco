@@ -9,13 +9,19 @@ Pago::Pago() {
     interes = false;
 }
 
-Pago::Pago(string des, Fecha* fechaR, Tarjeta& cuenta) {
-    monto = 0.0;
-    fecha = fechaR;
-    montoAcumulado = cuenta.getLimiteSaldo() - cuenta.getSaldo();
-    morosidad = cuenta.getMoroso();
+Pago::Pago(float mon, string des, Fecha* fec){
+    monto = mon;
     descripcion = des;
-    interes = false;
+    fecha = fec; 
+}
+
+Pago::Pago(float mon, float mAcum, bool inter, bool moro, Fecha* fechaR, string des) {
+    monto = mon;
+    fecha = fechaR;
+    montoAcumulado = mAcum;
+    morosidad = moro;
+    descripcion = des;
+    interes = inter;
 }
 
 Pago::~Pago() {
@@ -30,14 +36,20 @@ void Pago::setMontoAcumulado(float montoA){
     montoAcumulado = montoA;
 }
     
-void Pago::setMorosidad(){
-    if (morosidad == true)
-        montoAcumulado += montoAcumulado*0.002;
+void Pago::setMorosidad(bool moro){
+    morosidad = moro;
 }
 
-void Pago::setInteres(){
-    if (morosidad == true)
-        montoAcumulado += montoAcumulado * 0.09;
+void Pago::setInteres(bool inter){
+    interes = inter;
+}
+
+void Pago::setFecha(Fecha* fec){
+    fecha = fec;
+}
+
+void Pago::setDescripcion(string des){
+    descripcion = des;
 }
 
 float Pago::getMonto(){
@@ -51,6 +63,10 @@ float Pago::getMontoAcumulado(){
 Fecha* Pago::getFecha(){
     return fecha;
 }
+
+string Pago::getDescripcion(){
+    return descripcion;
+}
     
 string Pago::toString() const{
     stringstream s;
@@ -63,6 +79,21 @@ string Pago::toString() const{
     return s.str();
 }
 
+istream& operator >>(istream& entrada, Pago& p){
+    float m;
+    string des;
+    Fecha fec;
+    cout<<"Fecha del pago: "<<endl;
+    entrada>>fec;
+    cout<<"Monto del pago: ";
+    entrada>>m;
+    cout<<"Descripcion del pago: ";
+    entrada>>des;
+    
+    p.setMonto(m);
+    p.setDescripcion(des);
+    p.setFecha(*fec);
+}
 ostream& operator <<(ostream& salida, Pago& p){
     return salida<<p.toString()<<endl;
 }

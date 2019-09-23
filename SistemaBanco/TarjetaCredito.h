@@ -1,9 +1,4 @@
-/* 
- * File:   TarjetaCredito.h
- * Author: Jose David
- *
- * Created on September 9, 2019, 5:38 PM
- */
+
 
 #ifndef TARJETACREDITO_H
 #define	TARJETACREDITO_H
@@ -59,14 +54,10 @@ public:
     bool verificaSaldo(float);//Verifica que la persona tenga aalfo en la cuenta disponible comparado con el monto de la compra
 
     void comprar(Compra, Procesar&);
-    void pagar(float, string, Fecha*, Procesar&);
+    void pagar(Pago, Procesar&);
     float obtenerSaldoFechaCorte();
     float obtenerSaldoTotal();
 
-    
-    
-   
-    
     
 private:
     bool moroso; //Boleano que es verdadero cuando la persona no paga a tiempo

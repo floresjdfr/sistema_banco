@@ -1,9 +1,3 @@
-/* 
- * File:   ListaCompra.h
- * Author: Jose David
- *
- * Created on September 21, 2019, 9:50 AM
- */
 
 #ifndef LISTACOMPRA_H
 #define	LISTACOMPRA_H

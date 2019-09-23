@@ -1,9 +1,3 @@
-/* 
- * File:   procesaPago.h
- * Author: Jose David
- *
- * Created on September 19, 2019, 11:37 PM
- */
 
 #ifndef PROCESARPAGO_H
 #define	PROCESARPAGO_H
@@ -18,7 +12,7 @@ public:
     ProcesarPago();
     virtual ~ProcesarPago();
     
-    bool verificarPago(float, float);
+    bool verificarPago(float, Tarjeta&);
     void procesarTransaccion(float, string, Fecha*, Tarjeta&);
     string obtenerVoucher();
 };

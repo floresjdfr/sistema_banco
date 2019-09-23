@@ -1,9 +1,4 @@
-/* 
- * File:   Persona.cpp
- * Author: Jose David
- * 
- * Created on September 7, 2019, 4:33 PM
- */
+
 
 #include "Persona.h"
 

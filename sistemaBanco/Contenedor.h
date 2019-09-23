@@ -1,9 +1,4 @@
-/* 
- * File:   Contenedor.h
- * Author: Jose David
- *
- * Created on September 7, 2019, 7:07 PM
- */
+
 
 #ifndef CONTENEDOR_H
 #define	CONTENEDOR_H

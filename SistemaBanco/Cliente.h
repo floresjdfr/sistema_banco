@@ -1,9 +1,4 @@
-/* 
- * File:   Cliente.h
- * Author: Jose David
- *
- * Created on September 7, 2019, 4:33 PM
- */
+
 
 #ifndef CLIENTE_H
 #define	CLIENTE_H

@@ -1,9 +1,4 @@
-/* 
- * File:   procesaPago.cpp
- * Author: Jose David
- * 
- * Created on September 19, 2019, 11:37 PM
- */
+
 
 #include "ProcesarPago.h"
 
@@ -15,16 +10,14 @@ ProcesarPago::~ProcesarPago() {
     
 }
 
-bool ProcesarPago::verificarPago(float montoP, float montoA){
-    return montoP == montoA;
+bool ProcesarPago::verificarPago(float montoP, Tarjeta& cuenta){
+    return montoP == cuenta.getSaldo();
 }
 
 void ProcesarPago::procesarTransaccion(float montoP, string des, Fecha* fechaP, Tarjeta& cuenta){
-    Pago* p = new Pago(des, fechaP, cuenta);
-    if (this->verificarPago(montoP, p->getMontoAcumulado())){
+    if(this->verificarPago(montoP, cuenta) && cuenta.getMoroso()){
         cuenta.setSaldo(cuenta.getSaldo() + montoP);
-        p->setMonto(montoP);
-        p->setMontoAcumulado(0.0);
+        cuenta.getPagos()->agregar(new Pago(montoP, des, fechaP));
     }
 }
 

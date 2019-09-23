@@ -1,9 +1,4 @@
-/* 
- * File:   main.cpp
- * Author: Jose David
- *
- * Created on September 7, 2019, 4:28 PM
- */
+
 
 #include <cstdlib>
 #include <iostream>

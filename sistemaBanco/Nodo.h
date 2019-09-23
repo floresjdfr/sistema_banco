@@ -1,9 +1,4 @@
-/* 
- * File:   Nodo.h
- * Author: Jose David
- *
- * Created on September 7, 2019, 7:11 PM
- */
+
 
 #ifndef NODO_H
 #define	NODO_H

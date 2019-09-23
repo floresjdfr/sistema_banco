@@ -1,9 +1,4 @@
-/* 
- * File:   IteradorLista.h
- * Author: JoseDavid
- *
- * Created on 10 de septiembre de 2019, 04:28 PM
- */
+
 
 #ifndef ITERADORLISTA_H
 #define	ITERADORLISTA_H

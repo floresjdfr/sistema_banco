@@ -1,9 +1,4 @@
-/* 
- * File:   Fecha.h
- * Author: Jose David
- *
- * Created on September 7, 2019, 6:26 PM
- */
+
 
 #ifndef FECHA_H
 #define	FECHA_H

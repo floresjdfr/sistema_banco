@@ -1,9 +1,3 @@
-/* 
- * File:   ProcesarPagoMinimo.h
- * Author: Jose David
- *
- * Created on September 21, 2019, 1:35 PM
- */
 
 #ifndef PROCESARPAGOMINIMO_H
 #define	PROCESARPAGOMINIMO_H
@@ -15,7 +9,7 @@ public:
     ProcesarPagoMinimo();
     virtual ~ProcesarPagoMinimo();
     
-    bool verificarPago(float, float);
+    bool verificarPago(float, Tarjeta&);
     void procesarTransaccion(float, string, Fecha*, Tarjeta&);
     string obtenerVoucher();
 };

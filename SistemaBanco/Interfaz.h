@@ -1,9 +1,3 @@
-/* 
- * File:   Interfaz.h
- * Author: JoseDavid
- *
- * Created on 22 de septiembre de 2019, 12:44 PM
- */
 
 #ifndef INTERFAZ_H
 #define	INTERFAZ_H

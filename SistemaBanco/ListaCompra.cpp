@@ -1,9 +1,3 @@
-/* 
- * File:   ListaCompra.cpp
- * Author: Jose David
- * 
- * Created on September 21, 2019, 9:50 AM
- */
 
 #include "ListaCompra.h"
 

@@ -1,9 +1,3 @@
-/* 
- * File:   Banco.h
- * Author: Jose David
- *
- * Created on September 21, 2019, 1:36 PM
- */
 
 #ifndef BANCO_H
 #define	BANCO_H

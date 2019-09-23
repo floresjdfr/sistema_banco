@@ -1,9 +1,3 @@
-/* 
- * File:   PocesarCompra.cpp
- * Author: JoseDavid
- * 
- * Created on 19 de septiembre de 2019, 10:37 AM
- */
 
 #include "ProcesarCompra.h"
 

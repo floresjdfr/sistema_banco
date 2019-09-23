@@ -1,9 +1,3 @@
-/* 
- * File:   Compra.h
- * Author: Jose David
- *
- * Created on September 21, 2019, 3:01 AM
- */
 
 #ifndef COMPRA_H
 #define	COMPRA_H

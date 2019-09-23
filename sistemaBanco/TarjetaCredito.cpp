@@ -156,7 +156,7 @@ float TarjetaCredito::obtenerSaldoTotal(){
     float mCompras = compras->montoALaFecha(fechaLimite);
     if(moroso){
         float adicional = (mCompras * 0.02) + (mCompras * 0.09);
-        mTotal += mCompras adicional;
+        mTotal += mCompras + adicional;
     }
     mTotal += mCompras;
     return mTotal;

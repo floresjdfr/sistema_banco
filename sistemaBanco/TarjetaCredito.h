@@ -60,8 +60,10 @@ public:
 
     void comprar(Compra, Procesar&);
     void pagar(float, string, Fecha*, Procesar&);
+    void pagarMinimo(string, Fecha*, Procesar&);
     float obtenerSaldoFechaCorte();
     float obtenerSaldoTotal();
+    float pagoMinimo();
 
     
     

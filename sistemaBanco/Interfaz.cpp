@@ -15,7 +15,7 @@ void Interfaz::main(Banco* banco){
     
     cout << "1. Registrar tarjeta credito al cliente" << endl;
     cout << "2. Realizar una compra" << endl;
-    cout << "3. Realizar pago" << endl;
+    cout << "3. Realizar pago saldo pendiente" << endl;
     cout << "4. Consultar saldo a pagar hasta fecha corte" << endl;
     cout << "5. Consultar saldo a pagar total" << endl;
     cout << "6. Generar estado de cuenta" << endl;
@@ -25,7 +25,7 @@ void Interfaz::main(Banco* banco){
     cin >> op;
     
     switch(op){
-        case 1:{
+        case 1:{ //Registrar tarjeta credito
             system("clear");
             cout << "Que salario tiene la persona: ";
             float salario;
@@ -58,7 +58,7 @@ void Interfaz::main(Banco* banco){
         } //Fin case 1
         
         
-        case 2:{
+        case 2:{ //Realizar compra
             system("clear");
             
             system("clear");
@@ -145,16 +145,101 @@ void Interfaz::main(Banco* banco){
         }//Fin case 2
         
         
-        case 3:{
+        case 3:{ //Realizar pago saldo pendiente
+            system("clear");
+            cout << "Digite numero tarjeta ";
+            int numero;
+            cin >> numero;
+            
+            
+            
+            if(banco->getListaTarjetas()->busquedaTarjetaNumero(numero)){
+                
+                cout << "1. Pagar total saldo" << endl;
+                cout << "2. Pago minimo" << endl;
+                cout << "Opcion: ";
+                int t;
+                switch(t){
+                    case 1:{
+                        ProcesarPago* p = new ProcesarPago;
+                        Tarjeta* tarjeta = banco->getListaTarjetas()->tarjetaNumero(numero);
+                        cout << "Fecha hoy: " << endl;
+                        Fecha f;
+                        cin >> f;
+                        
+                        float saldo = tarjeta->getLimiteSaldo() - tarjeta->getSaldo();
+                        tarjeta->pagar(saldo, "Pago total pendiente", &f, *p);
+                        break;
+                    }
+                    case 2:{
+                        break;
+                    }
+                    default:{
+                        cout << "Opcion no valida" << endl;
+                        cout << "Presione enter";
+                        cin.get(); 
+                    }
+                }
+                    
+            }
+            else{
+                cout << "Tarjeta no registrada en el sistema" << endl;
+                cout << "Presione enter" << endl;
+                cin.get();                
+            }
+            
             break;
         }//Fin case 3
-        case 4:{
+        
+        
+        
+        case 4:{ //Monto a pagar hasta la fecha
+            system("clear");
+            
+            cout << "Digite su numero tarjeta ";
+            int numero;
+            cin >> numero;
+            
+            if(banco->getListaTarjetas()->busquedaTarjetaNumero(numero)){
+                
+                cout << "Saldo a la fecha de corte: " << banco->getListaTarjetas()->tarjetaNumero(numero)->obtenerSaldoFechaCorte() << endl;
+            }
+            else{
+                system("clear");
+                cout << "Tarjeta no registrada en el sistema" << endl;
+                cout << "Presione enter" << endl;
+                cin.get();
+            }
             break;
+            
+            
         }//Fin case 4
-        case 5:{
+        
+        
+        
+        case 5:{ //Monto total a pagar
+            system("clear");
+            
+            cout << "Digite su numero tarjeta ";
+            int numero;
+            cin >> numero;
+            
+            if(banco->getListaTarjetas()->busquedaTarjetaNumero(numero)){
+                
+                cout << "Saldo a la fecha de corte: " << banco->getListaTarjetas()->tarjetaNumero(numero)->obtenerSaldoTotal() << endl;
+            }
+            else{
+                system("clear");
+                cout << "Tarjeta no registrada en el sistema" << endl;
+                cout << "Presione enter" << endl;
+                cin.get();
+            }            
+            
+            
+            
             break;
         }//Fin case 5
-        case 6:{
+        case 6:{ //Generar estado cuenta
             system("clear");
             cout << "Digite su numero tarjeta ";
             int numero;
@@ -179,7 +264,7 @@ void Interfaz::main(Banco* banco){
             
             break;
         }//Fin case 6
-        case 7:{
+        case 7:{ //Consultar puntos
             system("clear");
             cout << "Digite numero tarjeta ";
             int numero;

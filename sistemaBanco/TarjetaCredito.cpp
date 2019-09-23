@@ -145,6 +145,9 @@ void TarjetaCredito::comprar(Compra c, Procesar& p){
 void TarjetaCredito::pagar(float monto, string descripcion, Fecha* fecha, Procesar& p){
     p.procesarTransaccion(monto, descripcion, fecha, *this);
 }
+void TarjetaCredito::pagarMinimo(string descr, Fecha* fecha, Procesar& p){
+    p.procesarTransaccion(this->pagoMinimo(), descr, fecha, *this);
+}
 
 float TarjetaCredito::obtenerSaldoFechaCorte(){
     if(!moroso)
@@ -160,6 +163,10 @@ float TarjetaCredito::obtenerSaldoTotal(){
     }
     mTotal += mCompras;
     return mTotal;
+}
+
+float TarjetaCredito::pagoMinimo(){
+    return (limiteSaldo - saldo) / 3;
 }
 
 istream& operator >>(istream& entrada, TarjetaCredito& t){

@@ -79,7 +79,7 @@ float ListaCompra::montoALaFecha(Fecha* fec){
     IteradorLista<Compra>* iterador = Lista<Compra>::getIterador();
     float mAcumulado = 0.0;
     while (iterador->hayMas()){
-        if(iterador->getActual()->getEstado() && (iterador->getActual()->getFecha()< fec)){
+        if(iterador->getActual()->getEstado() && (iterador->getActual()->getFecha() < fec)){
             mAcumulado = iterador->getActual()->getMontoPendiente();
         }
         iterador->siguiente();

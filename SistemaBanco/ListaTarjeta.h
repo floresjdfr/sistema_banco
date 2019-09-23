@@ -1,9 +1,4 @@
-/* 
- * File:   ListaTarjeta.h
- * Author: JoseDavid
- *
- * Created on 22 de septiembre de 2019, 11:36 AM
- */
+
 
 #ifndef LISTATARJETA_H
 #define	LISTATARJETA_H

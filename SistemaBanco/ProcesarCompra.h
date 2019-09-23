@@ -1,9 +1,3 @@
-/* 
- * File:   PocesarCompra.h
- * Author: JoseDavid
- *
- * Created on 19 de septiembre de 2019, 10:37 AM
- */
 
 #ifndef PROCESARCOMPRA_H
 #define	PROCESARCOMPRA_H

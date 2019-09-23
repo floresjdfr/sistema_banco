@@ -1,9 +1,3 @@
-/* 
- * File:   Lista.h
- * Author: Giancarlo
- *
- * Created on 8 de septiembre de 2019, 11:36 AM
- */
 
 #ifndef LISTA_H
 #define	LISTA_H

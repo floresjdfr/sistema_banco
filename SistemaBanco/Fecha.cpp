@@ -1,9 +1,3 @@
-/* 
- * File:   Fecha.cpp
- * Author: Jose David
- * 
- * Created on September 7, 2019, 6:26 PM
- */
 
 #include "Fecha.h"
 

@@ -1,9 +1,3 @@
-/* 
- * File:   ListaTarjeta.cpp
- * Author: JoseDavid
- * 
- * Created on 22 de septiembre de 2019, 11:36 AM
- */
 
 #include "ListaTarjeta.h"
 #include "Tarjeta.h"

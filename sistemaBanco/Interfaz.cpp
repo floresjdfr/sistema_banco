@@ -205,7 +205,7 @@ string Interfaz::encabezado(){
     s << "                   *             SISTEMA BANCARIO              *" << endl;
     s << "                   *                                           *" <<endl;
     s << "                   *         Jose David Flores Rodriguez       *" << endl;
-    s << "                   *         Jean Carlo                        *" << endl;
+    s << "                   *         Giancarlo Chaves Matarrita        *" << endl;
     s << "                   *********************************************" << endl;
     return s.str();
 }

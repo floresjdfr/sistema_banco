@@ -8,26 +8,26 @@
 #ifndef BANCO_H
 #define	BANCO_H
 
-#include "TarjetaCredito.h"
-#include "Lista.h"
+#include "Tarjeta.h"
+#include "ListaTarjeta.h"
 
 
 class Banco {
 public:
     Banco();
-    Banco(string, Lista<Tarjeta>*);
+    Banco(string, ListaTarjeta*);
     Banco(string);
     virtual ~Banco();
     
-    void setListaTarjetas(Lista<Tarjeta>*);
+    void setListaTarjetas(ListaTarjeta*);
     void setNombre(string);
     
-    Lista<Tarjeta>* getListaTarjetas();
+    ListaTarjeta* getListaTarjetas();
     string getNombre();
         
     
 private:
-    Lista<Tarjeta>* tarjetas;
+    ListaTarjeta* tarjetas;
     string nombre;
 };
 

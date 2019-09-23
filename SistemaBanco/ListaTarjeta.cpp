@@ -72,3 +72,24 @@ bool ListaTarjeta::eliminaTarjetaNumero(int numero){
     }
 }
 
+bool ListaTarjeta::busquedaTarjetaNumero(int numero){
+    IteradorLista<Tarjeta>* iterador = Lista<Tarjeta>::getIterador();
+    while(iterador->hayMas()){
+        if(iterador->getActual()->getNumeroTarjeta() == numero){
+            return true;
+        }
+        iterador->siguiente();
+    }
+    return false;
+}
+
+Tarjeta* ListaTarjeta::tarjetaNumero(int numero){
+    IteradorLista<Tarjeta>* iterador = Lista<Tarjeta>::getIterador();
+    while(iterador->hayMas()){
+        if(iterador->getActual()->getNumeroTarjeta() == numero){
+            return iterador->getActual();
+        }
+        iterador->siguiente();
+    }
+}
+

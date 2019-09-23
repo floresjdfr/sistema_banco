@@ -2,8 +2,10 @@
 #define	PAGO_H
 
 #include "Transaccion.h"
-#include "TarjetaCredito.h"
+#include "Tarjeta.h"
 #include "Fecha.h"
+
+class Tarjeta;
 
 class Pago : public Transaccion{
 public:

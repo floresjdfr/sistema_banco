@@ -1,14 +1,17 @@
-build/Debug/Cygwin-Windows/Banco.o: Banco.cpp Banco.h TarjetaCredito.h \
- Tarjeta.h Fecha.h Lista.h Nodo.h Contenedor.h IteradorLista.h Iterador.h \
- Persona.h Cliente.h Procesar.h ListaCompra.h Compra.h Transaccion.h
+build/Debug/Cygwin-Windows/Banco.o: Banco.cpp Banco.h Tarjeta.h Fecha.h \
+ Persona.h Cliente.h Lista.h Nodo.h Contenedor.h IteradorLista.h \
+ Iterador.h Procesar.h ListaCompra.h Compra.h Transaccion.h Utiles.h \
+ Pago.h ListaTarjeta.h
 
 Banco.h:
-
-TarjetaCredito.h:
 
 Tarjeta.h:
 
 Fecha.h:
+
+Persona.h:
+
+Cliente.h:
 
 Lista.h:
 
@@ -20,10 +23,6 @@ IteradorLista.h:
 
 Iterador.h:
 
-Persona.h:
-
-Cliente.h:
-
 Procesar.h:
 
 ListaCompra.h:
@@ -31,3 +30,9 @@ ListaCompra.h:
 Compra.h:
 
 Transaccion.h:
+
+Utiles.h:
+
+Pago.h:
+
+ListaTarjeta.h:

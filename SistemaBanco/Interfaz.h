@@ -11,11 +11,15 @@
 #include "Banco.h"
 #include "TarjetaCredito.h"
 #include "ListaTarjeta.h"
+#include "ProcesarCompra.h"
+#include "ProcesarCompraCuotas.h"
+#include "ProcesarPago.h"
+#include "ProcesarPagoMinimo.h"
 
 class Interfaz {
 public:
     
-    void main();
+    void main(Banco*);
     string encabezado();
 
 

@@ -109,6 +109,7 @@ istream& operator >>(istream& entrada, Compra& nCompra){
     entrada>>op;
     switch(op){
         case 1:{
+            system("clear");
             cout<<"Descripcion de la compra: ";
             entrada>>des;
             cout<<"Monto de la compra: ";
@@ -122,6 +123,7 @@ istream& operator >>(istream& entrada, Compra& nCompra){
             nCompra.setMontoPagoMensual(0.0);
         }
         case 2:{
+            system("clear");
             cout<<"Descripcion de la compra: ";
             entrada>>des;
             cout<<"Monto de la compra: ";

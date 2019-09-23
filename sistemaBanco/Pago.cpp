@@ -1,5 +1,4 @@
 #include "Pago.h"
-#include "TarjetaCredito.h"
 
 Pago::Pago() {
     monto = 0.0;

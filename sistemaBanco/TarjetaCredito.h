@@ -13,6 +13,7 @@
 
 
 
+
 class TarjetaCredito : public Tarjeta{
     
 public:
@@ -31,6 +32,7 @@ public:
     void setCliente(Persona*);
     void setMoroso(bool);
     void setCompras(ListaCompra*);
+    void setPagos(Lista<Pago>*);
     
 
     
@@ -47,6 +49,7 @@ public:
     int getPuntos();
     Persona* getCliente();
     ListaCompra* getCompras();
+    Lista<Pago>* getPagos();
     
     //Metodos
     
@@ -55,8 +58,7 @@ public:
     
     bool verificaSaldo(float);//Verifica que la persona tenga aalfo en la cuenta disponible comparado con el monto de la compra
 
-    void comprar(float, float, string, Fecha*, Procesar&);
-    void comprar(float, string, Fecha*, Procesar&);
+    void comprar(Compra, Procesar&);
     void pagar(float, string, Fecha*, Procesar&);
 
     
@@ -76,6 +78,7 @@ private:
     int codigoSeguridad;
     Persona* cliente;
     ListaCompra* compras;
+    Lista<Pago>* pagos;
     
 
 };

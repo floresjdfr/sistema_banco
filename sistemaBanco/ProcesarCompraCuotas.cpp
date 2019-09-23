@@ -28,6 +28,7 @@ void ProcesarCompraCuotas::procesarTransaccion(float monto, string descripcion, 
     if (this->verificaSaldo(monto, tarjeta) && tarjeta.getMoroso() == false){
         tarjeta.setSaldo(tarjeta.getSaldo() - monto);
         float cuota = monto / cuotas;
+        tarjeta.ganarPuntos(monto);
         tarjeta.getCompras()->agregar(new Compra(true, monto, cuota, fecha, descripcion));
     }
 }

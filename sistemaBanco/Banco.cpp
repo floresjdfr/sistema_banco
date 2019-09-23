@@ -9,27 +9,27 @@
 
 Banco::Banco() {
     nombre = " ";
-    tarjetas = new Lista<Tarjeta>;
+    tarjetas = new ListaTarjeta;
 }
 
-Banco::Banco(string nom, Lista<Tarjeta>* list) {
+Banco::Banco(string nom, ListaTarjeta* list) {
     nombre = nom;
     tarjetas = list;
 }
 
 Banco::Banco(string nom) {
     nombre = nom;
-    tarjetas = new Lista<Tarjeta>;
+    tarjetas = new ListaTarjeta;
 }
 
-void Banco::setListaTarjetas(Lista<Tarjeta>* t){
+void Banco::setListaTarjetas(ListaTarjeta* t){
     tarjetas = t;
 }
 void Banco::setNombre(string nom){
     nombre = nom;
 }
     
-Lista<Tarjeta>* Banco::getListaTarjetas(){
+ListaTarjeta* Banco::getListaTarjetas(){
     return tarjetas;
 }
 string Banco::getNombre(){

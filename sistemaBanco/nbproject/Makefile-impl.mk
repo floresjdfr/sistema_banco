@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=SistemaBanco
+PROJECTNAME=sistemaBanco
 
 # Active Configuration
 DEFAULTCONF=Debug

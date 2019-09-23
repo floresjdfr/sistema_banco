@@ -13,11 +13,12 @@
 using namespace std;
 
 #include "Fecha.h"
-#include "Lista.h"
 #include "Persona.h"
 #include "Procesar.h"
 #include "ListaCompra.h"
+#include "Pago.h"
 
+class Pago;
 class Procesar;
 
 /*Clase abstracta de una tarjeta*/
@@ -33,6 +34,8 @@ public:
     virtual bool getMoroso() = 0;
     virtual ListaCompra* getCompras() = 0;
     virtual int getNumeroTarjeta() = 0;
+    virtual Lista<Pago>* getPagos() = 0;
+    virtual int getPuntos() = 0;
     
     //Sets
     
@@ -41,10 +44,13 @@ public:
     virtual void setCliente(Persona*) = 0;
     virtual void setMoroso(bool) = 0;
     virtual void setNumeroTarjeta(int) = 0;
+    virtual void setPagos(Lista<Pago>*) = 0;
     //Otros
     
     
     virtual string toString() = 0;
+    virtual void comprar(Compra, Procesar&) = 0;
+    virtual void ganarPuntos(float) = 0;
     
 };
 

@@ -18,7 +18,8 @@ TarjetaCredito::TarjetaCredito() {
     numeroTarjeta = 0;
     codigoSeguridad = 0;
     cliente = NULL;
-    compras = NULL;
+    compras = new ListaCompra;
+    pagos = new Lista<Pago>;
 }
 
 TarjetaCredito::TarjetaCredito(float Saldo, Fecha* corte, Fecha* limite, Fecha* Expiracion, int NumeroCuenta, Persona* Cliente){//saldo, fecha corte, fecha limite, fecha caducidad, numeroTarjeta, cliente
@@ -33,6 +34,7 @@ TarjetaCredito::TarjetaCredito(float Saldo, Fecha* corte, Fecha* limite, Fecha* 
     codigoSeguridad = 0;
     cliente = Cliente;
     compras = new ListaCompra;
+    pagos = new Lista<Pago>;
 }
 
 TarjetaCredito::~TarjetaCredito() {
@@ -68,6 +70,9 @@ void TarjetaCredito::setMoroso(bool Moroso){
 }
 void TarjetaCredito::setCompras(ListaCompra* Compras){
     compras = Compras;
+}
+void TarjetaCredito::setPagos(Lista<Pago>* lista){
+    pagos = lista;
 }
 
 //Gets
@@ -105,6 +110,9 @@ Persona* TarjetaCredito::getCliente(){
 ListaCompra* TarjetaCredito::getCompras(){
     return compras;
 }
+Lista<Pago>* TarjetaCredito::getPagos(){
+    return pagos;
+}
 
 
 /*Metodos*/
@@ -129,9 +137,9 @@ bool TarjetaCredito::verificaSaldo(float monto){
     return monto <= saldo;
 }
 
-void TarjetaCredito::comprar(float monto, float cuota, string descripcion, Fecha* fecha, Procesar& p){
+void TarjetaCredito::comprar(Compra c, Procesar& p){
     /*Este es el metodo encargado de ejecutar las compras*/
-    p.procesarTransaccion(monto, descripcion, fecha, *this);
+    p.procesarTransaccion(c.getMonto(), c.getDescripcion(), c.getFecha(), *this);
 }
 
 void TarjetaCredito::pagar(float monto, string descripcion, Fecha* fecha, Procesar& p){
@@ -146,19 +154,32 @@ istream& operator >>(istream& entrada, TarjetaCredito& t){
     Persona p;
     cout<<"Cliente: "<<endl;
     entrada>>p;
-    cout<<"Establecer fecha de expiracion: "<<endl;
-    entrada>>exp;
-    cout<<"Establecer el codigo de seguridad: ";
-    entrada>>cod;
-    cout<<"Establecer saldo de la tarjeta: ";
-    entrada>>s;
     t.setCliente(&p);
+    
+    
+    int d, m, a;
+    
+    d = rand() % 30 + 1;
+    m = rand() % 12 + 1;
+    a = rand() % 26 + 2019;
+    
+    exp.setDia(d);
+    exp.setMes(m);
+    exp.setAno(a);
+    
     t.setFechaExpiracion(&exp);
+    
+    cod = rand() % 999 + 100;
     t.setCodigoSeguridad(cod);
-    numT = rand() % 1000000000000000 + 9999999999999999;
+    
+    numT = rand() % 9999999999999999 + 1000000000000000;
     t.setNumeroTarjeta(numT);
-    t.setLimiteSaldo(s);
-    t.setSaldo(s);
+    
+    t.setLimiteSaldo(p.getSalario() * 0.4);
+    t.setSaldo(p.getSalario() * 0.4);
+    
+    cout << "Numero Tarjeta: " << t.getNumeroTarjeta() << endl;
+
     
     return entrada;
 }
